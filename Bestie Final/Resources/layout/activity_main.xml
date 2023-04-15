@@ -6,10 +6,13 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"/>
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"           
-        android:src="@drawable/bestieiconnew"/>
+        android:layout_height="wrap_content"/>
 
 
     <LinearLayout
@@ -51,7 +54,6 @@
             android:gravity="bottom"
             android:text="Codeez ata"
             android:id="@+id/textView1" />
-
-
     </LinearLayout>
+
 </RelativeLayout>
