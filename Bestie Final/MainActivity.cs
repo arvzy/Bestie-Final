@@ -31,19 +31,11 @@ namespace Bestie_Final
             SetTypefaceForView(rootLayout, bestieFont);
 
             btnoverview = FindViewById<Button>(Resource.Id.BuildingOverviewButton);
-            btnsearch = FindViewById<Button>(Resource.Id.SearchByBuildingButton);
-            btnabout = FindViewById<Button>(Resource.Id.AboutButton);
+            btnsearch = FindViewById<Button>(Resource.Id.SearchByBuildingButton);            
 
             btnoverview.Click += Btnoverview_Click;
             btnsearch.Click += Btnsearch_Click;
-            btnabout.Click += Btnabout_Click;
-        }
-
-        private void Btnabout_Click(object sender, System.EventArgs e)
-        {
-            var intent = new Intent(this, typeof(About));
-            this.StartActivity(intent); ;
-        }
+        }      
 
         private void Btnsearch_Click(object sender, System.EventArgs e)
         {
