@@ -5,37 +5,56 @@
     android:layout_height="wrap_content">
 
     <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:columnCount="4"
         android:rowCount="1"
-        android:columnCount="4">
+        android:layout_width="1000px"
+        android:layout_height="1500px"
+        android:layout_gravity="center"
+        android:id="@+id/gridLayout1">
 
         <Button
+            android:id="@+id/BackBuildingOview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Back"/>
+
+        <Button
+            android:id="@+id/BuildingAOverview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:layout_row="0"
             android:layout_column="0"
+            android:padding="90dp"           
             android:text="Building A"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:layout_row="0"
             android:layout_column="1"
+            android:padding="90px"
             android:text="Building B"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:layout_row="0"
             android:layout_column="2"
+            android:padding="90px"
             android:text="Building C"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:layout_row="0"
             android:layout_column="3"
+            android:padding="90px"
             android:text="Building D"/>
 
 
