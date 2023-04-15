@@ -3275,15 +3275,7 @@ namespace Bestie_Final
 			public const int background_gradient = 2131165278;
 			
 			// aapt resource value: 0x7F07005F
-<<<<<<< Updated upstream
-			public const int bestie_icon = 2131165279;
-=======
-<<<<<<< HEAD
 			public const int bestieiconnew = 2131165279;
-=======
-			public const int bestie_icon = 2131165279;
->>>>>>> 2f023832a53547e1d2ffb6d69793f9328089c4c5
->>>>>>> Stashed changes
 			
 			// aapt resource value: 0x7F070060
 			public const int btn_checkbox_checked_mtrl = 2131165280;
