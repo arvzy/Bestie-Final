@@ -5,6 +5,7 @@ using Android.Widget;
 using Android.Content;
 using Android.Views;
 using AndroidX.AppCompat.App;
+using Android.Content.PM;
 
 namespace Bestie_Final
 {
@@ -21,6 +22,7 @@ namespace Bestie_Final
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+            RequestedOrientation = ScreenOrientation.Landscape;
 
             btnoverview = FindViewById<Button>(Resource.Id.BuildingOverviewButton);
             btnsearch = FindViewById<Button>(Resource.Id.SearchByBuildingButton);
