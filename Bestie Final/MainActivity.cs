@@ -11,6 +11,8 @@ using Javax.Security.Auth;
 using Android.Media.Metrics;
 using System;
 using Android.Animation;
+using AndroidX.AppCompat.Widget;
+using Android.Views.InputMethods;
 
 namespace Bestie_Final
 {
@@ -18,8 +20,10 @@ namespace Bestie_Final
     public class MainActivity : AppCompatActivity
     {
 
+        string[] suggestions = { "Computer LAboratory A", "Registrar"};
+
         Button btnoverview, btnsearch;
-        SearchView searchBar;
+        AutoCompleteTextView searchBar;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -33,13 +37,28 @@ namespace Bestie_Final
             ViewGroup rootLayout = FindViewById<ViewGroup>(Android.Resource.Id.Content);
             SetTypefaceForView(rootLayout, bestieFont);
 
-            searchBar = FindViewById<SearchView>(Resource.Id.searchBar);
+            searchBar = FindViewById<AutoCompleteTextView>(Resource.Id.searchBar);
+
+            var adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleDropDownItem1Line, suggestions);
+
+            searchBar.Adapter = adapter;
+
+            searchBar.EditorAction += (sender, args) =>
+            {
+                if (args.ActionId == ImeAction.Search)
+                {
+                    var searchText = searchBar.Text;
+                    
+                }
+            };
 
             btnoverview = FindViewById<Button>(Resource.Id.BuildingOverviewButton);
             btnsearch = FindViewById<Button>(Resource.Id.searchBtn);
 
             btnoverview.Click += Btnoverview_Click;
             btnsearch.Click += searchOnClick;
+
+
         }
 
         private void Btnoverview_Click(object sender, EventArgs e)
@@ -48,7 +67,7 @@ namespace Bestie_Final
             this.StartActivity(intent);
         }
 
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
