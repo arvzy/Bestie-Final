@@ -42,11 +42,6 @@ namespace Bestie_Final
             btnsearch.Click += searchOnClick;
         }
 
-        private void Btnabout_Click(object sender, EventArgs e)
-        {
-            var intent = new Intent(this, typeof(About));
-            this.StartActivity(intent); ;
-        }
         private void Btnoverview_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(BuildingOverview));
