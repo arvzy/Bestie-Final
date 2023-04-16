@@ -22,6 +22,7 @@
             android:id="@+id/searchBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
             android:textColor="@android:color/white"
             android:layout_marginLeft="20px"
             android:layout_marginRight="20px"
@@ -35,12 +36,13 @@
         <ImageView
             android:layout_width="200px"
             android:layout_height="200px"
-            android:src="@drawable/bestie_icon"/>
+            android:src="@drawable/bestietransparent"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textStyle="bold"
             android:text="BESTIE"
             android:textColor="@android:color/white"
             android:textSize="70px"

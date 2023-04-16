@@ -33,8 +33,7 @@ namespace Bestie_Final
 
         private void Backbtnbldngoviw_Click(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(MainActivity));
-            this.StartActivity(intent);
+            this.Finish();
         }
 
         private void BldngA_Click(object sender, EventArgs e)
