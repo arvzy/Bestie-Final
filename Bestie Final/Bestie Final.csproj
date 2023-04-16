@@ -136,10 +136,16 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\bestie_icon.png" />
+    <AndroidResource Include="Resources\drawable\Floor2and4.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\bestie_icon.png" />
+    <AndroidResource Include="Resources\drawable\Floor3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Mezzanine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Floor1.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\NewFolder1\" />
