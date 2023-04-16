@@ -18,9 +18,19 @@
         android:orientation="vertical"
         android:background="@drawable/background_gradient">
 
-        <ImageView
-            android:layout_width="wrap_content"
+        <SearchView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/searchBar"
+            android:visibility="gone"
+            android:background="@android:color/white"
+            app:queryHint="Search"/>
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
             android:src="@drawable/bestie_icon"/>
 
         <TextView
@@ -36,20 +46,13 @@
             android:id="@+id/BuildingOverviewButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:elevation="8dp"
             android:text="Building Overview"/>
 
         <Button
-            android:id="@+id/SearchByBuildingButton"
+            android:id="@+id/searchBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Search"/>
-
-        <Button
-            android:id="@+id/AboutButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="About"/>
 
         <TextView
             android:layout_width="wrap_content"

@@ -7,6 +7,10 @@ using Android.Views;
 using AndroidX.AppCompat.App;
 using Android.Content.PM;
 using Android.Graphics;
+using Javax.Security.Auth;
+using Android.Media.Metrics;
+using System;
+using Android.Animation;
 
 namespace Bestie_Final
 {
@@ -14,9 +18,8 @@ namespace Bestie_Final
     public class MainActivity : AppCompatActivity
     {
 
-        Button btnoverview;
-        Button btnsearch;
-        Button btnabout;
+        Button btnoverview, btnsearch;
+        SearchView searchBar;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -30,28 +33,21 @@ namespace Bestie_Final
             ViewGroup rootLayout = FindViewById<ViewGroup>(Android.Resource.Id.Content);
             SetTypefaceForView(rootLayout, bestieFont);
 
+            searchBar = FindViewById<SearchView>(Resource.Id.searchBar);
+
             btnoverview = FindViewById<Button>(Resource.Id.BuildingOverviewButton);
-            btnsearch = FindViewById<Button>(Resource.Id.SearchByBuildingButton);
-            btnabout = FindViewById<Button>(Resource.Id.AboutButton);
+            btnsearch = FindViewById<Button>(Resource.Id.searchBtn);
 
             btnoverview.Click += Btnoverview_Click;
-            btnsearch.Click += Btnsearch_Click;
-            btnabout.Click += Btnabout_Click;
+            btnsearch.Click += searchOnClick;
         }
 
-        private void Btnabout_Click(object sender, System.EventArgs e)
+        private void Btnabout_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(About));
             this.StartActivity(intent); ;
         }
-
-        private void Btnsearch_Click(object sender, System.EventArgs e)
-        {
-            var intent = new Intent(this, typeof(BuildingSearch));
-            this.StartActivity(intent);
-        }
-
-        private void Btnoverview_Click(object sender, System.EventArgs e)
+        private void Btnoverview_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(BuildingOverview));
             this.StartActivity(intent);
@@ -79,7 +75,26 @@ namespace Bestie_Final
                 {
                     SetTypefaceForView(viewGroup.GetChildAt(i), typeface);
                 }
+            } 
+        }
+
+        private void searchOnClick(object sender, EventArgs e) 
+        {
+            if (searchBar.Visibility == ViewStates.Visible)
+            {
+                searchBar.Visibility = ViewStates.Gone;
+                var anim = ObjectAnimator.OfFloat(searchBar, "alpha", 1, 0);
+                anim.SetDuration(300);
+                anim.Start();
             }
+            else 
+            {
+                searchBar.Visibility = ViewStates.Visible;
+                var anim = ObjectAnimator.OfFloat(searchBar, "alpha", 0, 1);
+                anim.SetDuration(300);
+                anim.Start();
+            }
+
         }
     }
 }
