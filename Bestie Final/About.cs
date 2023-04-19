@@ -20,6 +20,15 @@ namespace Bestie_Final
 
             // Create your application here
             SetContentView(Resource.Layout.about);
+
+            var scrollView = FindViewById<ScrollView>(Resource.Id.scrollView);
+            var textView = FindViewById<TextView>(Resource.Id.textView1);
+
+            textView.Text = "BESTIE";
+
+            scrollView.SmoothScrollingEnabled = true;
+            scrollView.ScrollBarStyle = ScrollbarStyles.OutsideOverlay;
+            scrollView.ScrollbarFadingEnabled = false;
         }
     }
 }
