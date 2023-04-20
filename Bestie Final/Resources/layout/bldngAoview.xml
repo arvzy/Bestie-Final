@@ -13,7 +13,7 @@
         android:background="@drawable/background_gradient"/>
 
     <Button
-        android:id="@id/BackBuildingAOview"
+        android:id="@+id/BackBuildingAOview"
         android:layout_width="75px"
         android:layout_height="50px"
         android:text="Back"/>

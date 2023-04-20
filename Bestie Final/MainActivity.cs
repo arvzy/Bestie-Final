@@ -20,9 +20,9 @@ namespace Bestie_Final
     public class MainActivity : AppCompatActivity
     {
 
-        string[] suggestions = { "Computer LAboratory A", "Registrar"};
+        string[] suggestions = { "Computer Laboratory A", "Registrar"};
 
-        Button btnoverview, btnsearch;
+        Button btnoverview, btnsearch, btnautocompletesearch;
         AutoCompleteTextView searchBar;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -54,12 +54,13 @@ namespace Bestie_Final
 
             btnoverview = FindViewById<Button>(Resource.Id.BuildingOverviewButton);
             btnsearch = FindViewById<Button>(Resource.Id.searchBtn);
+            btnautocompletesearch = FindViewById<Button>(Resource.Id.AutoCompleteSearch);
 
             btnoverview.Click += Btnoverview_Click;
             btnsearch.Click += searchOnClick;
-
-
+            btnautocompletesearch.Click += Btnautocompletesearch_Click;
         }
+        
 
         private void Btnoverview_Click(object sender, EventArgs e)
         {
@@ -109,6 +110,23 @@ namespace Bestie_Final
                 anim.Start();
             }
 
+            if (btnautocompletesearch.Visibility == ViewStates.Visible)
+            {
+                btnautocompletesearch.Visibility = ViewStates.Gone;
+            }
+            else
+            {
+                btnautocompletesearch.Visibility= ViewStates.Visible;
+            }
+        }
+
+        private void Btnautocompletesearch_Click(object sender, EventArgs e)
+        {
+            if (searchBar.Text == "Registrar")
+            {
+                var intent = new Intent(this, typeof(BuildingAOverview));
+                this.StartActivity(intent);
+            }
         }
     }
 }
