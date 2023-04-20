@@ -12,6 +12,12 @@
         android:layout_height="match_parent"
         android:background="@drawable/background_gradient"/>
 
+    <Button
+        android:id="@id/BackBuildingAOview"
+        android:layout_width="75px"
+        android:layout_height="50px"
+        android:text="Back"/>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -22,7 +28,7 @@
             android:layout_width="792.0dp"
             android:src="@drawable/Floor1"
             android:id="@+id/imageView1"
-        />
+        />       
 
         <LinearLayout
             android:orientation="vertical"
