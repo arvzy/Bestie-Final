@@ -44,7 +44,7 @@
                 android:layout_weight="1"
                 android:src="@drawable/mezzanine"
                 android:id="@+id/mzznnImage"
-                android:visibility="gone"
+                android:visibility="invisible"
             /> 
 
             <ImageView
@@ -54,7 +54,7 @@
                 android:layout_weight="1"
                 android:src="@drawable/floor2and4"
                 android:id="@+id/flr2Image"
-                android:visibility="gone"
+                android:visibility="invisible"
             /> 
 
             <ImageView
@@ -64,7 +64,7 @@
                 android:layout_weight="1"
                 android:src="@drawable/floor3"
                 android:id="@+id/flr3Image"
-                android:visibility="gone"
+                android:visibility="invisible"
             /> 
 
             <ImageView
@@ -74,7 +74,7 @@
                 android:layout_weight="1"
                 android:src="@drawable/floor2and4"
                 android:id="@+id/flr4Image"
-                android:visibility="gone"
+                android:visibility="invisible"
             /> 
 
             

@@ -51,58 +51,63 @@ namespace Bestie_Final
             if (flr1img.Visibility == ViewStates.Invisible)
             {
                 flr1img.Visibility = ViewStates.Visible;
+                mzznnimg.Visibility = ViewStates.Invisible;
+                flr2img.Visibility = ViewStates.Invisible;
+                flr3img.Visibility = ViewStates.Invisible;
+                flr4img.Visibility = ViewStates.Invisible;
+
             }
             else
             {
-                flr1img.Visibility = ViewStates.Invisible;
+                flr1img.Visibility = ViewStates.Visible;                
             }
         }
 
         private void Mzznnbtn_Click(object sender, EventArgs e)
         {
-            if (mzznnimg.Visibility == ViewStates.Gone)
+            if (mzznnimg.Visibility == ViewStates.Invisible)
             {
                 mzznnimg.Visibility = ViewStates.Visible;
-            }
-            else
-            {
-                mzznnimg.Visibility = ViewStates.Gone;
-            }
+                flr1img.Visibility = ViewStates.Invisible;
+                flr2img.Visibility = ViewStates.Invisible;
+                flr3img.Visibility = ViewStates.Invisible;
+                flr4img.Visibility = ViewStates.Invisible;
+            }            
         }
 
         private void Scndflrbtn_Click(object sender, EventArgs e)
         {
-            if (flr2img.Visibility == ViewStates.Gone)
+            if (flr2img.Visibility == ViewStates.Invisible)
             {
                 flr2img.Visibility = ViewStates.Visible;
+                flr1img.Visibility = ViewStates.Invisible;
+                mzznnimg.Visibility = ViewStates.Invisible;
+                flr3img.Visibility = ViewStates.Invisible;
+                flr4img.Visibility = ViewStates.Invisible;                
             } 
-            else
-            {
-                flr2img.Visibility = ViewStates.Gone;
-            }
         }
 
         private void Thrdflrbtn_Click(object sender, EventArgs e)
         {
-            if (flr3img.Visibility == ViewStates.Gone)
+            if (flr3img.Visibility == ViewStates.Invisible)
             {
                 flr3img.Visibility = ViewStates.Visible;
-            }
-            else
-            {
-                flr3img.Visibility = ViewStates.Gone;
+                flr1img.Visibility = ViewStates.Invisible;
+                mzznnimg.Visibility = ViewStates.Invisible;
+                flr2img.Visibility = ViewStates.Invisible;
+                flr4img.Visibility = ViewStates.Invisible;
             }
         }
 
         private void Frthflrbtn_Click(object sender, EventArgs e)
         {
-            if (flr4img.Visibility == ViewStates.Gone)
+            if (flr4img.Visibility == ViewStates.Invisible)
             {
                 flr4img.Visibility = ViewStates.Visible;
-            }
-            else
-            {
-                flr4img.Visibility = ViewStates.Gone;
+                flr1img.Visibility = ViewStates.Invisible;
+                mzznnimg.Visibility = ViewStates.Invisible;
+                flr2img.Visibility = ViewStates.Invisible;
+                flr3img.Visibility = ViewStates.Invisible;
             }
         }
 
