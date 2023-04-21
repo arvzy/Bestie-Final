@@ -23,14 +23,64 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_height="wrap_content"
-            android:layout_width="792.0dp"
-            android:padding="12dp"
-            android:layout_weight="1"
-            android:src="@drawable/Floor1"
-            android:id="@+id/imageView1"
-        />       
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="792.0dp"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:src="@drawable/Floor1"
+                android:id="@+id/flr1Image"
+                android:visibility="visible"
+            />
+            
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="792.0dp"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:src="@drawable/mezzanine"
+                android:id="@+id/mzznnImage"
+                android:visibility="gone"
+            /> 
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="792.0dp"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:src="@drawable/floor2and4"
+                android:id="@+id/flr2Image"
+                android:visibility="gone"
+            /> 
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="792.0dp"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:src="@drawable/floor3"
+                android:id="@+id/flr3Image"
+                android:visibility="gone"
+            /> 
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="792.0dp"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:src="@drawable/floor2and4"
+                android:id="@+id/flr4Image"
+                android:visibility="gone"
+            /> 
+
+            
+
+        </RelativeLayout>
+           
 
         <LinearLayout
             android:orientation="vertical"
@@ -45,13 +95,23 @@
 
             <android.widget.Button
                 android:textSize="30px"
+                android:text="1f"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="85px"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_design"
+                android:id="@+id/frstfButton" />
+
+            <android.widget.Button
+                android:textSize="30px"
                 android:text="M"
                 android:textColor="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="85px"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/button_design"
-                android:id="@+id/button1" />
+                android:id="@+id/mzznnButton" />
 
             <android.widget.Button
                 android:textSize="30px"
@@ -61,7 +121,7 @@
                 android:layout_height="85px"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/button_design"
-                android:id="@+id/button2" />
+                android:id="@+id/scndfButton" />
 
             <android.widget.Button
                 android:textSize="30px"
@@ -71,7 +131,7 @@
                 android:layout_height="85px"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/button_design"
-                android:id="@+id/button3" />
+                android:id="@+id/thrdfButton" />
 
             <android.widget.Button
                 android:textSize="30px"
@@ -81,7 +141,8 @@
                 android:layout_height="85px"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/button_design"
-                android:id="@+id/button4"  />
+                android:id="@+id/frthfButton"  />
+
             <android.widget.Button
                 android:textSize="30px"
                 android:text="rf"
