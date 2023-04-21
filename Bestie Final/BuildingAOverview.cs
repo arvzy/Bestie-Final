@@ -13,10 +13,10 @@ namespace Bestie_Final
 {
     [Activity(Label = "BuildingAOverview")]
     public class BuildingAOverview : Activity
-    {
-
+    {        
         Button backbtnbldngaoview, frstflrbtn, mzznnbtn, scndflrbtn, thrdflrbtn, frthflrbtn;
         ImageView flr1img, mzznnimg, flr2img, flr3img, flr4img;
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -42,7 +42,7 @@ namespace Bestie_Final
             mzznnimg = FindViewById<ImageView>(Resource.Id.mzznnImage);
             flr2img = FindViewById<ImageView>(Resource.Id.flr2Image);
             flr3img = FindViewById<ImageView>(Resource.Id.flr3Image);
-            flr4img = FindViewById<ImageView>(Resource.Id.flr4Image);
+            flr4img = FindViewById<ImageView>(Resource.Id.flr4Image);            
         }              
               
 
@@ -116,5 +116,6 @@ namespace Bestie_Final
             var intent = new Intent(this, typeof(BuildingOverview));
             this.StartActivity(intent);
         }
+        
     }
 }
