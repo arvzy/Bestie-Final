@@ -55,7 +55,6 @@ namespace Bestie_Final
                 flr2img.Visibility = ViewStates.Invisible;
                 flr3img.Visibility = ViewStates.Invisible;
                 flr4img.Visibility = ViewStates.Invisible;
-
             }
             else
             {

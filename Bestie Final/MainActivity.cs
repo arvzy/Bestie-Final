@@ -37,28 +37,28 @@ namespace Bestie_Final
             ViewGroup rootLayout = FindViewById<ViewGroup>(Android.Resource.Id.Content);
             SetTypefaceForView(rootLayout, bestieFont);
 
-            searchBar = FindViewById<AutoCompleteTextView>(Resource.Id.searchBar);
+            //searchBar = FindViewById<AutoCompleteTextView>(Resource.Id.searchBar);
 
-            var adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleDropDownItem1Line, suggestions);
+            //var adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleDropDownItem1Line, suggestions);
 
-            searchBar.Adapter = adapter;
+            //searchBar.Adapter = adapter;
 
-            searchBar.EditorAction += (sender, args) =>
-            {
-                if (args.ActionId == ImeAction.Search)
-                {
-                    var searchText = searchBar.Text;
+            //searchBar.EditorAction += (sender, args) =>
+            //{
+            //    if (args.ActionId == ImeAction.Search)
+            //    {
+            //        var searchText = searchBar.Text;
                     
-                }
-            };
+            //    }
+            //};
 
             btnoverview = FindViewById<Button>(Resource.Id.BuildingOverviewButton);
             btnsearch = FindViewById<Button>(Resource.Id.searchBtn);
-            btnautocompletesearch = FindViewById<Button>(Resource.Id.AutoCompleteSearch);
+            //btnautocompletesearch = FindViewById<Button>(Resource.Id.AutoCompleteSearch);
 
             btnoverview.Click += Btnoverview_Click;
             btnsearch.Click += searchOnClick;
-            btnautocompletesearch.Click += Btnautocompletesearch_Click;
+            //btnautocompletesearch.Click += Btnautocompletesearch_Click;
         }
         
 
@@ -95,40 +95,43 @@ namespace Bestie_Final
 
         private void searchOnClick(object sender, EventArgs e) 
         {
-            if (searchBar.Visibility == ViewStates.Visible)
-            {
-                searchBar.Visibility = ViewStates.Gone;
-                var anim = ObjectAnimator.OfFloat(searchBar, "alpha", 1, 0);
-                anim.SetDuration(300);
-                anim.Start();
-            }
-            else 
-            {
-                searchBar.Visibility = ViewStates.Visible;
-                var anim = ObjectAnimator.OfFloat(searchBar, "alpha", 0, 1);
-                anim.SetDuration(300);
-                anim.Start();
-            }
+            //if (searchBar.Visibility == ViewStates.Visible)
+            //{
+            //    searchBar.Visibility = ViewStates.Gone;
+            //    var anim = ObjectAnimator.OfFloat(searchBar, "alpha", 1, 0);
+            //    anim.SetDuration(300);
+            //    anim.Start();
+            //}
+            //else 
+            //{
+            //    searchBar.Visibility = ViewStates.Visible;
+            //    var anim = ObjectAnimator.OfFloat(searchBar, "alpha", 0, 1);
+            //    anim.SetDuration(300);
+            //    anim.Start();
+            //}
 
-            if (btnautocompletesearch.Visibility == ViewStates.Visible)
-            {
-                btnautocompletesearch.Visibility = ViewStates.Gone;
-            }
-            else
-            {
-                btnautocompletesearch.Visibility= ViewStates.Visible;
-            }
+            //if (btnautocompletesearch.Visibility == ViewStates.Visible)
+            //{
+            //    btnautocompletesearch.Visibility = ViewStates.Gone;
+            //}
+            //else
+            //{
+            //    btnautocompletesearch.Visibility= ViewStates.Visible;
+            //}
+
+            var intent = new Intent(this, typeof(BuildingSearch));
+            this.StartActivity(intent);
         }
 
-        private void Btnautocompletesearch_Click(object sender, EventArgs e)
-        {
-            //placeholder lang to para sa ngayon
-            if (searchBar.Text == "Registrar")
-            {
-                var intent = new Intent(this, typeof(BuildingAOverview));
-                this.StartActivity(intent);
-            }
+        //private void Btnautocompletesearch_Click(object sender, EventArgs e)
+        //{
+        //    //placeholder lang to para sa ngayon
+        //    if (searchBar.Text == "Registrar")
+        //    {
+        //        var intent = new Intent(this, typeof(BuildingAOverview));
+        //        this.StartActivity(intent);
+        //    }
             
-        }
+        //}
     }
 }
