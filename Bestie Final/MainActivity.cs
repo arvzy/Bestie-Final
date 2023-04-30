@@ -13,6 +13,7 @@ using System;
 using Android.Animation;
 using AndroidX.AppCompat.Widget;
 using Android.Views.InputMethods;
+using Microsoft.Win32;
 
 namespace Bestie_Final
 {
@@ -20,7 +21,8 @@ namespace Bestie_Final
     public class MainActivity : AppCompatActivity
     {
 
-        string[] suggestions = { "Computer Laboratory A", "Registrar"};
+        string[] suggestions = { "Admissions Office", "Cashier", "Registrar", "Deputy", "Computer Laboratory A", 
+            "Male Toilet Lobby", "Female Toilet Lobby", "Library", "Bookstore", "School Administrator"};
 
         Button btnoverview, btnsearch, btnautocompletesearch;
         AutoCompleteTextView searchBar;

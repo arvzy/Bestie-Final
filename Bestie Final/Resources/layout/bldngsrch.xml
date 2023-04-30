@@ -5,16 +5,26 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
             
         <ImageView
-                android:layout_height="wrap_content"
-                android:layout_width="792.0dp"
-                android:padding="12dp"
-                android:layout_weight="1" 
-            android:id="@+id/imageView"
+            android:layout_height="wrap_content"
+            android:layout_width="792.0dp"
+            android:padding="12dp"
+            android:layout_weight="1" 
+            android:id="@+id/BuildingSearchImageViewFirst"
             />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="792.0dp"
+            android:padding="12dp"
+            android:layout_weight="1" 
+            android:id="@+id/BuildingSearchImageViewSecond"
+            />
+
+
             
            
     </RelativeLayout>
