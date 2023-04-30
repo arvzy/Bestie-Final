@@ -202,6 +202,124 @@ namespace Bestie_Final
             }
 
             //3rd Floor
+            if (text == "Computer Laboratory B")
+            {
+                imageView.SetImageResource(Resource.Drawable.CompLabB_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.CompLabB_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.CompLabB_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.CompLabB_4);
+                }, 9000);
+            }
+
+            if (text == "Computer Laboratory C")
+            {
+                imageView.SetImageResource(Resource.Drawable.CompLabC_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.CompLabC_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.CompLabC_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.CompLabC_4);
+                }, 9000);
+            }
+
+            if (text == "Computer Laboratory D")
+            {
+                imageView.SetImageResource(Resource.Drawable.CompLabD_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.CompLabD_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.CompLabD_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.CompLabD_4);
+                }, 9000);
+            }
+
+            if (text == "Computer Laboratory E")
+            {
+                imageView.SetImageResource(Resource.Drawable.CompLabE_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.CompLabE_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.CompLabE_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.CompLabE_4);
+                }, 9000);
+            }
+
+            if (text == "Computer Laboratory F")
+            {
+                imageView.SetImageResource(Resource.Drawable.CompLabF_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.CompLabF_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.CompLabF_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.CompLabF_4);
+                }, 9000);
+            }
+
+            if (text == "Male Toilet 3rd Floor")
+            {
+                imageView.SetImageResource(Resource.Drawable.MaleToilet3rdFloor_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.MaleToilet3rdFloor_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.MaleToilet3rdFloor_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.MaleToilet3rdFloor_4);
+                }, 9000);
+            }
+
+            if (text == "Female Toilet 3rd Floor")
+            {
+                imageView.SetImageResource(Resource.Drawable.FemaleToilet3rdFloor_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.FemaleToilet3rdFloor_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.FemaleToilet3rdFloor_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.FemaleToilet3rdFloor_4);
+                }, 9000);
+            }
         }
     }
 }
