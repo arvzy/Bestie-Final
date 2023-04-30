@@ -252,11 +252,8 @@ namespace Bestie_Final
                     maletoilet1.Visibility = ViewStates.Invisible;
                     femaletoilet2.Visibility = ViewStates.Invisible;
 
-                    //Mezzaninne
-                    handler.PostDelayed(() =>
-                    {
-                        lbrry1.Visibility = ViewStates.Visible;
-                    }, 0);
+                    //Mezzaninne                    
+                    lbrry1.Visibility = ViewStates.Visible;                    
 
                     handler.PostDelayed(() =>
                     {
