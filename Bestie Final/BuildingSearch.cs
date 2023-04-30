@@ -28,6 +28,7 @@ namespace Bestie_Final
             var imageView3 = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewThird);
             var imageView4 = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewFourth);
             var imageView5 = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewFifth);
+            var imageView6 = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewSixth);
 
             //Lobby
 
@@ -95,7 +96,7 @@ namespace Bestie_Final
                 }, 3000);
             }
 
-            //3rd Floor
+            //2nd Floor
 
             if (text == "A201")
             {
@@ -319,6 +320,201 @@ namespace Bestie_Final
                 {
                     imageView4.SetImageResource(Resource.Drawable.FemaleToilet3rdFloor_4);
                 }, 9000);
+            }
+
+            //4th Floor
+            if (text == "A401")
+            {
+                imageView.SetImageResource(Resource.Drawable.A401_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.A401_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.A401_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.A401_4);
+                }, 9000);
+                handler.PostDelayed(() =>
+                {
+                    imageView5.SetImageResource(Resource.Drawable.A401_5);
+                }, 12000);
+            }
+
+            if (text == "A402")
+            {
+                imageView.SetImageResource(Resource.Drawable.A402_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.A402_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.A402_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.A402_4);
+                }, 9000);
+                handler.PostDelayed(() =>
+                {
+                    imageView5.SetImageResource(Resource.Drawable.A402_5);
+                }, 12000);
+            }
+
+            if (text == "A403")
+            {
+                imageView.SetImageResource(Resource.Drawable.A403_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.A403_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.A403_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.A403_4);
+                }, 9000);
+                handler.PostDelayed(() =>
+                {
+                    imageView5.SetImageResource(Resource.Drawable.A403_5);
+                }, 12000);
+            }
+
+            if (text == "Physics Laboratory")
+            {
+                imageView.SetImageResource(Resource.Drawable.PhysicsLab_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.PhysicsLab_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.PhysicsLab_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.PhysicsLab_4);
+                }, 9000);
+                handler.PostDelayed(() =>
+                {
+                    imageView5.SetImageResource(Resource.Drawable.PhysicsLab_5);
+                }, 12000);
+            }
+
+            if (text == "Chemistry Laboratory")
+            {
+                imageView.SetImageResource(Resource.Drawable.ChemLab_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.ChemLab_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.ChemLab_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.ChemLab_4);
+                }, 9000);
+                handler.PostDelayed(() =>
+                {
+                    imageView5.SetImageResource(Resource.Drawable.ChemLab_5);
+                }, 12000);
+            }
+
+            if (text == "Electronic Laboratory")
+            {
+                imageView.SetImageResource(Resource.Drawable.ElectronicLab_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.ElectronicLab_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.ElectronicLab_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.ElectronicLab_4);
+                }, 9000);
+                handler.PostDelayed(() =>
+                {
+                    imageView5.SetImageResource(Resource.Drawable.ElectronicLab_5);
+                }, 12000);
+            }
+
+            if (text == "Female Toilet 4th Floor")
+            {
+                imageView.SetImageResource(Resource.Drawable.FemaleToilet4thFloor_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.FemaleToilet4thFloor_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.FemaleToilet4thFloor_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.FemaleToilet4thFloor_4);
+                }, 9000);
+                handler.PostDelayed(() =>
+                {
+                    imageView5.SetImageResource(Resource.Drawable.FemaleToilet4thFloor_5);
+                }, 12000);
+            }
+
+            if (text == "Male Toilet 4th Floor")
+            {
+                imageView.SetImageResource(Resource.Drawable.MaleToilet4thFloor_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.MaleToilet4thFloor_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.MaleToilet4thFloor_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.MaleToilet4thFloor_4);
+                }, 9000);
+                handler.PostDelayed(() =>
+                {
+                    imageView5.SetImageResource(Resource.Drawable.MaleToilet4thFloor_5);
+                }, 12000);
+            }
+
+            //Roofdeck
+            if (text == "Roofdeck")
+            {
+                imageView.SetImageResource(Resource.Drawable.Roofdeck_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.Roofdeck_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.Roofdeck_3);
+                }, 6000);
+                handler.PostDelayed(() =>
+                {
+                    imageView4.SetImageResource(Resource.Drawable.Roofdeck_4);
+                }, 9000);
+                handler.PostDelayed(() =>
+                {
+                    imageView5.SetImageResource(Resource.Drawable.Roofdeck_5);
+                }, 12000);
+                handler.PostDelayed(() =>
+                {
+                    imageView6.SetImageResource(Resource.Drawable.Roofdeck_6);
+                }, 13000);
             }
         }
     }
