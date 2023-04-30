@@ -524,7 +524,7 @@ namespace Bestie_Final
 
         private void Bldngsrchbckbtn_Click(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(BuildingOverview));
+            var intent = new Intent(this, typeof(MainActivity));
             this.StartActivity(intent);
         }
     }
