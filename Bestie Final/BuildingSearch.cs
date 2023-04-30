@@ -30,6 +30,7 @@ namespace Bestie_Final
             var imageView5 = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewFifth);
 
             //Lobby
+
             if (text == "Admissions Office")
             {
                 imageView.SetImageResource(Resource.Drawable.AdmissionsOffice);
@@ -66,14 +67,141 @@ namespace Bestie_Final
             }
 
             //Mezzanine
+
             if (text == "Library")
             {
                 imageView.SetImageResource(Resource.Drawable.Library1);
                 handler.PostDelayed(() =>
                 {
                     imageView2.SetImageResource(Resource.Drawable.Library2);
-                }, 5000);               
+                }, 3000);               
             }
+
+            if (text == "Bookstore")
+            {
+                imageView.SetImageResource(Resource.Drawable.Bookstore1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.Bookstore2);
+                }, 3000);
+            }
+
+            if (text == "School Administrator")
+            {
+                imageView.SetImageResource(Resource.Drawable.SchoolAdmin1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.SchoolAdmin2);
+                }, 3000);
+            }
+
+            //3rd Floor
+
+            if (text == "A201")
+            {
+                imageView.SetImageResource(Resource.Drawable.A201_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.A201_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.A201_3);
+                }, 6000);
+            }
+
+            if (text == "A202")
+            {
+                imageView.SetImageResource(Resource.Drawable.A202_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.A202_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.A202_3);
+                }, 6000);
+            }
+
+            if (text == "A203")
+            {
+                imageView.SetImageResource(Resource.Drawable.A203_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.A203_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.A203_3);
+                }, 6000);
+            }
+
+            if (text == "A204")
+            {
+                imageView.SetImageResource(Resource.Drawable.A204_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.A204_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.A204_3);
+                }, 6000);
+            }
+
+            if (text == "A205")
+            {
+                imageView.SetImageResource(Resource.Drawable.A205_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.A205_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.A205_3);
+                }, 6000);
+            }
+
+            if (text == "A205")
+            {
+                imageView.SetImageResource(Resource.Drawable.A206_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.A206_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.A206_3);
+                }, 6000);
+            }
+
+            if (text == "Female Toilet 2nd Floor")
+            {
+                imageView.SetImageResource(Resource.Drawable.FemaleToilet2ndFloor_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.FemaleToilet2ndFloor_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.FemaleToilet2ndFloor_3);
+                }, 6000);
+            }
+
+            if (text == "Male Toilet 2nd Floor")
+            {
+                imageView.SetImageResource(Resource.Drawable.MaleToilet2ndFloor_1);
+                handler.PostDelayed(() =>
+                {
+                    imageView2.SetImageResource(Resource.Drawable.MaleToilet2ndFloor_2);
+                }, 3000);
+                handler.PostDelayed(() =>
+                {
+                    imageView3.SetImageResource(Resource.Drawable.MaleToilet2ndFloor_3);
+                }, 6000);
+            }
+
+            //3rd Floor
         }
     }
 }
