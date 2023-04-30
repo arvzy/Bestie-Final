@@ -263,8 +263,8 @@ namespace Bestie_Final
                 }
                 else
                 {
-                    //lbrry1.Visibility = ViewStates.Visible;
-                    //lbrry2.Visibility = ViewStates.Invisible;
+                    lbrry1.Visibility = ViewStates.Visible;
+                    lbrry2.Visibility = ViewStates.Visible;
                 }
             }
         }
