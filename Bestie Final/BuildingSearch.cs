@@ -25,6 +25,9 @@ namespace Bestie_Final
 
             var imageView = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewFirst);
             var imageView2 = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewSecond);
+            var imageView3 = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewThird);
+            var imageView4 = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewFourth);
+            var imageView5 = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewFifth);
 
             //Lobby
             if (text == "Admissions Office")

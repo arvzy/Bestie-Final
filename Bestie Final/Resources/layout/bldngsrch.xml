@@ -24,6 +24,30 @@
             android:id="@+id/BuildingSearchImageViewSecond"
             />
 
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="792.0dp"
+            android:padding="12dp"
+            android:layout_weight="1" 
+            android:id="@+id/BuildingSearchImageViewThird"
+            />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="792.0dp"
+            android:padding="12dp"
+            android:layout_weight="1" 
+            android:id="@+id/BuildingSearchImageViewFourth"
+            />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="792.0dp"
+            android:padding="12dp"
+            android:layout_weight="1" 
+            android:id="@+id/BuildingSearchImageViewFifth"
+            />
+
 
             
            
