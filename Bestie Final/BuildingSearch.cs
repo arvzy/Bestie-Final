@@ -256,12 +256,12 @@ namespace Bestie_Final
                     handler.PostDelayed(() =>
                     {
                         lbrry1.Visibility = ViewStates.Visible;
-                    }, 5000);
+                    }, 0);
 
                     handler.PostDelayed(() =>
                     {
                         lbrry2.Visibility = ViewStates.Visible;
-                    }, 10000);
+                    }, 5000);
                 }
                 else
                 {
