@@ -260,7 +260,7 @@ namespace Bestie_Final
 
                     handler.PostDelayed(() =>
                     {
-                        lbrry1.Visibility = ViewStates.Visible;
+                        lbrry2.Visibility = ViewStates.Visible;
                     }, 10000);
                 }
                 else
