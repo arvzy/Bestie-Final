@@ -255,7 +255,7 @@ namespace Bestie_Final
                     //Mezzaninne
                     handler.PostDelayed(() =>
                     {
-                        lbrry1.Visibility = ViewStates.Invisible;
+                        lbrry1.Visibility = ViewStates.Visible;
                     }, 5000);
 
                     handler.PostDelayed(() =>
