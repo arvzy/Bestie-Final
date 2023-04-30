@@ -22,7 +22,11 @@ namespace Bestie_Final
     {
 
         string[] suggestions = { "Admissions Office", "Cashier", "Registrar", "Deputy", "Computer Laboratory A", 
-            "Male Toilet Lobby", "Female Toilet Lobby", "Library", "Bookstore", "School Administrator"};
+            "Male Toilet Lobby", "Female Toilet Lobby", "Male Toilet 2nd Floor", "Female Toilet 2nd Floor", "Male Toilet 3rd Floor",
+            "Female Toilet 3rd Floor", "Male Toilet 4th Floor", "Female Toilet 4th Floor", "Library", "Bookstore", "School Administrator", 
+            "A201", "A202", "A203", "A204", "A205", "Computer Laboratory B", "Computer Laboratory C", "Computer Laboratory D", 
+            "Computer Laboratory E", "Computer Laboratory F", "A401", "A402", "A403", "Chemistry Laboratory", "Physics Laboratory", 
+            "Electronics Laboratory"};
 
         Button btnoverview, btnsearch, btnautocompletesearch;
         AutoCompleteTextView searchBar;
