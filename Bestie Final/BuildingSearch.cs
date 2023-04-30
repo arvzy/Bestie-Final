@@ -30,9 +30,24 @@ namespace Bestie_Final
             flr3img = FindViewById<ImageView>(Resource.Id.flr3Image);
             flr4img = FindViewById<ImageView>(Resource.Id.flr4Image);
 
-            if (text == "Floor 2")
+            if (text == "Floor 2" || text == "Floor 4")
             {
                 flr2img.SetImageResource(Resource.Drawable.Floor2and4);
+            }
+
+            if (text == "Floor 1")
+            {
+                flr2img.SetImageResource(Resource.Drawable.Floor1);
+            }
+
+            if (text == "Floor 3")
+            {
+                flr2img.SetImageResource(Resource.Drawable.Floor3);
+            }
+
+            if (text == "Floor 3")
+            {
+                flr2img.SetImageResource(Resource.Drawable.Mezzanine);
             }
         }
     }
