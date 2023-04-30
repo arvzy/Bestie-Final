@@ -73,6 +73,7 @@ namespace Bestie_Final
             schladmn1 = FindViewById<ImageView>(Resource.Id.SchoolAdminImage1);
             schladmn2 = FindViewById<ImageView>(Resource.Id.SchoolAdminImage2);
 
+
         }
 
         
