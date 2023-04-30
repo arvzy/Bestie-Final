@@ -122,12 +122,11 @@ namespace Bestie_Final
 
         private void Btnautocompletesearch_Click(object sender, EventArgs e)
         {
-            //placeholder lang to para sa ngayon
-            if (searchBar.Text == "Registrar")
-            {
-                var intent = new Intent(this, typeof(BuildingAOverview));
-                this.StartActivity(intent);
-            }
+            string text = searchBar.Text;
+            var intent = new Intent(this, typeof(BuildingAOverview));
+            intent.PutExtra("text", text);
+            this.StartActivity(intent);
+            
             
         }
     }
