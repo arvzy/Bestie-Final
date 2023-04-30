@@ -9,6 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Android.Views.InputMethods;
+using Java.Util;
+using System.Timers;
+using Timer = System.Timers.Timer;
 
 namespace Bestie_Final
 {
@@ -17,7 +20,10 @@ namespace Bestie_Final
     {
         Button btnautocompletesearch;
         AutoCompleteTextView searchBar;
-        ImageView flr1img, admsssnsoffce, regstrr, cashr, complabA, depty, maletoilet1, femaletoilet2;
+        ImageView flr1img, admsssnsoffce, regstrr, cashr, complabA, depty, maletoilet1, femaletoilet2, lbrry1, lbrry2;
+
+        
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -45,8 +51,10 @@ namespace Bestie_Final
 
                 }
             };
-
+            
             flr1img = FindViewById<ImageView>(Resource.Id.flr1Image);
+
+            //Lobby
             admsssnsoffce = FindViewById<ImageView>(Resource.Id.AdmissionsOfficeImage);
             regstrr = FindViewById<ImageView>(Resource.Id.RegistrarImage);
             cashr = FindViewById<ImageView>(Resource.Id.CashierImage);
@@ -54,15 +62,24 @@ namespace Bestie_Final
             depty = FindViewById<ImageView>(Resource.Id.DeputyImage);
             maletoilet1 = FindViewById<ImageView>(Resource.Id.MaleToiletImage1);
             femaletoilet2 = FindViewById<ImageView>(Resource.Id.FemaleToiletImage1);
+
+            //Mezzaninne
+            lbrry1 = FindViewById<ImageView>(Resource.Id.LibraryImage1);
+            lbrry2 = FindViewById<ImageView>(Resource.Id.LibraryImage2);
+
         }
+
+        
         private void Btnautocompletesearch_Click(object sender, EventArgs e)
         {
-            
+            var handler = new Handler();
+
             //first floor lobby
             if (searchBar.Text == "Admissions Office")
             {
                 if (admsssnsoffce.Visibility == ViewStates.Invisible)
                 {
+                    //Lobby
                     flr1img.Visibility = ViewStates.Invisible;
                     admsssnsoffce.Visibility = ViewStates.Visible;
                     regstrr.Visibility = ViewStates.Invisible;
@@ -71,6 +88,10 @@ namespace Bestie_Final
                     depty.Visibility = ViewStates.Invisible;
                     maletoilet1.Visibility = ViewStates.Invisible;
                     femaletoilet2.Visibility = ViewStates.Invisible;
+
+                    //Mezzaninne
+                    lbrry1.Visibility = ViewStates.Invisible;
+                    lbrry2.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
@@ -90,6 +111,10 @@ namespace Bestie_Final
                     depty.Visibility = ViewStates.Invisible;
                     maletoilet1.Visibility = ViewStates.Invisible;
                     femaletoilet2.Visibility = ViewStates.Invisible;
+
+                    //Mezzaninne
+                    lbrry1.Visibility = ViewStates.Invisible;
+                    lbrry2.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
@@ -109,6 +134,10 @@ namespace Bestie_Final
                     depty.Visibility = ViewStates.Invisible;
                     maletoilet1.Visibility = ViewStates.Invisible;
                     femaletoilet2.Visibility = ViewStates.Invisible;
+
+                    //Mezzaninne
+                    lbrry1.Visibility = ViewStates.Invisible;
+                    lbrry2.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
@@ -128,6 +157,10 @@ namespace Bestie_Final
                     depty.Visibility = ViewStates.Invisible;
                     maletoilet1.Visibility = ViewStates.Invisible;
                     femaletoilet2.Visibility = ViewStates.Invisible;
+
+                    //Mezzaninne
+                    lbrry1.Visibility = ViewStates.Invisible;
+                    lbrry2.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
@@ -147,6 +180,10 @@ namespace Bestie_Final
                     depty.Visibility = ViewStates.Visible;
                     maletoilet1.Visibility = ViewStates.Invisible;
                     femaletoilet2.Visibility = ViewStates.Invisible;
+
+                    //Mezzaninne
+                    lbrry1.Visibility = ViewStates.Invisible;
+                    lbrry2.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
@@ -166,6 +203,10 @@ namespace Bestie_Final
                     depty.Visibility = ViewStates.Invisible;
                     maletoilet1.Visibility = ViewStates.Visible;
                     femaletoilet2.Visibility = ViewStates.Invisible;
+
+                    //Mezzaninne
+                    lbrry1.Visibility = ViewStates.Invisible;
+                    lbrry2.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
@@ -185,14 +226,48 @@ namespace Bestie_Final
                     depty.Visibility = ViewStates.Invisible;
                     maletoilet1.Visibility = ViewStates.Invisible;
                     femaletoilet2.Visibility = ViewStates.Visible;
+
+                    //Mezzaninne
+                    lbrry1.Visibility = ViewStates.Invisible;
+                    lbrry2.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
                     femaletoilet2.Visibility = ViewStates.Visible;
-                }
-            //first floor lobby
+                }                       
+            }
 
             //mezzannine
+
+            if (searchBar.Text == "Library")
+            {
+                if (lbrry1.Visibility == ViewStates.Invisible && lbrry2.Visibility == ViewStates.Invisible)
+                {
+                    flr1img.Visibility = ViewStates.Invisible;
+                    admsssnsoffce.Visibility = ViewStates.Invisible;
+                    regstrr.Visibility = ViewStates.Invisible;
+                    cashr.Visibility = ViewStates.Invisible;
+                    complabA.Visibility = ViewStates.Invisible;
+                    depty.Visibility = ViewStates.Invisible;
+                    maletoilet1.Visibility = ViewStates.Invisible;
+                    femaletoilet2.Visibility = ViewStates.Invisible;
+
+                    //Mezzaninne
+                    handler.PostDelayed(() =>
+                    {
+                        lbrry1.Visibility = ViewStates.Invisible;
+                    }, 5000);
+
+                    handler.PostDelayed(() =>
+                    {
+                        lbrry1.Visibility = ViewStates.Visible;
+                    }, 10000);
+                }
+                else
+                {
+                    //lbrry1.Visibility = ViewStates.Visible;
+                    //lbrry2.Visibility = ViewStates.Invisible;
+                }
             }
         }
     }
