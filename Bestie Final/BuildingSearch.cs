@@ -20,9 +20,10 @@ namespace Bestie_Final
     {
         Button btnautocompletesearch;
         AutoCompleteTextView searchBar;
-        ImageView flr1img, admsssnsoffce, regstrr, cashr, complabA, depty, maletoilet1, femaletoilet2, lbrry1, lbrry2;
+        ImageView flr1img, admsssnsoffce, regstrr, cashr, complabA, depty, maletoilet1, femaletoilet2;
+        ImageView lbrry1, lbrry2, bkstre1, bkstre2, schladmn1, schladmn2;
 
-        
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -32,7 +33,7 @@ namespace Bestie_Final
             SetContentView(Resource.Layout.bldngsrch);
 
             string[] suggestions = { "Admissions Office", "Cashier", "Registrar", "Deputy", "Computer Laboratory A", 
-            "Male Toilet Lobby", "Female Toilet Lobby", "Library"};
+            "Male Toilet Lobby", "Female Toilet Lobby", "Library", "Bookstore", "School Administrator"};
 
             btnautocompletesearch = FindViewById<Button>(Resource.Id.AutoCompleteSearch);
 
@@ -67,6 +68,10 @@ namespace Bestie_Final
             //Mezzaninne
             lbrry1 = FindViewById<ImageView>(Resource.Id.LibraryImage1);
             lbrry2 = FindViewById<ImageView>(Resource.Id.LibraryImage2);
+            bkstre1 = FindViewById<ImageView>(Resource.Id.BookstoreImage1);
+            bkstre2 = FindViewById<ImageView>(Resource.Id.BookstoreImage2);
+            schladmn1 = FindViewById<ImageView>(Resource.Id.SchoolAdminImage1);
+            schladmn2 = FindViewById<ImageView>(Resource.Id.SchoolAdminImage2);
 
         }
 
@@ -93,6 +98,10 @@ namespace Bestie_Final
                     //Mezzaninne
                     lbrry1.Visibility = ViewStates.Invisible;
                     lbrry2.Visibility = ViewStates.Invisible;
+                    bkstre1.Visibility = ViewStates.Invisible;
+                    bkstre2.Visibility = ViewStates.Invisible;
+                    schladmn1.Visibility = ViewStates.Invisible;
+                    schladmn2.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
@@ -116,6 +125,10 @@ namespace Bestie_Final
                     //Mezzaninne
                     lbrry1.Visibility = ViewStates.Invisible;
                     lbrry2.Visibility = ViewStates.Invisible;
+                    bkstre1.Visibility = ViewStates.Invisible;
+                    bkstre2.Visibility = ViewStates.Invisible;
+                    schladmn1.Visibility = ViewStates.Invisible;
+                    schladmn2.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
@@ -139,6 +152,10 @@ namespace Bestie_Final
                     //Mezzaninne
                     lbrry1.Visibility = ViewStates.Invisible;
                     lbrry2.Visibility = ViewStates.Invisible;
+                    bkstre1.Visibility = ViewStates.Invisible;
+                    bkstre2.Visibility = ViewStates.Invisible;
+                    schladmn1.Visibility = ViewStates.Invisible;
+                    schladmn2.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
@@ -162,6 +179,10 @@ namespace Bestie_Final
                     //Mezzaninne
                     lbrry1.Visibility = ViewStates.Invisible;
                     lbrry2.Visibility = ViewStates.Invisible;
+                    bkstre1.Visibility = ViewStates.Invisible;
+                    bkstre2.Visibility = ViewStates.Invisible;
+                    schladmn1.Visibility = ViewStates.Invisible;
+                    schladmn2.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
@@ -185,6 +206,10 @@ namespace Bestie_Final
                     //Mezzaninne
                     lbrry1.Visibility = ViewStates.Invisible;
                     lbrry2.Visibility = ViewStates.Invisible;
+                    bkstre1.Visibility = ViewStates.Invisible;
+                    bkstre2.Visibility = ViewStates.Invisible;
+                    schladmn1.Visibility = ViewStates.Invisible;
+                    schladmn2.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
@@ -208,6 +233,10 @@ namespace Bestie_Final
                     //Mezzaninne
                     lbrry1.Visibility = ViewStates.Invisible;
                     lbrry2.Visibility = ViewStates.Invisible;
+                    bkstre1.Visibility = ViewStates.Invisible;
+                    bkstre2.Visibility = ViewStates.Invisible;
+                    schladmn1.Visibility = ViewStates.Invisible;
+                    schladmn2.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
@@ -231,6 +260,10 @@ namespace Bestie_Final
                     //Mezzaninne
                     lbrry1.Visibility = ViewStates.Invisible;
                     lbrry2.Visibility = ViewStates.Invisible;
+                    bkstre1.Visibility = ViewStates.Invisible;
+                    bkstre2.Visibility = ViewStates.Invisible;
+                    schladmn1.Visibility = ViewStates.Invisible;
+                    schladmn2.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
@@ -259,7 +292,11 @@ namespace Bestie_Final
                     handler.PostDelayed(() =>
                     {
                         lbrry2.Visibility = ViewStates.Visible;
-                    }, 5000);
+                    }, 3000);
+                    bkstre1.Visibility = ViewStates.Invisible;
+                    bkstre2.Visibility = ViewStates.Invisible;
+                    schladmn1.Visibility = ViewStates.Invisible;
+                    schladmn2.Visibility = ViewStates.Invisible;
                 }
                 else
                 {
@@ -267,6 +304,71 @@ namespace Bestie_Final
                     lbrry2.Visibility = ViewStates.Visible;
                 }
             }
+
+            if (searchBar.Text == "Bookstore")
+            {
+                if (bkstre1.Visibility == ViewStates.Invisible && bkstre1.Visibility == ViewStates.Invisible)
+                {
+                    flr1img.Visibility = ViewStates.Invisible;
+                    admsssnsoffce.Visibility = ViewStates.Invisible;
+                    regstrr.Visibility = ViewStates.Invisible;
+                    cashr.Visibility = ViewStates.Invisible;
+                    complabA.Visibility = ViewStates.Invisible;
+                    depty.Visibility = ViewStates.Invisible;
+                    maletoilet1.Visibility = ViewStates.Invisible;
+                    femaletoilet2.Visibility = ViewStates.Invisible;
+
+                    //Mezzaninne                    
+                    lbrry1.Visibility = ViewStates.Invisible;
+                    lbrry2.Visibility = ViewStates.Invisible;
+
+                    bkstre1.Visibility = ViewStates.Visible;
+                    handler.PostDelayed(() =>
+                    {
+                        bkstre2.Visibility = ViewStates.Visible;
+                    }, 3000);
+                    schladmn1.Visibility = ViewStates.Invisible;
+                    schladmn2.Visibility = ViewStates.Invisible;
+                }
+                else
+                {
+                    bkstre1.Visibility = ViewStates.Visible;
+                    bkstre2.Visibility = ViewStates.Visible;
+                }
+            }
+
+            if (searchBar.Text == "Bookstore")
+            {
+                if (schladmn1.Visibility == ViewStates.Invisible && schladmn2.Visibility == ViewStates.Invisible)
+                {
+                    flr1img.Visibility = ViewStates.Invisible;
+                    admsssnsoffce.Visibility = ViewStates.Invisible;
+                    regstrr.Visibility = ViewStates.Invisible;
+                    cashr.Visibility = ViewStates.Invisible;
+                    complabA.Visibility = ViewStates.Invisible;
+                    depty.Visibility = ViewStates.Invisible;
+                    maletoilet1.Visibility = ViewStates.Invisible;
+                    femaletoilet2.Visibility = ViewStates.Invisible;
+
+                    //Mezzaninne                    
+                    lbrry1.Visibility = ViewStates.Invisible;
+                    lbrry2.Visibility = ViewStates.Invisible;
+                    bkstre1.Visibility = ViewStates.Invisible;
+                    bkstre2.Visibility = ViewStates.Invisible;
+
+                    schladmn1.Visibility = ViewStates.Visible;
+                    handler.PostDelayed(() =>
+                    {
+                        schladmn2.Visibility = ViewStates.Visible;
+                    }, 3000);
+                }
+                else
+                {
+                    schladmn1.Visibility = ViewStates.Visible;
+                    schladmn2.Visibility = ViewStates.Visible;
+                }
+            }
+
         }
     }
 }

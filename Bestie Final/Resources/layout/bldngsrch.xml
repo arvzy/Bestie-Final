@@ -141,6 +141,42 @@
                     android:id="@+id/LibraryImage2"
                     android:visibility="invisible"/>
 
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="12dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/bookstore1"
+                    android:id="@+id/BookstoreImage1"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="12dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/bookstore2"
+                    android:id="@+id/BookstoreImage2"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="12dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/schooladmin1"
+                    android:id="@+id/SchoolAdminImage1"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="12dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/schooladmin2"
+                    android:id="@+id/SchoolAdminImage2"
+                    android:visibility="invisible"/>
+
             </RelativeLayout>
 
         </LinearLayout>
