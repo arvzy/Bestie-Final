@@ -13,7 +13,8 @@ namespace Bestie_Final
 {
     [Activity(Label = "BuildingSearch")]
     public class BuildingSearch : Activity
-    {        
+    {
+        Button bldngsrchbckbtn;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -22,6 +23,9 @@ namespace Bestie_Final
             SetContentView(Resource.Layout.bldngsrch);
             var handler = new Handler();            
             string text = Intent.GetStringExtra("text");
+
+            bldngsrchbckbtn = FindViewById<Button>(Resource.Id.BuildingSearchBackButton);
+            bldngsrchbckbtn.Click += Bldngsrchbckbtn_Click;
 
             var imageView = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewFirst);
             var imageView2 = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewSecond);
@@ -516,6 +520,12 @@ namespace Bestie_Final
                     imageView6.SetImageResource(Resource.Drawable.Roofdeck_6);
                 }, 15000);
             }
+        }
+
+        private void Bldngsrchbckbtn_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(BuildingOverview));
+            this.StartActivity(intent);
         }
     }
 }
