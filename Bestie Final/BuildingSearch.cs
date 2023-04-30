@@ -514,7 +514,7 @@ namespace Bestie_Final
                 handler.PostDelayed(() =>
                 {
                     imageView6.SetImageResource(Resource.Drawable.Roofdeck_6);
-                }, 13000);
+                }, 15000);
             }
         }
     }
