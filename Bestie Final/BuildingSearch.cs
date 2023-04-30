@@ -31,7 +31,8 @@ namespace Bestie_Final
             // Create your application here
             SetContentView(Resource.Layout.bldngsrch);
 
-            string[] suggestions = { "Admissions Office", "Cashier", "Registrar", "Deputy", "Computer Laboratory A", "Male Toilet Lobby", "Female Toilet Lobby" };
+            string[] suggestions = { "Admissions Office", "Cashier", "Registrar", "Deputy", "Computer Laboratory A", 
+            "Male Toilet Lobby", "Female Toilet Lobby", "Library"};
 
             btnautocompletesearch = FindViewById<Button>(Resource.Id.AutoCompleteSearch);
 
