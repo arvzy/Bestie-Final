@@ -12,45 +12,10 @@
                 android:layout_height="wrap_content"
                 android:layout_width="792.0dp"
                 android:padding="12dp"
-                android:layout_weight="1"
-                android:src="@drawable/Floor1"
-                android:id="@+id/flr1Image"
+                android:layout_weight="1" 
+            android:id="@+id/imageView"
             />
             
-            <ImageView
-                android:layout_height="wrap_content"
-                android:layout_width="792.0dp"
-                android:padding="12dp"
-                android:layout_weight="1"
-                android:src="@drawable/mezzanine"
-                android:id="@+id/mzznnImage"                
-            /> 
-
-            <ImageView
-                android:layout_height="wrap_content"
-                android:layout_width="792.0dp"
-                android:padding="12dp"
-                android:layout_weight="1"
-                android:src="@drawable/floor2and4"
-                android:id="@+id/flr2Image"
-            /> 
-
-            <ImageView
-                android:layout_height="wrap_content"
-                android:layout_width="792.0dp"
-                android:padding="12dp"
-                android:layout_weight="1"
-                android:src="@drawable/floor3"
-                android:id="@+id/flr3Image"
-            /> 
-
-            <ImageView
-                android:layout_height="wrap_content"
-                android:layout_width="792.0dp"
-                android:padding="12dp"
-                android:layout_weight="1"
-                android:src="@drawable/floor2and4"
-                android:id="@+id/flr4Image"
-            />
+           
     </RelativeLayout>
 </LinearLayout>

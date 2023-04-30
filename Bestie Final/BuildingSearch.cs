@@ -24,30 +24,32 @@ namespace Bestie_Final
 
             string text = Intent.GetStringExtra("text");
 
-            flr1img = FindViewById<ImageView>(Resource.Id.flr1Image);
-            mzznnimg = FindViewById<ImageView>(Resource.Id.mzznnImage);
-            flr2img = FindViewById<ImageView>(Resource.Id.flr2Image);
-            flr3img = FindViewById<ImageView>(Resource.Id.flr3Image);
-            flr4img = FindViewById<ImageView>(Resource.Id.flr4Image);
+            //flr1img = FindViewById<ImageView>(Resource.Id.flr1Image);
+            //mzznnimg = FindViewById<ImageView>(Resource.Id.mzznnImage);
+            //flr2img = FindViewById<ImageView>(Resource.Id.flr2Image);
+            //flr3img = FindViewById<ImageView>(Resource.Id.flr3Image);
+            //flr4img = FindViewById<ImageView>(Resource.Id.flr4Image);
+
+            var imageView = FindViewById<ImageView>(Resource.Id.imageView);
 
             if (text == "Floor 2" || text == "Floor 4")
             {
-                flr2img.SetImageResource(Resource.Drawable.Floor2and4);
+                imageView.SetImageResource(Resource.Drawable.Floor2and4);
             }
 
             if (text == "Floor 1")
             {
-                flr2img.SetImageResource(Resource.Drawable.Floor1);
+                imageView.SetImageResource(Resource.Drawable.Floor1);
             }
 
             if (text == "Floor 3")
             {
-                flr2img.SetImageResource(Resource.Drawable.Floor3);
+                imageView.SetImageResource(Resource.Drawable.Floor3);
             }
 
-            if (text == "Floor 3")
+            if (text == "Mezzanine")
             {
-                flr2img.SetImageResource(Resource.Drawable.Mezzanine);
+                imageView.SetImageResource(Resource.Drawable.Mezzanine);
             }
         }
     }

@@ -123,7 +123,7 @@ namespace Bestie_Final
         private void Btnautocompletesearch_Click(object sender, EventArgs e)
         {
             string text = searchBar.Text;
-            var intent = new Intent(this, typeof(BuildingAOverview));
+            var intent = new Intent(this, typeof(BuildingSearch));
             intent.PutExtra("text", text);
             this.StartActivity(intent);
             
