@@ -337,7 +337,7 @@ namespace Bestie_Final
                 }
             }
 
-            if (searchBar.Text == "Bookstore")
+            if (searchBar.Text == "School Administrator")
             {
                 if (schladmn1.Visibility == ViewStates.Invisible && schladmn2.Visibility == ViewStates.Invisible)
                 {
