@@ -26,7 +26,7 @@ namespace Bestie_Final
             "Female Toilet 3rd Floor", "Male Toilet 4th Floor", "Female Toilet 4th Floor", "Library", "Bookstore", "School Administrator", 
             "A201", "A202", "A203", "A204", "A205", "Computer Laboratory B", "Computer Laboratory C", "Computer Laboratory D", 
             "Computer Laboratory E", "Computer Laboratory F", "A401", "A402", "A403", "Chemistry Laboratory", "Physics Laboratory", 
-            "Electronics Laboratory"};
+            "Electronics Laboratory", "Roofdeck"};
 
         Button btnoverview, btnsearch, btnautocompletesearch;
         AutoCompleteTextView searchBar;
