@@ -38,11 +38,12 @@
         <AutoCompleteTextView
             android:id="@+id/searchBar"
             android:layout_width="700dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:background="@drawable/button_design"
             android:textColor="@android:color/white"
             android:layout_marginLeft="20px"
             android:layout_marginRight="20px"
+            android:textAlignment="center"
             android:hint="Search"
             android:completionThreshold="1"
             android:dropDownWidth="match_parent"
