@@ -59,11 +59,11 @@ namespace Bestie_Final
             };
 
             btnoverview = FindViewById<Button>(Resource.Id.BuildingOverviewButton);
-            btnsearch = FindViewById<Button>(Resource.Id.searchBtn);
+            //btnsearch = FindViewById<Button>(Resource.Id.searchBtn);
             btnautocompletesearch = FindViewById<Button>(Resource.Id.AutoCompleteSearch);
 
             btnoverview.Click += Btnoverview_Click;
-            btnsearch.Click += searchOnClick;
+            /*btnsearch.Click += searchOnClick*/;
             btnautocompletesearch.Click += Btnautocompletesearch_Click;
         }
         
@@ -99,32 +99,32 @@ namespace Bestie_Final
             } 
         }
 
-        private void searchOnClick(object sender, EventArgs e) 
-        {
-            if (searchBar.Visibility == ViewStates.Visible)
-            {
-                searchBar.Visibility = ViewStates.Gone;
-                var anim = ObjectAnimator.OfFloat(searchBar, "alpha", 1, 0);
-                anim.SetDuration(300);
-                anim.Start();
-            }
-            else 
-            {
-                searchBar.Visibility = ViewStates.Visible;
-                var anim = ObjectAnimator.OfFloat(searchBar, "alpha", 0, 1);
-                anim.SetDuration(300);
-                anim.Start();
-            }
+        //private void searchOnClick(object sender, EventArgs e) 
+        //{
+        //    if (searchBar.Visibility == ViewStates.Visible)
+        //    {
+        //        searchBar.Visibility = ViewStates.Gone;
+        //        var anim = ObjectAnimator.OfFloat(searchBar, "alpha", 1, 0);
+        //        anim.SetDuration(300);
+        //        anim.Start();
+        //    }
+        //    else 
+        //    {
+        //        searchBar.Visibility = ViewStates.Visible;
+        //        var anim = ObjectAnimator.OfFloat(searchBar, "alpha", 0, 1);
+        //        anim.SetDuration(300);
+        //        anim.Start();
+        //    }
 
-            if (btnautocompletesearch.Visibility == ViewStates.Visible)
-            {
-                btnautocompletesearch.Visibility = ViewStates.Gone;
-            }
-            else
-            {
-                btnautocompletesearch.Visibility= ViewStates.Visible;
-            }
-        }
+        //    if (btnautocompletesearch.Visibility == ViewStates.Visible)
+        //    {
+        //        btnautocompletesearch.Visibility = ViewStates.Gone;
+        //    }
+        //    else
+        //    {
+        //        btnautocompletesearch.Visibility= ViewStates.Visible;
+        //    }
+        //}
 
         private void Btnautocompletesearch_Click(object sender, EventArgs e)
         {

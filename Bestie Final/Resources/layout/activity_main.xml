@@ -17,29 +17,8 @@
         android:gravity="center"
         android:orientation="vertical"
         android:background="@drawable/background_gradient">
-
-        <AutoCompleteTextView
-            android:id="@+id/searchBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/white"
-            android:textColor="@android:color/white"
-            android:layout_marginLeft="20px"
-            android:layout_marginRight="20px"
-            android:hint="Search"
-            android:completionThreshold="1"
-            android:dropDownWidth="match_parent"
-            android:dropDownHeight="wrap_content"
-            android:imeOptions="actionSearch"
-            android:visibility="gone"/>
-
-        <Button
-            android:id="@+id/AutoCompleteSearch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Search"
-            android:visibility="gone"/>
-
+        
+        
         <ImageView
             android:layout_width="200px"
             android:layout_height="200px"
@@ -55,6 +34,29 @@
             android:textSize="70px"
         />
 
+        <!--for now ung background is yan muna-->
+        <AutoCompleteTextView
+            android:id="@+id/searchBar"
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:hint="Search"
+            android:completionThreshold="1"
+            android:dropDownWidth="match_parent"
+            android:dropDownHeight="wrap_content"
+            android:imeOptions="actionSearch"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/AutoCompleteSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:visibility="visible"/>
+
         <Button
             android:id="@+id/BuildingOverviewButton"
             android:layout_width="wrap_content"
@@ -62,10 +64,9 @@
             android:text="Building Overview"/>
 
         <Button
-            android:id="@+id/searchBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Search"/>
+            android:text="About"/>
 
         <TextView
             android:layout_width="wrap_content"
