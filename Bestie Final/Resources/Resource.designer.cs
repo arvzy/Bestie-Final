@@ -3791,10 +3791,16 @@ namespace Bestie_Final
 			public const int SchoolAdmin2 = 2131165429;
 			
 			// aapt resource value: 0x7F0700F6
-			public const int tooltip_frame_dark = 2131165430;
+			public const int search_design = 2131165430;
 			
 			// aapt resource value: 0x7F0700F7
-			public const int tooltip_frame_light = 2131165431;
+			public const int testing = 2131165431;
+			
+			// aapt resource value: 0x7F0700F8
+			public const int tooltip_frame_dark = 2131165432;
+			
+			// aapt resource value: 0x7F0700F9
+			public const int tooltip_frame_light = 2131165433;
 			
 			static Drawable()
 			{

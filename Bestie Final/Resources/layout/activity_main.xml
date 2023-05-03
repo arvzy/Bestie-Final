@@ -35,11 +35,12 @@
         />
 
         <!--for now ung background is yan muna-->
+        
         <AutoCompleteTextView
             android:id="@+id/searchBar"
             android:layout_width="700dp"
             android:layout_height="50dp"
-            android:background="@drawable/button_design"
+            android:background="@drawable/search_design"
             android:textColor="@android:color/white"
             android:layout_marginLeft="20px"
             android:layout_marginRight="20px"

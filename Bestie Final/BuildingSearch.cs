@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Com.Bumptech.Glide;
+using Com.Bumptech.Glide.Request.Target;
 
 namespace Bestie_Final
 {
@@ -35,6 +37,13 @@ namespace Bestie_Final
             var imageView6 = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewSixth);
 
             //Lobby
+
+            if (text == "testing")
+            {
+                Glide.With(this)
+                .Load(Resource.Drawable.testing)
+                .Into(new DrawableImageViewTarget(imageView));
+            }
 
             if (text == "Admissions Office")
             {
