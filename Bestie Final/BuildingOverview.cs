@@ -6,6 +6,7 @@ using Android.Views;
 using Android.Widget;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 
@@ -24,10 +25,17 @@ namespace Bestie_Final
             SetContentView(Resource.Layout.bldngoverview);
 
             Button backbtnbldngoviw = FindViewById<Button>(Resource.Id.BackBuildingOview);
-            Button bldngA = FindViewById<Button>(Resource.Id.BuildingAOverview);
+            ImageButton bldngA = FindViewById<ImageButton>(Resource.Id.BuildingAOverview);
+            ImageButton bldngB = FindViewById<ImageButton>(Resource.Id.BuildingBOverview);
+            ImageButton bldngC = FindViewById<ImageButton>(Resource.Id.BuildingCOverview);
+            ImageButton bldngD = FindViewById<ImageButton>(Resource.Id.BuildingDOverview);
 
             backbtnbldngoviw.Click += Backbtnbldngoviw_Click;
             bldngA.Click += BldngA_Click;
+            bldngB.Click += BldngB_Click;
+            bldngC.Click += BldngC_Click;
+            bldngD.Click += BldngD_Click;
+
 
         }
 
@@ -41,6 +49,49 @@ namespace Bestie_Final
         {
             var intent = new Intent(this, typeof(BuildingAOverview));
             this.StartActivity(intent);
+        }
+
+        private void BldngB_Click(object sender, EventArgs e)
+        {
+            ShowBuildingAlertDialog(Resource.Drawable.Loock);
+        }
+
+        private void BldngC_Click(object sender, EventArgs e)
+        {
+            ShowBuildingAlertDialog(Resource.Drawable.Loock);
+        }
+
+        private void BldngD_Click(object sender, EventArgs e)
+        {
+            ShowBuildingAlertDialog(Resource.Drawable.Loock);
+        }
+
+        private void ShowBuildingAlertDialog(int imageResource)
+        {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+            builder.SetTitle("Building Overview");
+
+            builder.SetMessage("Coming Soon");
+
+            ImageButton dialogImageButton = new ImageButton(this);
+            dialogImageButton.SetImageResource(imageResource);
+
+            dialogImageButton.Click += DialogImageButton_Click;
+
+            builder.SetView(dialogImageButton);
+
+            builder.SetPositiveButton("OK", (dialog, which) =>
+            {
+
+            });
+
+            AlertDialog dialog = builder.Create();
+            dialog.Show();
+        }
+
+        private void DialogImageButton_Click(object sender, EventArgs e)
+        {
         }
     }
 }

@@ -2,17 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:id="@+id/gridLayout1"
+    android:background="@drawable/topviewbuilding">
 
-    <GridLayout
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:columnCount="4"
-        android:rowCount="1"
-        android:layout_width="1000px"
-        android:layout_height="1500px"
+    <RelativeLayout
+        android:layout_width="1400px"
+        android:layout_height="800px"
         android:layout_gravity="center"
-        android:id="@+id/gridLayout1">
+        >
 
         <Button
             android:id="@+id/BackBuildingOview"
@@ -20,44 +18,67 @@
             android:layout_height="wrap_content"
             android:text="Back"/>
 
-        <Button
+    </RelativeLayout>
+
+     <RelativeLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+         <ImageButton
             android:id="@+id/BuildingAOverview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:padding="90dp"           
+            android:background="@drawable/Top_a"
+            android:layout_width="358px"
+            android:layout_height="347px"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="158px"
             android:text="Building A"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:padding="90px"
+    </RelativeLayout>
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/BuildingBOverview"
+            android:background="@drawable/top_b"
+            android:layout_width="208px"
+            android:layout_height="341px"
+            android:layout_marginLeft="455px"
+            android:layout_marginTop="193px"
             android:text="Building B"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_row="0"
-            android:layout_column="2"
-            android:padding="90px"
+    </RelativeLayout>
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/BuildingCOverview"
+            android:background="@drawable/top_c"
+            android:layout_width="204px"
+            android:layout_height="422px"
+            android:layout_marginLeft="658px"
+            android:layout_marginTop="113px"
             android:text="Building C"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_row="0"
-            android:layout_column="3"
-            android:padding="90px"
+    </RelativeLayout>
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/BuildingDOverview"
+            android:background="@drawable/top_d"
+            android:layout_width="405px"
+            android:layout_height="342px"
+            android:layout_marginLeft="859px"
+            android:layout_marginTop="194px"
             android:text="Building D"/>
 
-
-    </GridLayout>
+    </RelativeLayout>
 
 </RelativeLayout>
