@@ -24,12 +24,13 @@
         android:layout_height="match_parent">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_width="1150px"
             android:layout_height="wrap_content">
 
             <ImageView
                 android:layout_height="wrap_content"
-                android:layout_width="792.0dp"
+                android:layout_width="1200dp"
                 android:padding="12dp"
                 android:layout_weight="1"
                 android:src="@drawable/Floor1"
@@ -39,7 +40,7 @@
             
             <ImageView
                 android:layout_height="wrap_content"
-                android:layout_width="792.0dp"
+                android:layout_width="1200dp"
                 android:padding="12dp"
                 android:layout_weight="1"
                 android:src="@drawable/mezzanine"
@@ -49,7 +50,7 @@
 
             <ImageView
                 android:layout_height="wrap_content"
-                android:layout_width="792.0dp"
+                android:layout_width="1200dp"
                 android:padding="12dp"
                 android:layout_weight="1"
                 android:src="@drawable/floor2and4"
@@ -59,7 +60,7 @@
 
             <ImageView
                 android:layout_height="wrap_content"
-                android:layout_width="792.0dp"
+                android:layout_width="1200dp"
                 android:padding="12dp"
                 android:layout_weight="1"
                 android:src="@drawable/floor3"
@@ -69,7 +70,7 @@
 
             <ImageView
                 android:layout_height="wrap_content"
-                android:layout_width="792.0dp"
+                android:layout_width="1200dp"
                 android:padding="12dp"
                 android:layout_weight="1"
                 android:src="@drawable/floor2and4"

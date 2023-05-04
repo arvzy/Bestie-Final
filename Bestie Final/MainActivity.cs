@@ -56,6 +56,11 @@ namespace Bestie_Final
                     var searchText = searchBar.Text;
                     
                 }
+
+                if (args.ActionId == ImeAction.Done)
+                {
+
+                }
             };
 
             btnoverview = FindViewById<Button>(Resource.Id.BuildingOverviewButton);

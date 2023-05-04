@@ -3797,28 +3797,31 @@ namespace Bestie_Final
 			public const int search_design = 2131165431;
 			
 			// aapt resource value: 0x7F0700F8
-			public const int testing = 2131165432;
+			public const int Search_icon = 2131165432;
 			
 			// aapt resource value: 0x7F0700F9
-			public const int tooltip_frame_dark = 2131165433;
+			public const int testing = 2131165433;
 			
 			// aapt resource value: 0x7F0700FA
-			public const int tooltip_frame_light = 2131165434;
-			
-			// aapt resource value: 0x7F0700FF
-			public const int TopViewBuilding = 2131165439;
+			public const int tooltip_frame_dark = 2131165434;
 			
 			// aapt resource value: 0x7F0700FB
-			public const int Top_A = 2131165435;
+			public const int tooltip_frame_light = 2131165435;
+			
+			// aapt resource value: 0x7F070100
+			public const int TopViewBuilding = 2131165440;
 			
 			// aapt resource value: 0x7F0700FC
-			public const int Top_B = 2131165436;
+			public const int Top_A = 2131165436;
 			
 			// aapt resource value: 0x7F0700FD
-			public const int Top_C = 2131165437;
+			public const int Top_B = 2131165437;
 			
 			// aapt resource value: 0x7F0700FE
-			public const int Top_D = 2131165438;
+			public const int Top_C = 2131165438;
+			
+			// aapt resource value: 0x7F0700FF
+			public const int Top_D = 2131165439;
 			
 			static Drawable()
 			{

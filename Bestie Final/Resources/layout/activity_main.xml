@@ -41,10 +41,11 @@
             android:layout_width="700dp"
             android:layout_height="50dp"
             android:background="@drawable/search_design"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:layout_marginLeft="20px"
             android:layout_marginRight="20px"
             android:textAlignment="center"
+            android:textColorHint="@android:color/black"
             android:hint="Search"
             android:completionThreshold="1"
             android:dropDownWidth="match_parent"
@@ -78,5 +79,18 @@
             android:textColor="@android:color/white"
             android:id="@+id/textView1" />
     </LinearLayout>
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="40px"
+            android:layout_marginTop="400px"
+            android:layout_marginLeft="300px"
+            android:src="@drawable/search_icon"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>
