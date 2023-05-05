@@ -77,78 +77,6 @@
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A201_1.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A201_2.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A201_3.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A202_1.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A202_2.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A202_3.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A203_1.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A203_2.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A203_3.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A204_1.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A204_2.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A204_3.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A205_1.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A205_2.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A205_3.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A206_1.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A206_2.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\A206_3.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
     <AndroidResource Include="Resources\drawable\A401_1.png">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
@@ -229,90 +157,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabA.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabB_1.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabB_2.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabB_3.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabB_4.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabC_1.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabC_2.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabC_3.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabC_4.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabD_1.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabD_2.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabD_3.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabD_4.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabE_1.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabE_2.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabE_3.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabE_4.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabF_1.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabF_2.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabF_3.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\CompLabF_4.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
     <AndroidResource Include="Resources\drawable\ElectronicLab_1.png">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
@@ -337,34 +181,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\drawable\FemaleToilet2ndFloor_1.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\FemaleToilet2ndFloor_2.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\FemaleToilet2ndFloor_3.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\FemaleToilet3rdFloor_1.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\FemaleToilet3rdFloor_2.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\FemaleToilet3rdFloor_3.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\FemaleToilet3rdFloor_4.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
     <AndroidResource Include="Resources\drawable\FemaleToilet4thFloor_1.png">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
@@ -385,38 +201,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\drawable\FemaleToiletLobby.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\MaleToilet2ndFloor_1.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\MaleToilet2ndFloor_2.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\MaleToilet2ndFloor_3.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\MaleToilet3rdFloor_1.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\MaleToilet3rdFloor_2.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\MaleToilet3rdFloor_3.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\MaleToilet3rdFloor_4.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
     <AndroidResource Include="Resources\drawable\MaleToilet4thFloor_1.png">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
@@ -434,10 +218,6 @@
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\MaleToilet4thFloor_5.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\MaleToiletLobby.png">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
@@ -537,36 +317,6 @@
     <AndroidResource Include="Resources\drawable\BestieTransparent.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Cashier.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Deputy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Bookstore2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Bookstore1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\AdmissionsOffice.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Library1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Library2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Registrar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\SchoolAdmin1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\SchoolAdmin2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\PhysicsLab_5.png" />
   </ItemGroup>
   <ItemGroup>
@@ -663,7 +413,52 @@
     <AndroidResource Include="Resources\drawable\LibraryGIF.gif" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A201GIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A202GIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A203GIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A204GIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A205GIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A206GIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\FemaleToilet2ndFloorGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\MaleToilet2ndFloorGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
     <AndroidResource Include="Resources\drawable\SchoolAdminGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CompLabB.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CompLabC.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CompLabD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CompLabE.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CompLabF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\FemaleToilet3rdFloorGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\MaleToilet3rdFloorGIF.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
