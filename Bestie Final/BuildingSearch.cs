@@ -37,58 +37,63 @@ namespace Bestie_Final
             var imageView6 = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewSixth);
 
             //Lobby
-
-            if (text == "testing")
-            {
-                Glide.With(this)
-                .Load(Resource.Drawable.testing)
-                .Into(new DrawableImageViewTarget(imageView));
-            }
-
+           
             if (text == "Admissions Office")
             {
-                imageView.SetImageResource(Resource.Drawable.AdmissionsOffice);
+                Glide.With(this)
+                .Load(Resource.Drawable.AdmissionsOfficeGIF)
+                .Into(new DrawableImageViewTarget(imageView));
             }
 
             if (text == "Cashier")
             {
-                imageView.SetImageResource(Resource.Drawable.Cashier);
+                Glide.With(this)
+                .Load(Resource.Drawable.CashierGIF)
+                .Into(new DrawableImageViewTarget(imageView));
             }
 
             if (text == "Computer Laboratory A")
             {
-                imageView.SetImageResource(Resource.Drawable.CompLabA);
+                Glide.With(this)
+                .Load(Resource.Drawable.CompLabAGIF)
+                .Into(new DrawableImageViewTarget(imageView));
             }
 
             if (text == "Deputy School Administrator")
             {
-                imageView.SetImageResource(Resource.Drawable.Deputy);
+                Glide.With(this)
+                .Load(Resource.Drawable.DeputyGIF)
+                .Into(new DrawableImageViewTarget(imageView));
             }
 
             if (text == "Registrar")
             {
-                imageView.SetImageResource(Resource.Drawable.Registrar);
+                Glide.With(this)
+                .Load(Resource.Drawable.RegistrarGIF)
+                .Into(new DrawableImageViewTarget(imageView));
             }
 
             if (text == "Female Toilet Lobby")
             {
-                imageView.SetImageResource(Resource.Drawable.FemaleToiletLobby);
+                Glide.With(this)
+                .Load(Resource.Drawable.FemaleToiletLobbyGIF)
+                .Into(new DrawableImageViewTarget(imageView));
             }
 
             if (text == "Male Toilet Lobby")
             {
-                imageView.SetImageResource(Resource.Drawable.MaleToiletLobby);
+                Glide.With(this)
+                .Load(Resource.Drawable.MaleToiletLobbyGIF)
+                .Into(new DrawableImageViewTarget(imageView));
             }
 
             //Mezzanine
 
             if (text == "Library")
             {
-                imageView.SetImageResource(Resource.Drawable.Library1);
-                handler.PostDelayed(() =>
-                {
-                    imageView2.SetImageResource(Resource.Drawable.Library2);
-                }, 3000);               
+                Glide.With(this)
+                .Load(Resource.Drawable.LibraryGIF)
+                .Into(new DrawableImageViewTarget(imageView));
             }
 
             //changed to communication from bookstore
