@@ -18,6 +18,7 @@ using Android.Content.Res;
 using Android.Util;
 using System.Threading.Tasks;
 
+
 namespace Bestie_Final
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
@@ -83,10 +84,16 @@ namespace Bestie_Final
                     string text = searchBar.Text;
                     if (string.IsNullOrEmpty(text))
                     {
-                        Toast toast = Toast.MakeText(this, "Please enter a destination", ToastLength.Long);
-                        toast.SetGravity(GravityFlags.Center | GravityFlags.CenterHorizontal | GravityFlags.CenterVertical, 0, 0);
-                        toast.Show();
-                        return;
+                        AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                        builder.SetTitle("Alert");
+                        builder.SetMessage("Please enter a destination");
+                        builder.SetPositiveButton("OK", (dialog, which) =>
+                                {
+
+                                });
+
+                        AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+                        dialog.Show();
                     }
                     var intent = new Intent(this, typeof(BuildingSearch));
                     intent.PutExtra("text", text);
