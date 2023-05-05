@@ -50,6 +50,7 @@
             android:completionThreshold="1"
             android:dropDownWidth="match_parent"
             android:dropDownHeight="wrap_content"
+            android:inputType="textCapCharacters"
             android:singleLine="true"
             android:imeOptions="actionDone"
             android:visibility="visible"/>
@@ -88,8 +89,8 @@
         <ImageView
             android:layout_width="50px"
             android:layout_height="40px"
-            android:layout_marginTop="400px"
-            android:layout_marginLeft="300px"
+            android:layout_marginTop="412px"
+            android:layout_marginLeft="165px"
             android:src="@drawable/search_icon"/>
 
     </RelativeLayout>

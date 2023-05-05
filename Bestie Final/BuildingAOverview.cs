@@ -14,7 +14,7 @@ namespace Bestie_Final
     [Activity(Label = "BuildingAOverview")]
     public class BuildingAOverview : Activity
     {        
-        Button backbtnbldngaoview, frstflrbtn, mzznnbtn, scndflrbtn, thrdflrbtn, frthflrbtn;
+        Button backbtnbldngaoview, frstflrbtn, mzznnbtn, scndflrbtn, thrdflrbtn, frthflrbtn, rfdckbtn;
         ImageView imageViewBAView;
         
         protected override void OnCreate(Bundle savedInstanceState)
@@ -32,6 +32,7 @@ namespace Bestie_Final
             scndflrbtn = FindViewById<Button>(Resource.Id.scndfButton);
             thrdflrbtn = FindViewById<Button>(Resource.Id.thrdfButton);
             frthflrbtn = FindViewById<Button>(Resource.Id.frthfButton);
+            rfdckbtn = FindViewById<Button>(Resource.Id.rfdckButton);
 
             backbtnbldngaoview.Click += Backbtnbldngaoview_Click;
             frstflrbtn.Click += Frstflrbtn_Click;
@@ -39,9 +40,9 @@ namespace Bestie_Final
             scndflrbtn.Click += Scndflrbtn_Click;
             thrdflrbtn.Click += Thrdflrbtn_Click;
             frthflrbtn.Click += Frthflrbtn_Click;
+            rfdckbtn.Click += Rfdckbtn_Click;
          
-        }              
-              
+        }        
 
         private void Frstflrbtn_Click(object sender, EventArgs e)
         {
@@ -65,9 +66,13 @@ namespace Bestie_Final
 
         private void Frthflrbtn_Click(object sender, EventArgs e)
         {
-            imageViewBAView.SetImageResource(Resource.Drawable.AdmissionsOffice);
+            imageViewBAView.SetImageResource(Resource.Drawable.Floor4);
         }
 
+        private void Rfdckbtn_Click(object sender, EventArgs e)
+        {
+            imageViewBAView.SetImageResource(Resource.Drawable.Roofdeck);
+        }
         private void Backbtnbldngaoview_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(BuildingOverview));
