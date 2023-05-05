@@ -22,8 +22,7 @@ namespace Bestie_Final
             base.OnCreate(savedInstanceState);
 
             // Create your application here
-            SetContentView(Resource.Layout.bldngsrch);
-            var handler = new Handler();            
+            SetContentView(Resource.Layout.bldngsrch);                       
             string text = Intent.GetStringExtra("text");
 
             bldngsrchbckbtn = FindViewById<Button>(Resource.Id.BuildingSearchBackButton);
