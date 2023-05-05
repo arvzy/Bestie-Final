@@ -50,7 +50,8 @@
             android:completionThreshold="1"
             android:dropDownWidth="match_parent"
             android:dropDownHeight="wrap_content"
-            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
             android:visibility="visible"/>
 
         <Button

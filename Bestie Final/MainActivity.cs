@@ -14,6 +14,7 @@ using Android.Animation;
 using AndroidX.AppCompat.Widget;
 using Android.Views.InputMethods;
 using Microsoft.Win32;
+using Android.Content.Res;
 
 namespace Bestie_Final
 {
@@ -21,13 +22,8 @@ namespace Bestie_Final
     public class MainActivity : AppCompatActivity
     {
 
-        string[] suggestions = { "Admissions Office", "Cashier", "Registrar", "Deputy", "Computer Laboratory A", 
-            "Male Toilet Lobby", "Female Toilet Lobby", "Male Toilet 2nd Floor", "Female Toilet 2nd Floor", "Male Toilet 3rd Floor",
-            "Female Toilet 3rd Floor", "Male Toilet 4th Floor", "Female Toilet 4th Floor", "Library", "Bookstore", "School Administrator", 
-            "A201", "A202", "A203", "A204", "A205", "Computer Laboratory B", "Computer Laboratory C", "Computer Laboratory D", 
-            "Computer Laboratory E", "Computer Laboratory F", "A401", "A402", "A403", "Chemistry Laboratory", "Physics Laboratory", 
-            "Electronics Laboratory", "Roofdeck"};
-
+        string[] suggestions;
+                        
         Button btnoverview, btnsearch, btnautocompletesearch;
         AutoCompleteTextView searchBar;
         protected override void OnCreate(Bundle savedInstanceState)
@@ -42,6 +38,8 @@ namespace Bestie_Final
 
             ViewGroup rootLayout = FindViewById<ViewGroup>(Android.Resource.Id.Content);
             SetTypefaceForView(rootLayout, bestieFont);
+
+            suggestions = Resources.GetStringArray(Resource.Array.searchRec);
 
             searchBar = FindViewById<AutoCompleteTextView>(Resource.Id.searchBar);
 
@@ -70,6 +68,17 @@ namespace Bestie_Final
             btnoverview.Click += Btnoverview_Click;
             /*btnsearch.Click += searchOnClick*/;
             btnautocompletesearch.Click += Btnautocompletesearch_Click;
+
+            searchBar.EditorAction += (sender, args) =>
+            {
+                if (args.ActionId == ImeAction.Done)
+                {
+                    string text = searchBar.Text;
+                    var intent = new Intent(this, typeof(BuildingSearch));
+                    intent.PutExtra("text", text);
+                    this.StartActivity(intent);
+                }
+            };
         }
         
 
@@ -130,7 +139,7 @@ namespace Bestie_Final
         //        btnautocompletesearch.Visibility= ViewStates.Visible;
         //    }
         //}
-
+        
         private void Btnautocompletesearch_Click(object sender, EventArgs e)
         {
             string text = searchBar.Text;

@@ -1,7 +1,47 @@
 <resources>
     <string name="app_name">BESTIE</string>
     <string name="action_settings">Settings</string>
-	<string-array name="myass">
-		<item></item>
+	<string-array name="searchRec">
+		<item>Admissions Office</item>
+		<item>Cashier</item>
+		<item>Registrar</item>
+		<item>Deputy</item>
+		<item>Computer Laboratory A</item>
+		<item>Male Toilet Lobby</item>
+		<item>Female Toilet Lobby</item>
+		<item>Male Toilet 2nd Floor</item>
+		<item>Female Toilet 2nd Floor</item>
+		<item>Male Toilet 3rd Floor</item>
+		<item>Female Toilet 3rd Floor</item>
+		<item>Male Toilet 4th Floor</item>
+		<item>Female Toilet 4th Floor</item>
+		<item>Library</item>
+		<item>Communication</item>
+		<item>School Administrator</item>
+		<item>A201</item>
+		<item>A202</item>
+		<item>A203</item>
+		<item>A204</item>
+		<item>A205</item>
+		<item>A206</item>
+		<item>Computer Laboratory B</item>
+		<item>Computer Laboratory C</item>
+		<item>Computer Laboratory D</item>
+		<item>Computer Laboratory E</item>
+		<item>Computer Laboratory F</item>
+		<item>A401</item>
+		<item>A402</item>
+		<item>A403</item>
+		<item>Chemistry Laboratory</item>
+		<item>Physics Laboratory</item>
+		<item>Electronics Laboratory</item>
+		<item>Roofdeck</item>
 	</string-array>
 </resources>
+
+<!--{ "Admissions Office", "Cashier", "Registrar", "Deputy", "Computer Laboratory A",
+"Male Toilet Lobby", "Female Toilet Lobby", "Male Toilet 2nd Floor", "Female Toilet 2nd Floor", "Male Toilet 3rd Floor",
+"Female Toilet 3rd Floor", "Male Toilet 4th Floor", "Female Toilet 4th Floor", "Library", "Bookstore", "School Administrator",
+"A201", "A202", "A203", "A204", "A205", "Computer Laboratory B", "Computer Laboratory C", "Computer Laboratory D",
+"Computer Laboratory E", "Computer Laboratory F", "A401", "A402", "A403", "Chemistry Laboratory", "Physics Laboratory",
+"Electronics Laboratory", "Roofdeck"};-->

@@ -15,7 +15,7 @@ namespace Bestie_Final
     public class BuildingAOverview : Activity
     {        
         Button backbtnbldngaoview, frstflrbtn, mzznnbtn, scndflrbtn, thrdflrbtn, frthflrbtn;
-        ImageView flr1img, mzznnimg, flr2img, flr3img, flr4img;
+        ImageView imageViewBAView;
         
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -23,6 +23,8 @@ namespace Bestie_Final
 
             // Create your application here
             SetContentView(Resource.Layout.bldngAoview);
+
+            imageViewBAView = FindViewById<ImageView>(Resource.Id.imageViewBuildingView);
 
             backbtnbldngaoview = FindViewById<Button>(Resource.Id.BackBuildingAOview);
             frstflrbtn = FindViewById<Button>(Resource.Id.frstfButton);
@@ -37,78 +39,33 @@ namespace Bestie_Final
             scndflrbtn.Click += Scndflrbtn_Click;
             thrdflrbtn.Click += Thrdflrbtn_Click;
             frthflrbtn.Click += Frthflrbtn_Click;
-
-            flr1img = FindViewById<ImageView>(Resource.Id.flr1Image);
-            mzznnimg = FindViewById<ImageView>(Resource.Id.mzznnImage);
-            flr2img = FindViewById<ImageView>(Resource.Id.flr2Image);
-            flr3img = FindViewById<ImageView>(Resource.Id.flr3Image);
-            flr4img = FindViewById<ImageView>(Resource.Id.flr4Image);            
+         
         }              
               
 
         private void Frstflrbtn_Click(object sender, EventArgs e)
         {
-            if (flr1img.Visibility == ViewStates.Invisible)
-            {
-                flr1img.Visibility = ViewStates.Visible;
-                mzznnimg.Visibility = ViewStates.Invisible;
-                flr2img.Visibility = ViewStates.Invisible;
-                flr3img.Visibility = ViewStates.Invisible;
-                flr4img.Visibility = ViewStates.Invisible;
-
-            }
-            else
-            {
-                flr1img.Visibility = ViewStates.Visible;                
-            }
+            imageViewBAView.SetImageResource(Resource.Drawable.Floor1);
         }
 
         private void Mzznnbtn_Click(object sender, EventArgs e)
         {
-            if (mzznnimg.Visibility == ViewStates.Invisible)
-            {
-                mzznnimg.Visibility = ViewStates.Visible;
-                flr1img.Visibility = ViewStates.Invisible;
-                flr2img.Visibility = ViewStates.Invisible;
-                flr3img.Visibility = ViewStates.Invisible;
-                flr4img.Visibility = ViewStates.Invisible;
-            }            
+            imageViewBAView.SetImageResource(Resource.Drawable.Mezzanine);
         }
 
         private void Scndflrbtn_Click(object sender, EventArgs e)
         {
-            if (flr2img.Visibility == ViewStates.Invisible)
-            {
-                flr2img.Visibility = ViewStates.Visible;
-                flr1img.Visibility = ViewStates.Invisible;
-                mzznnimg.Visibility = ViewStates.Invisible;
-                flr3img.Visibility = ViewStates.Invisible;
-                flr4img.Visibility = ViewStates.Invisible;                
-            } 
+            imageViewBAView.SetImageResource(Resource.Drawable.Floor2);
         }
 
         private void Thrdflrbtn_Click(object sender, EventArgs e)
         {
-            if (flr3img.Visibility == ViewStates.Invisible)
-            {
-                flr3img.Visibility = ViewStates.Visible;
-                flr1img.Visibility = ViewStates.Invisible;
-                mzznnimg.Visibility = ViewStates.Invisible;
-                flr2img.Visibility = ViewStates.Invisible;
-                flr4img.Visibility = ViewStates.Invisible;
-            }
+            imageViewBAView.SetImageResource(Resource.Drawable.Floor3);
         }
 
         private void Frthflrbtn_Click(object sender, EventArgs e)
         {
-            if (flr4img.Visibility == ViewStates.Invisible)
-            {
-                flr4img.Visibility = ViewStates.Visible;
-                flr1img.Visibility = ViewStates.Invisible;
-                mzznnimg.Visibility = ViewStates.Invisible;
-                flr2img.Visibility = ViewStates.Invisible;
-                flr3img.Visibility = ViewStates.Invisible;
-            }
+            imageViewBAView.SetImageResource(Resource.Drawable.AdmissionsOffice);
         }
 
         private void Backbtnbldngaoview_Click(object sender, EventArgs e)

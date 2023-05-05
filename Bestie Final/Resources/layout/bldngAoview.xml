@@ -27,57 +27,20 @@
             android:layout_marginLeft="15px"
             android:layout_width="1150px"
             android:layout_height="wrap_content">
-
             <ImageView
                 android:layout_height="wrap_content"
                 android:layout_width="1200dp"
                 android:padding="12dp"
                 android:layout_weight="1"
-                android:src="@drawable/Floor1"
-                android:id="@+id/flr1Image"
-                android:visibility="visible"
-            />
-            
-            <ImageView
-                android:layout_height="wrap_content"
-                android:layout_width="1200dp"
-                android:padding="12dp"
-                android:layout_weight="1"
-                android:src="@drawable/mezzanine"
-                android:id="@+id/mzznnImage"
-                android:visibility="invisible"
-            /> 
+                android:src="@drawable/floor1"/>
 
             <ImageView
                 android:layout_height="wrap_content"
                 android:layout_width="1200dp"
                 android:padding="12dp"
-                android:layout_weight="1"
-                android:src="@drawable/floor2and4"
-                android:id="@+id/flr2Image"
-                android:visibility="invisible"
-            /> 
-
-            <ImageView
-                android:layout_height="wrap_content"
-                android:layout_width="1200dp"
-                android:padding="12dp"
-                android:layout_weight="1"
-                android:src="@drawable/floor3"
-                android:id="@+id/flr3Image"
-                android:visibility="invisible"
-            /> 
-
-            <ImageView
-                android:layout_height="wrap_content"
-                android:layout_width="1200dp"
-                android:padding="12dp"
-                android:layout_weight="1"
-                android:src="@drawable/floor2and4"
-                android:id="@+id/flr4Image"
-                android:visibility="invisible"
-            /> 
-
+                android:layout_weight="1"                
+                android:id="@+id/imageViewBuildingView"               
+            />        
             
 
         </RelativeLayout>
