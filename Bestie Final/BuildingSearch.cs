@@ -91,7 +91,8 @@ namespace Bestie_Final
                 }, 3000);               
             }
 
-            if (text == "Bookstore")
+            //changed to communication from bookstore
+            if (text == "Communication")
             {
                 imageView.SetImageResource(Resource.Drawable.Bookstore1);
                 handler.PostDelayed(() =>
@@ -176,7 +177,7 @@ namespace Bestie_Final
                 }, 6000);
             }
 
-            if (text == "A205")
+            if (text == "A206")
             {
                 imageView.SetImageResource(Resource.Drawable.A206_1);
                 handler.PostDelayed(() =>

@@ -2,6 +2,7 @@
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Util;
 using Android.Views;
 using Android.Widget;
 using System;
@@ -16,13 +17,17 @@ namespace Bestie_Final
     public class BuildingOverview : Activity
     {
 
-        Button bldngA;
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
             SetContentView(Resource.Layout.bldngoverview);
+
+            DisplayMetrics displayMetrics = Resources.DisplayMetrics;
+            float screenWidth = displayMetrics.WidthPixels / displayMetrics.Density;
+            float screenHeight = displayMetrics.HeightPixels / displayMetrics.Density;
 
             Button backbtnbldngoviw = FindViewById<Button>(Resource.Id.BackBuildingOview);
             ImageButton bldngA = FindViewById<ImageButton>(Resource.Id.BuildingAOverview);

@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    tools:gridSpec="1|8|#0093eeff|K:#ee8700ff:16,l:72,l:16,r|S:#83ee00ff:16,0,l:16,56,l:16,0,r">
 
     <View
         android:layout_width="match_parent"
@@ -17,8 +18,8 @@
         android:gravity="center"
         android:orientation="vertical"
         android:background="@drawable/background_gradient">
-        
-        
+
+
         <ImageView
             android:layout_width="200px"
             android:layout_height="200px"
@@ -35,7 +36,7 @@
         />
 
         <!--for now ung background is yan muna-->
-        
+
         <AutoCompleteTextView
             android:id="@+id/searchBar"
             android:layout_width="700dp"
@@ -50,7 +51,6 @@
             android:completionThreshold="1"
             android:dropDownWidth="match_parent"
             android:dropDownHeight="wrap_content"
-            android:inputType="textCapCharacters"
             android:singleLine="true"
             android:imeOptions="actionDone"
             android:visibility="visible"/>
@@ -82,7 +82,6 @@
             android:id="@+id/textView1" />
     </LinearLayout>
     <RelativeLayout
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 

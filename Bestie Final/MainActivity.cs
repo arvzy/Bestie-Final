@@ -15,6 +15,7 @@ using AndroidX.AppCompat.Widget;
 using Android.Views.InputMethods;
 using Microsoft.Win32;
 using Android.Content.Res;
+using Android.Util;
 
 namespace Bestie_Final
 {
@@ -32,6 +33,13 @@ namespace Bestie_Final
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+
+            DisplayMetrics displayMetrics = Resources.DisplayMetrics;
+
+            // Calculate the screen width and height in DP
+            float screenWidthDp = displayMetrics.WidthPixels / displayMetrics.Density;
+            float screenHeightDp = displayMetrics.HeightPixels / displayMetrics.Density;
+
             RequestedOrientation = ScreenOrientation.Landscape;
 
             Typeface bestieFont = Typeface.CreateFromAsset(this.Assets, "Fonts/fatherless.ttf");
