@@ -22,31 +22,32 @@ namespace Bestie_Final
             base.OnCreate(savedInstanceState);
 
             // Create your application here
-            SetContentView(Resource.Layout.bldngsrch);                       
+            SetContentView(Resource.Layout.bldngsrch);
+
             string text = Intent.GetStringExtra("text");
 
             bldngsrchbckbtn = FindViewById<Button>(Resource.Id.BuildingSearchBackButton);
             bldngsrchbckbtn.Click += Bldngsrchbckbtn_Click;
 
-            var imageView = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewFirst);            
+            var imageView = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewFirst);
 
             //Lobby
-           
-            if (text == "Admissions Office")
+
+            if (text == "Admissions Office" || text == "admissions office" || text == "admisions office" || text == "ADMISSIONS OFFICE")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.AdmissionsOfficeGIF)
                 .Into(new DrawableImageViewTarget(imageView));
             }
 
-            if (text == "Cashier")
+            if (text == "Cashier" || text == "cashier" || text == "CASHIER" || text == "cahsier")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.CashierGIF)
                 .Into(new DrawableImageViewTarget(imageView));
             }
 
-            if (text == "Computer Laboratory A")
+            if (text == "Computer Laboratory A" || text == "computer laboratory a" || text == "complab a" || text == "comlaba" || text == "complaboratory a")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.CompLabAGIF)

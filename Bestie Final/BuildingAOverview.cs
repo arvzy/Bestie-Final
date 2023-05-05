@@ -42,8 +42,6 @@ namespace Bestie_Final
             thrdflrbtn.Click += Thrdflrbtn_Click;
             frthflrbtn.Click += Frthflrbtn_Click;
             rfdckbtn.Click += Rfdckbtn_Click;
-
-
          
         }        
 
