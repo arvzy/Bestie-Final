@@ -95,9 +95,12 @@ namespace Bestie_Final
                         AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
                         dialog.Show();
                     }
-                    var intent = new Intent(this, typeof(BuildingSearch));
-                    intent.PutExtra("text", text);
-                    this.StartActivity(intent);
+                    else
+                    {
+                        var intent = new Intent(this, typeof(BuildingSearch));
+                        intent.PutExtra("text", text);
+                        this.StartActivity(intent);
+                    }
                 }
             };
         }
