@@ -16,6 +16,7 @@ using Android.Views.InputMethods;
 using Microsoft.Win32;
 using Android.Content.Res;
 using Android.Util;
+using System.Threading.Tasks;
 
 namespace Bestie_Final
 {
@@ -82,6 +83,13 @@ namespace Bestie_Final
                 if (args.ActionId == ImeAction.Done)
                 {
                     string text = searchBar.Text;
+                    if (string.IsNullOrEmpty(text))
+                    {
+                        Toast toast = Toast.MakeText(this, "Please enter a destination", ToastLength.Long);
+                        toast.SetGravity(GravityFlags.Center | GravityFlags.CenterHorizontal | GravityFlags.CenterVertical, 0, 0);
+                        toast.Show();
+                        return;
+                    }
                     var intent = new Intent(this, typeof(BuildingSearch));
                     intent.PutExtra("text", text);
                     this.StartActivity(intent);
@@ -151,6 +159,13 @@ namespace Bestie_Final
         private void Btnautocompletesearch_Click(object sender, EventArgs e)
         {
             string text = searchBar.Text;
+            if (string.IsNullOrEmpty(text))
+            {               
+                Toast toast = Toast.MakeText(this, "Please enter a destination", ToastLength.Long);
+                toast.SetGravity(GravityFlags.Center | GravityFlags.CenterHorizontal | GravityFlags.CenterVertical, 0, 0);
+                toast.Show();
+                return;
+            }
             var intent = new Intent(this, typeof(BuildingSearch));
             intent.PutExtra("text", text);
             this.StartActivity(intent);
