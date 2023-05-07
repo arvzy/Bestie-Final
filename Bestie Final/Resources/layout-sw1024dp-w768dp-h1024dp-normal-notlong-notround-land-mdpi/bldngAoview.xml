@@ -20,12 +20,12 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="match_parent"
+        android:layout_width="1024"
         android:layout_height="match_parent">
 
         <RelativeLayout
             android:layout_marginLeft="15px"
-            android:layout_width="900px"
+            android:layout_width="1150px"
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_height="wrap_content"
@@ -117,15 +117,6 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/button_design"
                 android:id="@+id/rfdckButton"  />
-            <android.widget.Button
-                android:textSize="30px"
-                android:text=""
-                android:textColor="@android:color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="85px"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/button_design"
-                android:id="@+id/frthfButton"  />
 
         </LinearLayout>
 

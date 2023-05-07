@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:gridSpec="1|8|#0093eeff|K:#ee8700ff:16,l:72,l:16,r|S:#83ee00ff:16,0,l:16,56,l:16,0,r">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/background_gradient">
+
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/bestietransparent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="BESTIE"
+            android:textColor="@android:color/white"
+            android:textSize="70px"
+        />
+
+        <!--for now ung background is yan muna-->
+
+        <AutoCompleteTextView
+            android:id="@+id/searchBar"
+            android:layout_width="700dp"
+            android:layout_height="50dp"
+            android:background="@drawable/search_design"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:textAlignment="center"
+            android:textColorHint="@android:color/black"
+            android:hint="Search"
+            android:completionThreshold="1"
+            android:dropDownWidth="match_parent"
+            android:dropDownHeight="wrap_content"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/AutoCompleteSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/BuildingOverviewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Building Overview"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Codeez Inc."
+            android:textColor="@android:color/white"
+            android:id="@+id/textView1" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="40px"
+            android:layout_marginTop="412px"
+            android:layout_marginLeft="165px"
+            android:src="@drawable/search_icon"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

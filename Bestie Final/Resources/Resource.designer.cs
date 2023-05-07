@@ -3576,49 +3576,52 @@ namespace Bestie_Final
 			public const int PhysicsLabGIF = 2131230888;
 			
 			// aapt resource value: 0x7F0800A9
-			public const int RegistrarGIF = 2131230889;
+			public const int red_button = 2131230889;
 			
 			// aapt resource value: 0x7F0800AA
-			public const int Roofdeck = 2131230890;
+			public const int RegistrarGIF = 2131230890;
 			
 			// aapt resource value: 0x7F0800AB
-			public const int RoofdeckGIF = 2131230891;
+			public const int Roofdeck = 2131230891;
 			
 			// aapt resource value: 0x7F0800AC
-			public const int SchoolAdminGIF = 2131230892;
+			public const int RoofdeckGIF = 2131230892;
 			
 			// aapt resource value: 0x7F0800AD
-			public const int search_design = 2131230893;
+			public const int SchoolAdminGIF = 2131230893;
 			
 			// aapt resource value: 0x7F0800AE
-			public const int Search_icon = 2131230894;
+			public const int search_design = 2131230894;
 			
 			// aapt resource value: 0x7F0800AF
-			public const int StudentServicesGIF = 2131230895;
+			public const int Search_icon = 2131230895;
 			
 			// aapt resource value: 0x7F0800B0
-			public const int testing = 2131230896;
+			public const int StudentServicesGIF = 2131230896;
 			
 			// aapt resource value: 0x7F0800B1
-			public const int tooltip_frame_dark = 2131230897;
+			public const int testing = 2131230897;
 			
 			// aapt resource value: 0x7F0800B2
-			public const int tooltip_frame_light = 2131230898;
-			
-			// aapt resource value: 0x7F0800B7
-			public const int TopViewBuilding = 2131230903;
+			public const int tooltip_frame_dark = 2131230898;
 			
 			// aapt resource value: 0x7F0800B3
-			public const int Top_A = 2131230899;
+			public const int tooltip_frame_light = 2131230899;
+			
+			// aapt resource value: 0x7F0800B8
+			public const int TopViewBuilding = 2131230904;
 			
 			// aapt resource value: 0x7F0800B4
-			public const int Top_B = 2131230900;
+			public const int Top_A = 2131230900;
 			
 			// aapt resource value: 0x7F0800B5
-			public const int Top_C = 2131230901;
+			public const int Top_B = 2131230901;
 			
 			// aapt resource value: 0x7F0800B6
-			public const int Top_D = 2131230902;
+			public const int Top_C = 2131230902;
+			
+			// aapt resource value: 0x7F0800B7
+			public const int Top_D = 2131230903;
 			
 			static Drawable()
 			{

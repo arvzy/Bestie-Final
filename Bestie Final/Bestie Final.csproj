@@ -145,6 +145,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\NewFolder1\" />
+    <Folder Include="Resources\layout-sw1024dp-w768dp-h1024dp-normal-notlong-notround-land-mdpi\" />
+    <Folder Include="Resources\layout-sw1024dp-w768dp-h1024dp-small-land\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\bestie_icon.png" />
@@ -307,6 +309,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\RoofdeckGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\red_button.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
