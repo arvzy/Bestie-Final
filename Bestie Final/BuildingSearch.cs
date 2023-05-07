@@ -32,7 +32,16 @@ namespace Bestie_Final
             string text = Intent.GetStringExtra("text");
 
             bldngsrchbckbtn = FindViewById<Button>(Resource.Id.BuildingSearchBackButton);
-            bldngsrchbckbtn.Click += Bldngsrchbckbtn_Click;
+            bldngsrchbckbtn.Click += (sender, args) =>
+            {
+                // Start a new instance of the activity to reset it
+                var intent = new Intent(this, typeof(MainActivity));
+                intent.SetFlags(ActivityFlags.ClearTop | ActivityFlags.ClearTask | ActivityFlags.NewTask);
+                StartActivity(intent);
+
+                // Finish the current instance of the activity
+                Finish();
+            };
 
             imageView = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewFirst);
             imageViewM = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewMezzanine);
@@ -43,6 +52,7 @@ namespace Bestie_Final
 
             startButton = FindViewById<Button>(Resource.Id.StartButtonGIF);
 
+            
             //startButton.Click += (sender, arg) =>
             //{
             //    var drawable = imageView.Drawable;
@@ -91,6 +101,19 @@ namespace Bestie_Final
                 Glide.With(this)
                 .Load(Resource.Drawable.AdmissionsOfficeGIF)
                 .Into(new DrawableImageViewTarget(imageView));
+            }
+            else
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Alert");
+                builder.SetMessage("Please enter a destination");
+                builder.SetPositiveButton("OK", (dialog, which) =>
+                {
+
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+                dialog.Show();
             }
 
             if (text == "Cashier" || text == "cashier" || text == "CASHIER" || text == "cahsier")
@@ -391,10 +414,11 @@ namespace Bestie_Final
 
         }
 
-        
-        private void Bldngsrchbckbtn_Click(object sender, EventArgs e)
+        public override void OnBackPressed()
         {
-            
+            bldngsrchbckbtn = FindViewById<Button>(Resource.Id.BuildingSearchBackButton);
+            bldngsrchbckbtn.PerformClick();
         }
+
     }
 }
