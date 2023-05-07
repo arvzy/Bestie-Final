@@ -129,7 +129,7 @@ namespace Bestie_Final
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewM));
             }
-            else if (text == "A201")
+            else if (text == "201")
             {
                 //2nd Floor
                 Glide.With(this)
@@ -137,35 +137,35 @@ namespace Bestie_Final
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
             }
-            else if (text == "A202")
+            else if (text == "202")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.A202GIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
             }
-            else if (text == "A203")
+            else if (text == "203")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.A203GIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
             }
-            else if (text == "A204")
+            else if (text == "204")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.A204GIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
             }
-            else if (text == "A205")
+            else if (text == "205")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.A205GIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
             }
-            else if (text == "A206")
+            else if (text == "206")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.A206GIF)
@@ -243,7 +243,7 @@ namespace Bestie_Final
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewT));
             }
-            else if (text == "A401")
+            else if (text == "401")
             {
                 //Fourth Floor
                 Glide.With(this)
@@ -251,14 +251,14 @@ namespace Bestie_Final
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewF));
             }
-            else if (text == "A402")
+            else if (text == "402")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.A402GIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewF));
             }
-            else if (text == "A403")
+            else if (text == "403")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.A403GIF)
