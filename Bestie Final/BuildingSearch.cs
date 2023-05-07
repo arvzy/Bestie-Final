@@ -291,10 +291,10 @@ namespace Bestie_Final
             Task.Delay(20000).ContinueWith(t =>
             {
                 var drawable = imageViewF.Drawable;
-               if (drawable is GifDrawable gifDrawableF)
-               {
-                   gifDrawableF.Stop();
-               }
+                if (drawable is GifDrawable gifDrawableF)
+                {
+                    gifDrawableF.Stop();
+                }
             });
 
             if (text == "A401")
@@ -374,7 +374,7 @@ namespace Bestie_Final
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            
+
             var drawable = imageView.Drawable as GifDrawable;
             var drawableM = imageViewM.Drawable as GifDrawable;
             var drawableS = imageViewS.Drawable as GifDrawable;
@@ -391,11 +391,7 @@ namespace Bestie_Final
 
         }
 
-        public void ClearGIF
-        {
-            img
-        }
-
+        
         private void Bldngsrchbckbtn_Click(object sender, EventArgs e)
         {
             
