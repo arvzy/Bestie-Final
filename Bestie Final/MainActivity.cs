@@ -45,16 +45,14 @@ namespace Bestie_Final
             ViewGroup rootLayout = FindViewById<ViewGroup>(Android.Resource.Id.Content);
             SetTypefaceForView(rootLayout, bestieFont);
 
-            suggestions = Resources.GetStringArray(Resource.Array.searchRec);
-
             searchBar = FindViewById<AutoCompleteTextView>(Resource.Id.searchBar);
 
-            var adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleDropDownItem1Line, suggestions);
-
+            string[] suggestions = Resources.GetStringArray(Resource.Array.searchRec);
+            var adapter = new ReverseArrayAdapter<string>(this, Android.Resource.Layout.SimpleDropDownItem1Line, suggestions);
             searchBar.Adapter = adapter;
 
             searchBar.DropDownAnchor = searchBar.Id;
-            searchBar.DropDownVerticalOffset = -searchBar.Height;
+            searchBar.DropDownVerticalOffset = -200;
 
             searchBar.EditorAction += (sender, args) =>
             {
@@ -106,8 +104,22 @@ namespace Bestie_Final
                     }
                 }
             };
+
+
         }
-        
+
+        public class ReverseArrayAdapter<T> : ArrayAdapter<T>
+        {
+            public ReverseArrayAdapter(Context context, int resource, T[] objects) : base(context, resource, objects)
+            {
+            }
+
+            public override View GetView(int position, View convertView, ViewGroup parent)
+            {
+                View view = base.GetView(Count - position - 1, convertView, parent);
+                return view;
+            }
+        }
 
         private void Btnoverview_Click(object sender, EventArgs e)
         {

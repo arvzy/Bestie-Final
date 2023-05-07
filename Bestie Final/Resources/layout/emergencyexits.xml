@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="750px"    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"/>
+
+    <Button
+        android:id="@+id/BackEmergencyExits"
+        android:layout_width="100px"
+        android:layout_height="80px"
+        android:background="@drawable/button_design"
+        android:layout_marginLeft="12px"
+        android:text="Back"/>
+
+    
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginLeft="15px"
+            android:layout_width="900px"
+            android:layout_height="650px">
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="1200dp"
+                android:padding="12dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="1200dp"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:src="@drawable/floor1"              
+            />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:textSize="30px"
+                app:cornerRadius="50px"
+                android:text="1f"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginBottom="20dp"
+                style="@style/Invert"
+                android:id="@+id/frstfEButton"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:textSize="30px"
+                app:cornerRadius="50px"
+                android:text="M"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginBottom="20dp"
+                style="@style/Invert"
+                android:id="@+id/mzznnEButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:textSize="30px"
+                app:cornerRadius="50px"
+                android:text="2f"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginBottom="20dp"
+                style="@style/Invert"
+                android:id="@+id/scndfEButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:textSize="30px"
+                app:cornerRadius="50px"
+                android:text="3f"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginBottom="20dp"
+                style="@style/Invert"
+                android:id="@+id/thrdfEButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:textSize="30px"
+                app:cornerRadius="50px"
+                android:text="4f"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginBottom="20dp"
+                style="@style/Invert"
+                android:id="@+id/frthfEButton"  />
+
+            <com.google.android.material.button.MaterialButton
+                android:textSize="30px"
+                app:cornerRadius="50px"
+                android:text="rf"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginBottom="20dp"
+                style="@style/Invert"
+                android:id="@+id/rfdckEButton"  />
+
+
+        </LinearLayout> 
+
+    </LinearLayout>
+
+</RelativeLayout>
