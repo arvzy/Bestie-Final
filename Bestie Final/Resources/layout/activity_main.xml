@@ -54,7 +54,6 @@
             android:textColorHint="@android:color/black"
             android:hint="Search"
             android:completionThreshold="3"
-            android:layout_weight="-1"
             android:dropDownWidth="match_parent"
             android:dropDownHeight="wrap_content"
             android:singleLine="true"
