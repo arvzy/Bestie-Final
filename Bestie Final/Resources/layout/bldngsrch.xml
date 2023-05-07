@@ -8,7 +8,11 @@
         android:layout_height="wrap_content"
         android:text="Back"
         android:id="@+id/BuildingSearchBackButton"/>
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/StartButtonGIF"/>
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -20,6 +24,48 @@
             android:layout_weight="1" 
             android:id="@+id/BuildingSearchImageViewFirst"
             />                   
-           
+        
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="792.0dp"
+            android:padding="12dp"
+            android:layout_weight="1" 
+            android:id="@+id/BuildingSearchImageViewMezzanine"
+            /> 
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="792.0dp"
+            android:padding="12dp"
+            android:layout_weight="1" 
+            android:id="@+id/BuildingSearchImageViewSecondFloor"
+            /> 
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="792.0dp"
+            android:padding="12dp"
+            android:layout_weight="1" 
+            android:id="@+id/BuildingSearchImageViewThirdFloor"
+            /> 
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="792.0dp"
+            android:padding="12dp"
+            android:layout_weight="1" 
+            android:id="@+id/BuildingSearchImageViewFourthFloor"
+            /> 
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="792.0dp"
+            android:padding="12dp"
+            android:layout_weight="1" 
+            android:id="@+id/BuildingSearchImageViewRoofdeck"
+            /> 
+        
     </RelativeLayout>
+
+    
 </LinearLayout>
