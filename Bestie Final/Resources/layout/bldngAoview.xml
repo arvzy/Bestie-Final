@@ -125,7 +125,7 @@
                 android:layout_height="85px"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/button_design"
-                android:id="@+id/frthfButton"  />
+                android:id="@+id/emergencyexitsButton"  />
 
         </LinearLayout>
 
