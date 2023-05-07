@@ -99,7 +99,11 @@ namespace Bestie_Final
                     {
                         var intent = new Intent(this, typeof(BuildingSearch));
                         intent.PutExtra("text", text);
-                        this.StartActivity(intent);
+                        intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.ClearTask | ActivityFlags.NewTask | ActivityFlags.TaskOnHome);
+                        StartActivity(intent);
+
+                        // Finish the current instance of the activity
+                        FinishAffinity();
                     }
                 }
             };
@@ -157,7 +161,11 @@ namespace Bestie_Final
             {
                 var intent = new Intent(this, typeof(BuildingSearch));
                 intent.PutExtra("text", text);
-                this.StartActivity(intent);
+                intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.ClearTask | ActivityFlags.NewTask | ActivityFlags.TaskOnHome);
+                StartActivity(intent);
+
+                // Finish the current instance of the activity
+                FinishAffinity();
             }
         }
     }
