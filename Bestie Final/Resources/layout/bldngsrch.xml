@@ -7,12 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
-        android:id="@+id/BuildingSearchBackButton"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start"
-        android:id="@+id/StartButtonGIF"/>
+        android:id="@+id/BuildingSearchBackButton"/>    
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">

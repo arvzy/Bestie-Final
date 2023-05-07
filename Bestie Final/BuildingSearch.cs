@@ -56,8 +56,6 @@ namespace Bestie_Final
             imageViewF = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewFourthFloor);
             imageViewR = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewRoofdeck);
 
-            startButton = FindViewById<Button>(Resource.Id.StartButtonGIF);
-
             if (text == "Admissions Office" || text == "admissions office" || text == "admisions office" || text == "ADMISSIONS OFFICE")
             {
                 //Lobby

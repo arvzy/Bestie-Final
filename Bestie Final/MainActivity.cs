@@ -17,6 +17,7 @@ using Microsoft.Win32;
 using Android.Content.Res;
 using Android.Util;
 using System.Threading.Tasks;
+using Android.Media.TV;
 
 
 namespace Bestie_Final
@@ -29,18 +30,13 @@ namespace Bestie_Final
                         
         Button btnoverview, btnautocompletesearch;
         AutoCompleteTextView searchBar;
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
-
-            DisplayMetrics displayMetrics = Resources.DisplayMetrics;
-
-            // Calculate the screen width and height in DP
-            float screenWidthDp = displayMetrics.WidthPixels / displayMetrics.Density;
-            float screenHeightDp = displayMetrics.HeightPixels / displayMetrics.Density;
 
             RequestedOrientation = ScreenOrientation.Landscape;
 
@@ -56,6 +52,9 @@ namespace Bestie_Final
             var adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleDropDownItem1Line, suggestions);
 
             searchBar.Adapter = adapter;
+
+            searchBar.DropDownAnchor = searchBar.Id;
+            searchBar.DropDownVerticalOffset = -searchBar.Height;
 
             searchBar.EditorAction += (sender, args) =>
             {
