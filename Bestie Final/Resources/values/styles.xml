@@ -12,5 +12,9 @@
 	<style name="Invert" parent="Widget.MaterialComponents.Button">
 		<item name="backgroundTint">#FFff</item>
 	</style>
+
+	<style name="Button" parent="Widget.MaterialComponents.Button">	
+		<item name="backgroundTint">#949494</item>
+	</style>
 </resources>
 
