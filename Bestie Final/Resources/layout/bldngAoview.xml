@@ -14,13 +14,16 @@
         android:layout_height="match_parent"
         android:background="@drawable/background_gradient"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/BackBuildingAOview"
         android:layout_width="100px"
-        android:layout_height="80px"
-        android:background="@drawable/button_design"
+        android:layout_height="60px"
+        android:textColor="@android:color/black"
+        app:cornerRadius="20px"
         android:layout_marginLeft="12px"
+        style="@style/Invert"
         android:text="Back"/>
+
 
     
 
@@ -136,10 +139,10 @@
     </LinearLayout>
 
     <ImageButton
-        android:layout_width="880px"
-        android:layout_height="120px"
-        android:layout_marginLeft="20px"
-        android:layout_marginTop="600px"
+        android:layout_width="700px"
+        android:layout_height="100px"
+        android:layout_marginLeft="120px"
+        android:layout_marginTop="610px"
         android:background="@drawable/emergency_exit"/>
 
 </RelativeLayout>
