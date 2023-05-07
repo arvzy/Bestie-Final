@@ -9,4 +9,8 @@
 		<item name="windowNoTitle">true</item>
     </style>
 
+	<style name="Invert" parent="Widget.MaterialComponents.Button">
+		<item name="backgroundTint">#FFff</item>
+	</style>
 </resources>
+
