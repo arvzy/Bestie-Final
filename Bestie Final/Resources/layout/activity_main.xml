@@ -22,7 +22,7 @@
 
 
         <ImageView
-            android:layout_width="200px"
+            android:layout_width="300px"
             android:layout_height="200px"
             android:src="@drawable/bestietransparent"/>
 

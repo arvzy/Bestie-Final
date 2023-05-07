@@ -16,8 +16,10 @@
 
     <Button
         android:id="@+id/BackBuildingAOview"
-        android:layout_width="75px"
-        android:layout_height="50px"
+        android:layout_width="100px"
+        android:layout_height="80px"
+        android:background="@drawable/button_design"
+        android:layout_marginLeft="12px"
         android:text="Back"/>
 
     
@@ -30,7 +32,7 @@
         <RelativeLayout
             android:layout_marginLeft="15px"
             android:layout_width="900px"
-            android:layout_height="600px">
+            android:layout_height="650px">
             <ImageView
                 android:layout_height="wrap_content"
                 android:layout_width="1200dp"
@@ -69,7 +71,7 @@
                 android:textColor="@color/colorAccent"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 style="@style/Invert"
                 android:id="@+id/frstfButton"/>
 
@@ -80,7 +82,7 @@
                 android:textColor="@color/colorAccent"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 style="@style/Invert"
                 android:id="@+id/mzznnButton" />
 
@@ -91,7 +93,7 @@
                 android:textColor="@color/colorAccent"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 style="@style/Invert"
                 android:id="@+id/scndfButton" />
 
@@ -102,7 +104,7 @@
                 android:textColor="@color/colorAccent"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 style="@style/Invert"
                 android:id="@+id/thrdfButton" />
 
@@ -113,7 +115,7 @@
                 android:textColor="@color/colorAccent"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 style="@style/Invert"
                 android:id="@+id/frthfButton"  />
 
@@ -124,7 +126,7 @@
                 android:textColor="@color/colorAccent"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 style="@style/Invert"
                 android:id="@+id/rfdckButton"  />
 
@@ -132,5 +134,12 @@
         </LinearLayout> 
 
     </LinearLayout>
+
+    <ImageButton
+        android:layout_width="880px"
+        android:layout_height="120px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="600px"
+        android:background="@drawable/emergency_exit"/>
 
 </RelativeLayout>
