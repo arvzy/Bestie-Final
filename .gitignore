@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Bestie Final/Resources/Resource.designer.cs
+/Bestie Final/Resources/Resource.designer.cs
