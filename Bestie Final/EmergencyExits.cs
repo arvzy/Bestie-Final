@@ -14,7 +14,7 @@ namespace Bestie_Final
     [Activity(Label = "EmergencyExits")]
     public class EmergencyExits : Activity
     {
-        Button eebckbtn, frstflrEbtn, mzznneEbtn, scndflrEbtn, thrdflrEbtn, frthflrEbtn, rfdckEbtn;
+        Button eebckbtn, frstflrEbtn, mzznneEbtn, scndflrEbtn, thrdflrEbtn, frthflrEbtn, rfdckEbtn, hmeEbtn;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -22,6 +22,7 @@ namespace Bestie_Final
             // Create your application here
 
             eebckbtn = FindViewById<Button>(Resource.Id.BackEmergencyExits);
+            hmeEbtn = FindViewById<Button>(Resource.Id.homeE);
             frstflrEbtn = FindViewById<Button>(Resource.Id.frstfEButton);
             mzznneEbtn = FindViewById<Button>(Resource.Id.mzznnEButton);
             scndflrEbtn = FindViewById<Button>(Resource.Id.scndfEButton); 
