@@ -1,66 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back"
-        android:id="@+id/BuildingSearchBackButton"/>    
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BuildingSearchBackButton"
+        android:layout_width="100px"
+        android:layout_height="60px"
+        android:textColor="@android:color/black"
+        app:cornerRadius="20px"
+        android:layout_marginLeft="12px"
+        style="@style/Button"
+        android:text="Back"/>
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-            
+
         <ImageView
             android:layout_height="wrap_content"
-            android:layout_width="792.0dp"
+            android:layout_width="wrap_content"
             android:padding="12dp"
-            android:layout_weight="1" 
+            android:layout_weight="1"
             android:id="@+id/BuildingSearchImageViewFirst"
-            />                   
-        
+            />
+
         <ImageView
             android:layout_height="wrap_content"
-            android:layout_width="792.0dp"
+            android:layout_width="wrap_content"
             android:padding="12dp"
-            android:layout_weight="1" 
+            android:layout_weight="1"
             android:id="@+id/BuildingSearchImageViewMezzanine"
-            /> 
+            />
 
         <ImageView
             android:layout_height="wrap_content"
-            android:layout_width="792.0dp"
+            android:layout_width="wrap_content"
             android:padding="12dp"
-            android:layout_weight="1" 
+            android:layout_weight="1"
             android:id="@+id/BuildingSearchImageViewSecondFloor"
-            /> 
+            />
 
         <ImageView
             android:layout_height="wrap_content"
-            android:layout_width="792.0dp"
+            android:layout_width="wrap_content"
             android:padding="12dp"
-            android:layout_weight="1" 
+            android:layout_weight="1"
             android:id="@+id/BuildingSearchImageViewThirdFloor"
-            /> 
+            />
 
         <ImageView
             android:layout_height="wrap_content"
-            android:layout_width="792.0dp"
+            android:layout_width="wrap_content"
             android:padding="12dp"
-            android:layout_weight="1" 
+            android:layout_weight="1"
             android:id="@+id/BuildingSearchImageViewFourthFloor"
-            /> 
+            />
 
         <ImageView
             android:layout_height="wrap_content"
-            android:layout_width="792.0dp"
+            android:layout_width="wrap_content" 
             android:padding="12dp"
-            android:layout_weight="1" 
+            android:layout_weight="1"
             android:id="@+id/BuildingSearchImageViewRoofdeck"
-            /> 
-        
+            />
+
     </RelativeLayout>
 
-    
+
 </LinearLayout>

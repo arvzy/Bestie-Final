@@ -18,7 +18,7 @@
         android:layout_height="50px"
         android:text="Back"/>
 
-    <LinearLayout
+    <LinearLayout 
         android:orientation="horizontal"
         android:layout_width="1024"
         android:layout_height="match_parent">
