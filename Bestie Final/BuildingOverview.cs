@@ -58,17 +58,17 @@ namespace Bestie_Final
 
         private void BldngB_Click(object sender, EventArgs e)
         {
-            ShowBuildingAlertDialog(Resource.Drawable.Loock);
+            ShowBuildingAlertDialog(Resource.Drawable.Locked);
         }
 
         private void BldngC_Click(object sender, EventArgs e)
         {
-            ShowBuildingAlertDialog(Resource.Drawable.Loock);
+            ShowBuildingAlertDialog(Resource.Drawable.Locked);
         }
 
         private void BldngD_Click(object sender, EventArgs e)
         {
-            ShowBuildingAlertDialog(Resource.Drawable.Loock);
+            ShowBuildingAlertDialog(Resource.Drawable.Locked);
         }
 
         private void ShowBuildingAlertDialog(int imageResource)

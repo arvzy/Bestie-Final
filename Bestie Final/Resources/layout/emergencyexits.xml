@@ -11,16 +11,28 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_gradient"/>
+        android:background="#ffff"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+        android:id="@id/homeE"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:textColor="@android:color/black"
+        android:textSize="30px"
+        app:cornerRadius="60px"
+        android:layout_marginLeft="12px"
+        style="@style/Button"
+        android:text="⌂"/>
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/BackEmergencyExits"
         android:layout_width="100px"
-        android:layout_height="80px"
-        android:background="@drawable/button_design"
-        android:layout_marginLeft="12px"
+        android:layout_height="60px"
+        android:textColor="@android:color/black"
+        app:cornerRadius="20px"
+        android:layout_marginLeft="80px"
+        style="@style/Button"
         android:text="Back"/>
-
     
 
     <LinearLayout
@@ -31,7 +43,7 @@
         <RelativeLayout
             android:layout_marginLeft="15px"
             android:layout_width="900px"
-            android:layout_height="650px">
+            android:layout_height="700px">
             <ImageView
                 android:layout_height="wrap_content"
                 android:layout_width="1200dp"
@@ -64,71 +76,83 @@
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="1f"
-                android:textColor="@color/colorAccent"
+                android:textColor="#ffff"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="20dp"
-                style="@style/Invert"
+                android:layout_marginBottom="1dp"
+                style="@style/ButtonOve"
                 android:id="@+id/frstfEButton"/>
 
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="M"
-                android:textColor="@color/colorAccent"
+                android:textColor="#ffff"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="20dp"
-                style="@style/Invert"
+                android:layout_marginBottom="1dp"
+                style="@style/ButtonOve"
                 android:id="@+id/mzznnEButton" />
 
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="2f"
-                android:textColor="@color/colorAccent"
+                android:textColor="#ffff"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="20dp"
-                style="@style/Invert"
+                android:layout_marginBottom="1dp"
+                style="@style/ButtonOve"
                 android:id="@+id/scndfEButton" />
 
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="3f"
-                android:textColor="@color/colorAccent"
+                android:textColor="#ffff"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="20dp"
-                style="@style/Invert"
+                android:layout_marginBottom="1dp"
+                style="@style/ButtonOve"
                 android:id="@+id/thrdfEButton" />
 
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="4f"
-                android:textColor="@color/colorAccent"
+                android:textColor="#ffff"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="20dp"
-                style="@style/Invert"
+                android:layout_marginBottom="1dp"
+                style="@style/ButtonOve"
                 android:id="@+id/frthfEButton"  />
 
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="rf"
-                android:textColor="@color/colorAccent"
+                android:textColor="#ffff"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="20dp"
-                style="@style/Invert"
+                android:layout_marginBottom="100dp"
+                style="@style/ButtonOve"
                 android:id="@+id/rfdckEButton"  />
 
 
         </LinearLayout> 
 
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_marginTop="635px"
+            android:layout_width="match_parent"
+            android:layout_height="110px"
+            android:background="@drawable/warning"/>
+    </RelativeLayout>
 
 </RelativeLayout>
