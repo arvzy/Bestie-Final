@@ -40,12 +40,10 @@ namespace Bestie_Final
 
             Glide.With(this)
                 .Load(Resource.Drawable.FireExitLobby)
-                .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imgviewback));
 
             Glide.With(this)
                 .Load(Resource.Drawable.Warning)
-                .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(wrnngimgview));
 
             eebckbtn.Click += Eebckbtn_Click;
@@ -61,8 +59,7 @@ namespace Bestie_Final
         private void FrstflrEbtn_Click(object sender, EventArgs e)
         {
             Glide.With(this)
-                .Load(Resource.Drawable.FireExitLobby)
-                .Listener(new MyRequestListener())
+                .Load(Resource.Drawable.FireExitLobby)                
                 .Into(new DrawableImageViewTarget(imgviewfront));
         }
 
@@ -70,7 +67,6 @@ namespace Bestie_Final
         {
             Glide.With(this)
                 .Load(Resource.Drawable.FireExitMezzanine)
-                .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imgviewfront));
         }
 
@@ -78,7 +74,6 @@ namespace Bestie_Final
         {
             Glide.With(this)
                 .Load(Resource.Drawable.FireExit2ndfloor)
-                .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imgviewfront));
         }
 
@@ -86,7 +81,6 @@ namespace Bestie_Final
         {
             Glide.With(this)
                 .Load(Resource.Drawable.FireExit3rdfloor)
-                .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imgviewfront));
         }
 
@@ -94,7 +88,6 @@ namespace Bestie_Final
         {
             Glide.With(this)
                 .Load(Resource.Drawable.FireExit4thfloor)
-                .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imgviewfront));
         }
 
@@ -102,7 +95,6 @@ namespace Bestie_Final
         {
             Glide.With(this)
                 .Load(Resource.Drawable.FireExitRoofDeck)
-                .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imgviewfront));
         }
 
