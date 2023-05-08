@@ -28,7 +28,7 @@ namespace Bestie_Final
 
         string[] suggestions;
                         
-        Button btnoverview, btnautocompletesearch;
+        Button btnoverview, btnautocompletesearch, btnabout;
         AutoCompleteTextView searchBar;
         
         protected override void OnCreate(Bundle savedInstanceState)
@@ -71,9 +71,11 @@ namespace Bestie_Final
 
             btnoverview = FindViewById<Button>(Resource.Id.BuildingOverviewButton);            
             btnautocompletesearch = FindViewById<Button>(Resource.Id.AutoCompleteSearch);
+            btnabout = FindViewById<Button>(Resource.Id.AboutButton);
 
             btnoverview.Click += Btnoverview_Click;            
             btnautocompletesearch.Click += Btnautocompletesearch_Click;
+            btnabout.Click += Btnabout_Click;
 
             searchBar.EditorAction += (sender, args) =>
             {
@@ -109,23 +111,18 @@ namespace Bestie_Final
 
         }
 
-        //public class ReverseArrayAdapter<T> : ArrayAdapter<T>
-        //{
-        //    public ReverseArrayAdapter(Context context, int resource, T[] objects) : base(context, resource, objects)
-        //    {
-        //    }
-
-        //    public override View GetView(int position, View convertView, ViewGroup parent)
-        //    {
-        //        View view = base.GetView(Count - position - 1, convertView, parent);
-        //        return view;
-        //    }
-        //}
+        private void Btnabout_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(AboutC));
+            this.StartActivity(intent);
+            Finish();
+        }
 
         private void Btnoverview_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(BuildingOverview));
             this.StartActivity(intent);
+            Finish();
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
