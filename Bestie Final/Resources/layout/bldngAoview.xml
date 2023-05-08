@@ -44,7 +44,7 @@
         <RelativeLayout
             android:layout_marginLeft="15px"
             android:layout_width="900px"
-            android:layout_height="650px">
+            android:layout_height="750px">
             <ImageView
                 android:layout_height="wrap_content"
                 android:layout_width="1200dp"
@@ -147,11 +147,5 @@
 
     </LinearLayout>
 
-    <ImageButton
-        android:layout_width="700px"
-        android:layout_height="100px"
-        android:layout_marginLeft="120px"
-        android:layout_marginTop="610px"
-        android:background="@drawable/emergency_exit"/>
-
+    
 </RelativeLayout>
