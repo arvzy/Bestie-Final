@@ -56,6 +56,7 @@ namespace Bestie_Final
         {
             var intent = new Intent(this, typeof(MainActivity));
             this.StartActivity(intent);
+            Finish();
         }
 
         private void BldngA_Click(object sender, EventArgs e)

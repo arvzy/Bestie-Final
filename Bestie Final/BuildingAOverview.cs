@@ -15,7 +15,7 @@ namespace Bestie_Final
     [Activity(Label = "BuildingAOverview")]
     public class BuildingAOverview : Activity
     {        
-        Button backbtnbldngaoview, frstflrbtn, mzznnbtn, scndflrbtn, thrdflrbtn, frthflrbtn, rfdckbtn;
+        Button backbtnbldngaoview, frstflrbtn, mzznnbtn, scndflrbtn, thrdflrbtn, frthflrbtn, rfdckbtn, homebtn;
         ImageView imageViewBAView;
         
         protected override void OnCreate(Bundle savedInstanceState)
@@ -28,6 +28,7 @@ namespace Bestie_Final
             imageViewBAView = FindViewById<ImageView>(Resource.Id.imageViewBuildingView);
 
             backbtnbldngaoview = FindViewById<Button>(Resource.Id.BackBuildingAOview);
+            homebtn = FindViewById<Button>(Resource.Id.home);
             frstflrbtn = FindViewById<Button>(Resource.Id.frstfButton);
             mzznnbtn = FindViewById<Button>(Resource.Id.mzznnButton);
             scndflrbtn = FindViewById<Button>(Resource.Id.scndfButton);
@@ -36,6 +37,7 @@ namespace Bestie_Final
             rfdckbtn = FindViewById<Button>(Resource.Id.rfdckButton);
 
             backbtnbldngaoview.Click += Backbtnbldngaoview_Click;
+            homebtn.Click += Homebtn_Click;
             frstflrbtn.Click += Frstflrbtn_Click;
             mzznnbtn.Click += Mzznnbtn_Click;
             scndflrbtn.Click += Scndflrbtn_Click;
@@ -43,7 +45,14 @@ namespace Bestie_Final
             frthflrbtn.Click += Frthflrbtn_Click;
             rfdckbtn.Click += Rfdckbtn_Click;
          
-        }        
+        }
+
+        private void Homebtn_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(MainActivity));
+            this.StartActivity(intent);
+            Finish();
+        }
 
         private void Frstflrbtn_Click(object sender, EventArgs e)
         {
@@ -78,6 +87,7 @@ namespace Bestie_Final
         {
             var intent = new Intent(this, typeof(BuildingOverview));
             this.StartActivity(intent);
+            Finish();
         }
         
     }
