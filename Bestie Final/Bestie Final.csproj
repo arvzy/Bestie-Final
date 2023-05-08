@@ -185,9 +185,6 @@
     <AndroidResource Include="Resources\drawable\testing.gif" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Loock.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\Search_icon.png" />
   </ItemGroup>
   <ItemGroup>
@@ -324,6 +321,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\emergencyexits.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Warning.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Locked.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
