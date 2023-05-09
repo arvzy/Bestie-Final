@@ -5,8 +5,9 @@
     android:layout_height="match_parent">
 
 <Button
-        android:id="@+id/AboutBackButton"
+    android:id="@+id/AboutBackButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Back"/>
+
 </LinearLayout>

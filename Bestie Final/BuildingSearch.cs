@@ -46,7 +46,7 @@ namespace Bestie_Final
                 StartActivity(intent);
 
                 // Finish the current instance of the activity
-                FinishAffinity();            
+                FinishAffinity();
             };
 
             imageView = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewFirst);
@@ -83,25 +83,25 @@ namespace Bestie_Final
                 .Load(Resource.Drawable.CompLabAGIF)
                 .Into(new DrawableImageViewTarget(imageView));
             }
-            else if (text == "Deputy School Administrator")
+            else if (text == "Deputy School Administrator" || text == "deputy school administrator" || text == "deputyschooladministrator" || text == "deputy")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.DeputyGIF)
                 .Into(new DrawableImageViewTarget(imageView));
             }
-            else if (text == "Registrar")
+            else if (text == "Registrar" || text == "registrar")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.RegistrarGIF)
                 .Into(new DrawableImageViewTarget(imageView));
             }
-            else if (text == "Female Toilet Lobby")
+            else if (text == "Female Toilet Lobby" || text == "female toilet lobby" || text == "femaletoiletlobby")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.FemaleToiletLobbyGIF)
                 .Into(new DrawableImageViewTarget(imageView));
             }
-            else if (text == "Male Toilet Lobby")
+            else if (text == "Male Toilet Lobby" || text == "male toilet lobby" || text == "maletoiletlobby")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.MaleToiletLobbyGIF)
@@ -113,16 +113,16 @@ namespace Bestie_Final
                 Glide.With(this)
                 .Load(Resource.Drawable.LibraryGIF)
                 .Listener(new MyRequestListener())
-                .Into(new DrawableImageViewTarget(imageViewM));                
+                .Into(new DrawableImageViewTarget(imageViewM));
             }
-            else if (text == "Communication")
+            else if (text == "Communication" || text == "communication")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.CommunicationGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewM));
             }
-            else if (text == "School Administrator")
+            else if (text == "School Administrator" || text == "school administrator" || text == "schooladministrator" || text == "schooladmin" || text == "admin")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.SchoolAdminGIF)
@@ -172,21 +172,21 @@ namespace Bestie_Final
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
             }
-            else if (text == "Female Toilet 2nd Floor")
+            else if (text == "Female Toilet 2nd Floor" || text == "female toilet 2nd floor" || text == "femaletoilet2ndfloor" || text == "femaletoiletsecondfloor" || text == "female toilet second floor")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.FemaleToilet2ndFloorGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
             }
-            else if (text == "Male Toilet 2nd Floor")
+            else if (text == "Male Toilet 2nd Floor" || text == "male toilet 2nd floor" || text == "maletoilet2ndfloor" || text == "maletoiletsecondfloor" || text == "male toilet second floor")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.MaleToilet2ndFloorGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
             }
-            else if (text == "Computer Laboratory B")
+            else if (text == "Computer Laboratory B" || text == "computer laboratory b" || text == "complab b" || text == "comlabb" || text == "complaboratory b")
             {
                 //3rd Floor
                 Glide.With(this)
@@ -194,49 +194,48 @@ namespace Bestie_Final
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewT));
             }
-            else if (text == "Computer Laboratory C")
+            else if (text == "Computer Laboratory C" || text == "computer laboratory c" || text == "complab c" || text == "comlabc" || text == "complaboratory c")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.CompLabCGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewT));
             }
-            else if (text == "Computer Laboratory D")
+            else if (text == "Computer Laboratory D" || text == "computer laboratory d" || text == "complab d" || text == "comlabd" || text == "complaboratory d")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.CompLabDGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewT));
             }
-            else if (text == "Computer Laboratory D")
-            {
-                Glide.With(this)
-                .Load(Resource.Drawable.CompLabDGIF)
-                .Listener(new MyRequestListener())
-                .Into(new DrawableImageViewTarget(imageViewT));
-            }
-            else if (text == "Computer Laboratory E")
+            //else if (text == "Computer Laboratory D" || text == "computer laboratory a" || text == "complab a" || text == "comlaba" || text == "complaboratory a")
+            //{
+            //    Glide.With(this)
+            //    .Load(Resource.Drawable.CompLabDGIF)
+            //    .Listener(new MyRequestListener())
+            //    .Into(new DrawableImageViewTarget(imageViewT));         
+            else if (text == "Computer Laboratory E" || text == "computer laboratory e" || text == "complab e" || text == "comlabe" || text == "complaboratory e")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.CompLabEGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewT));
             }
-            else if (text == "Computer Laboratory F")
+            else if (text == "Computer Laboratory F" || text == "computer laboratory f" || text == "complab f" || text == "comlabf" || text == "complaboratory f")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.CompLabFGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewT));
             }
-            else if (text == "Male Toilet 3rd Floor")
+            else if (text == "Male Toilet 3rd Floor" || text == "male toilet 3rd floor" || text == "maletoilet3rdfloor" || text == "maletoiletthirdfloor" || text == "male toilet third floor")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.MaleToilet3rdFloorGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewT));
             }
-            else if (text == "Female Toilet 3rd Floor")
+            else if (text == "Female Toilet 3rd Floor" || text == "female toilet 3rd floor" || text == "femaletoilet3rdfloor" || text == "femaletoiletthirdfloor" || text == "female toilet third floor")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.FemaleToilet3rdFloorGIF)
@@ -265,42 +264,42 @@ namespace Bestie_Final
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewF));
             }
-            else if (text == "Physics Laboratory")
+            else if (text == "Physics Laboratory" || text == "physicslaboratory" || text == "physics laboratory" || text == "physicslab" || text == "physics" || text == "physlab")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.PhysicsLabGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewF));
             }
-            else if (text == "Chemistry Laboratory")
+            else if (text == "Chemistry Laboratory" || text == "chemistrylaboratory" || text == "chemistry laboratory" || text == "chemistrylab" || text == "chemistry" || text == "chemlab")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.ChemLabGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewF));
             }
-            else if (text == "Electronic Laboratory")
+            else if (text == "Electronic Laboratory" || text == "electronicslaboratory" || text == "electronics laboratory" || text == "electronicslab" || text == "electronics" || text == "eleclab")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.ElectronicsLabGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewF));
             }
-            else if (text == "Female Toilet 4th Floor")
+            else if (text == "Female Toilet 4th Floor" || text == "female toilet 4th floor" || text == "femaletoilet4thfloor" || text == "femaletoiletfourthfloor" || text == "female toilet fourth floor")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.FemaleToilet4thFloorGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewF));
             }
-            else if (text == "Male Toilet 4th Floor")
+            else if (text == "Male Toilet 4th Floor" || text == "male toilet 4th floor" || text == "maletoilet4thfloor" || text == "maletoiletfourthfloor" || text == "male toilet fourth floor")
             {
                 Glide.With(this)
                 .Load(Resource.Drawable.MaleToilet4thFloorGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewF));
             }
-            else if (text == "Roofdeck")
+            else if (text == "Roofdeck" || text == "roofdeck" || text == "roof deck" || text == "roof" || text == "rooftop" || text == "roof top" || text == "Rooftop")
             {
                 //Roofdeck
                 Glide.With(this)

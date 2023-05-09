@@ -50,6 +50,7 @@ namespace Bestie_Final
         {
             var intent = new Intent(this, typeof(EmergencyExits));
             this.StartActivity(intent);
+            Finish();
         }
 
         private void Backbtnbldngoviw_Click(object sender, EventArgs e)
@@ -63,6 +64,7 @@ namespace Bestie_Final
         {
             var intent = new Intent(this, typeof(BuildingAOverview));
             this.StartActivity(intent);
+            Finish();
         }
 
         private void BldngB_Click(object sender, EventArgs e)
