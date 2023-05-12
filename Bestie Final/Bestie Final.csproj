@@ -74,6 +74,7 @@
     <AndroidAsset Include="Assets\Fonts\fatherlessbak.ttf" />
     <AndroidAsset Include="Assets\Fonts\fatherlesss.ttf" />
     <AndroidAsset Include="Assets\Fonts\fatherless.ttf" />
+    <AndroidAsset Include="Assets\Fonts\bestie-font.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />

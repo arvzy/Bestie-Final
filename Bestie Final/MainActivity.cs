@@ -42,7 +42,7 @@ namespace Bestie_Final
 
             RequestedOrientation = ScreenOrientation.Landscape;
 
-            Typeface bestieFont = Typeface.CreateFromAsset(this.Assets, "Fonts/fatherless.ttf");
+            Typeface bestieFont = Typeface.CreateFromAsset(this.Assets, "Fonts/bestie-font.ttf");
 
             ViewGroup rootLayout = FindViewById<ViewGroup>(Android.Resource.Id.Content);
             SetTypefaceForView(rootLayout, bestieFont);

@@ -64,6 +64,7 @@
             android:id="@+id/AutoCompleteSearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
             android:text="Search"
             android:visibility="visible"/>
 
@@ -71,34 +72,45 @@
             android:id="@+id/BuildingOverviewButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
             android:text="Building Overview"/>
 
-        <Button
-                android:id="@+id/AboutButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="About"/>
-
-        <TextView
+            <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="left"
             android:text="Codeez Inc."
             android:textColor="@android:color/white"
             android:id="@+id/textView1" />
+
+        <Button
+            android:id="@+id/AboutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
+            android:text="About"
+            android:visibility="invisible"/>
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Codeez Inc."
+            android:textColor="@android:color/white"
+            android:id="@+id/textView1" />-->
     </LinearLayout>
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="50px"
-            android:layout_height="40px"
-            android:layout_marginTop="412px"
-            android:layout_marginLeft="165px"
-            android:src="@drawable/search_icon"/>
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="40px"
+                android:layout_marginTop="412px"
+                android:layout_marginLeft="165px"
+                android:src="@drawable/search_icon"/>
 
-    </RelativeLayout>
+        </RelativeLayout>
     </RelativeLayout>
 
 </RelativeLayout>
