@@ -16,6 +16,10 @@
         android:layout_marginLeft="12px"
         style="@style/Button"
         android:text="Back"/>
+     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -70,5 +74,89 @@
 
     </RelativeLayout>
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:id="@+id/linearLayout1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:textSize="30px"
+                app:cornerRadius="50px"
+                android:text="1f"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/frstfButton"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:textSize="30px"
+                app:cornerRadius="50px"
+                android:text="M"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/mzznnButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:textSize="30px"
+                app:cornerRadius="50px"
+                android:text="2f"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/scndfButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:textSize="30px"
+                app:cornerRadius="50px"
+                android:text="3f"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/thrdfButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:textSize="30px"
+                app:cornerRadius="50px"
+                android:text="4f"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/frthfButton"  />
+
+            <com.google.android.material.button.MaterialButton
+                android:textSize="30px"
+                app:cornerRadius="50px"
+                android:text="rf"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/rfdckButton"  />
+
+
+        </LinearLayout> 
+
+        
+       <!-- <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:id="@+id/linearLayout1">
+
+            <ImageView
+               android:layout_width="100px"
+               android:layout_height="100px"
+               android:src="@drawable/femaletoilet2ndfloorgif"/>
+            </LinearLayout>-->
+
+        </LinearLayout>
+ 
 
 </LinearLayout>

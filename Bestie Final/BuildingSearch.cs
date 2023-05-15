@@ -19,15 +19,16 @@ using Java.Lang.Annotation;
 using Com.Bumptech.Glide.Request;
 using Com.Bumptech.Glide.Load.Engine;
 using Com.Bumptech.Glide.Load;
+using Android.Content.PM;
 
 namespace Bestie_Final
 {
     [Activity(Label = "BuildingSearch")]
     public class BuildingSearch : Activity
     {
-        Button bldngsrchbckbtn;
+        Button bldngsrchbckbtn, frstflrbtn, mzznnbtn, scndflrbtn, thrdflrbtn, frthflrbtn, rfdckbtn, homebtn;
         private ImageView imageView, imageViewM, imageViewS, imageViewT, imageViewF, imageViewR;
-        private Button startButton;
+        private DrawableImageViewTarget imageViewTarget;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -56,6 +57,18 @@ namespace Bestie_Final
             imageViewF = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewFourthFloor);
             imageViewR = FindViewById<ImageView>(Resource.Id.BuildingSearchImageViewRoofdeck);
 
+            imageViewTarget = new DrawableImageViewTarget(imageView);
+
+            
+
+            frstflrbtn = FindViewById<Button>(Resource.Id.frstfButton);
+            mzznnbtn = FindViewById<Button>(Resource.Id.mzznnButton);
+            scndflrbtn = FindViewById<Button>(Resource.Id.scndfButton);
+            thrdflrbtn = FindViewById<Button>(Resource.Id.thrdfButton);
+            frthflrbtn = FindViewById<Button>(Resource.Id.frthfButton);
+            rfdckbtn = FindViewById<Button>(Resource.Id.rfdckButton);            
+
+
             if (text == "Admissions Office" || text == "admissions office" || text == "admisions office" || text == "ADMISSIONS OFFICE")
             {
                 //Lobby
@@ -69,6 +82,8 @@ namespace Bestie_Final
                     Glide.With(this)
                     .Load(Resource.Drawable.CashierGIF)
                     .Into(new DrawableImageViewTarget(imageView));
+
+
                 }
             }
             else if (text == "Computer Laboratory A" || text == "computer laboratory a" || text == "complab a" || text == "comlaba" || text == "complaboratory a")
