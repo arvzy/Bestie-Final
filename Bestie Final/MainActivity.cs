@@ -28,7 +28,7 @@ namespace Bestie_Final
 
         string[] suggestions;
                         
-        Button btnoverview, btnautocompletesearch, btnabout;
+        Button btnoverview, btnautocompletesearch, btnabout, btninstructions;
         AutoCompleteTextView searchBar;
         
         protected override void OnCreate(Bundle savedInstanceState)
@@ -72,10 +72,12 @@ namespace Bestie_Final
             btnoverview = FindViewById<Button>(Resource.Id.BuildingOverviewButton);            
             btnautocompletesearch = FindViewById<Button>(Resource.Id.AutoCompleteSearch);
             btnabout = FindViewById<Button>(Resource.Id.AboutButton);
+            btninstructions = FindViewById<Button>(Resource.Id.InstructionsButton);
 
             btnoverview.Click += Btnoverview_Click;            
             btnautocompletesearch.Click += Btnautocompletesearch_Click;
             btnabout.Click += Btnabout_Click;
+            btninstructions.Click += Btninstructions_Click;
 
             searchBar.EditorAction += (sender, args) =>
             {
@@ -109,6 +111,13 @@ namespace Bestie_Final
             };
 
 
+        }
+
+        private void Btninstructions_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(InstructionsC));
+            this.StartActivity(intent);
+            Finish();
         }
 
         private void Btnabout_Click(object sender, EventArgs e)
