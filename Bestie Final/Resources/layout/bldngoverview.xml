@@ -36,10 +36,10 @@
         <ImageButton
             android:id="@+id/BuildingAOverview"
             android:background="@drawable/Top_a"
-            android:layout_width="297px"
-            android:layout_height="325px"
-            android:layout_marginLeft="71px"
-            android:layout_marginTop="136px"
+            android:layout_width="295px"
+            android:layout_height="332px"
+            android:layout_marginLeft="72px"
+            android:layout_marginTop="130px"
             android:text="Building A"/>
 
     </RelativeLayout>
@@ -51,10 +51,10 @@
         <ImageButton
             android:id="@+id/BuildingBOverview"
             android:background="@drawable/top_b"
-            android:layout_width="164px"
-            android:layout_height="285px"
-            android:layout_marginLeft="365px"
-            android:layout_marginTop="167px"
+            android:layout_width="167px"
+            android:layout_height="290px"
+            android:layout_marginLeft="364px"
+            android:layout_marginTop="165px"
             android:text="Building B"/>
 
     </RelativeLayout>
@@ -66,10 +66,10 @@
         <ImageButton
             android:id="@+id/BuildingCOverview"
             android:background="@drawable/top_c"
-            android:layout_width="184px"
-            android:layout_height="396px"
-            android:layout_marginLeft="506px"
-            android:layout_marginTop="66px"
+            android:layout_width="185px"
+            android:layout_height="402px"
+            android:layout_marginLeft="505px"
+            android:layout_marginTop="63px"
             android:text="Building C"/>
 
     </RelativeLayout>
