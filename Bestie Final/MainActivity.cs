@@ -19,7 +19,6 @@ using Android.Util;
 using System.Threading.Tasks;
 using Android.Media.TV;
 
-
 namespace Bestie_Final
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
@@ -30,7 +29,7 @@ namespace Bestie_Final
                         
         Button btnoverview, btnautocompletesearch, btnabout, btninstructions;
         AutoCompleteTextView searchBar;
-        
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -60,21 +59,37 @@ namespace Bestie_Final
                 if (args.ActionId == ImeAction.Search)
                 {
                     var searchText = searchBar.Text;
-                    
+
                 }
 
                 if (args.ActionId == ImeAction.Done)
                 {
-
+                    searchBar.ClearFocus();
                 }
             };
 
-            btnoverview = FindViewById<Button>(Resource.Id.BuildingOverviewButton);            
+            searchBar.FocusChange += (sender, e) =>
+            {
+                if (e.HasFocus)
+                {
+                    searchBar.Hint = "";
+                }
+                else
+                {
+                    searchBar.ClearFocus();
+                    searchBar.Hint = "Search";
+                    
+                }
+            };
+
+            Window.DecorView.ViewTreeObserver.AddOnGlobalLayoutListener(new KeyboardVisibilityListener(searchBar));
+
+            btnoverview = FindViewById<Button>(Resource.Id.BuildingOverviewButton);
             btnautocompletesearch = FindViewById<Button>(Resource.Id.AutoCompleteSearch);
             btnabout = FindViewById<Button>(Resource.Id.AboutButton);
             btninstructions = FindViewById<Button>(Resource.Id.InstructionsButton);
 
-            btnoverview.Click += Btnoverview_Click;            
+            btnoverview.Click += Btnoverview_Click;
             btnautocompletesearch.Click += Btnautocompletesearch_Click;
             btnabout.Click += Btnabout_Click;
             btninstructions.Click += Btninstructions_Click;
@@ -110,8 +125,9 @@ namespace Bestie_Final
                 }
             };
 
-
         }
+
+
 
         private void Btninstructions_Click(object sender, EventArgs e)
         {
@@ -186,5 +202,35 @@ namespace Bestie_Final
                 FinishAffinity();
             }
         }
+
+        private class KeyboardVisibilityListener : Java.Lang.Object, ViewTreeObserver.IOnGlobalLayoutListener
+        {
+            private readonly View _view;
+
+            public KeyboardVisibilityListener(View view)
+            {
+                _view = view;
+            }
+
+            public void OnGlobalLayout()
+            {
+                Rect r = new Rect();
+                _view.GetWindowVisibleDisplayFrame(r);
+
+                int heightDiff = _view.RootView.Height - (r.Bottom - r.Top);
+
+                if (heightDiff > 100) // arbitrary value to differentiate between keyboard and non-keyboard height
+                {
+                    // Keyboard is visible
+                }
+                else
+                {
+                    // Keyboard is hidden
+                    _view.ClearFocus(); // clear focus when keyboard is hidden
+                }
+            }
+        }
+
+
     }
 }
