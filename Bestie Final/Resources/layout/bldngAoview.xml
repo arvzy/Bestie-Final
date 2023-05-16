@@ -37,14 +37,16 @@
 
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <RelativeLayout
-            android:layout_marginLeft="15px"
-            android:layout_width="900px"
-            android:layout_height="750px">
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="580px">
             <ImageView
                 android:layout_height="wrap_content"
                 android:layout_width="1200dp"
@@ -66,12 +68,12 @@
 
 
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:gravity="center_vertical"
+            android:gravity="center_horizontal"
             android:id="@+id/linearLayout1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp">
@@ -83,6 +85,8 @@
                 android:textColor="@color/colorAccent"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
+                android:layout_marginLeft="170dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
                 style="@style/Invert"
                 android:id="@+id/frstfButton"/>
@@ -94,6 +98,8 @@
                 android:textColor="@color/colorAccent"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
                 style="@style/Invert"
                 android:id="@+id/mzznnButton" />
@@ -105,6 +111,8 @@
                 android:textColor="@color/colorAccent"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
                 style="@style/Invert"
                 android:id="@+id/scndfButton" />
@@ -116,6 +124,8 @@
                 android:textColor="@color/colorAccent"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
                 style="@style/Invert"
                 android:id="@+id/thrdfButton" />
@@ -127,6 +137,8 @@
                 android:textColor="@color/colorAccent"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
                 style="@style/Invert"
                 android:id="@+id/frthfButton"  />
@@ -138,6 +150,8 @@
                 android:textColor="@color/colorAccent"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
                 style="@style/Invert"
                 android:id="@+id/rfdckButton"  />
