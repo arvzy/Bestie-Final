@@ -56,32 +56,32 @@ namespace Bestie_Final
 
         private void Frstflrbtn_Click(object sender, EventArgs e)
         {
-            imageViewBAView.SetImageResource(Resource.Drawable.Floor1);
+            imageViewBAView.SetImageResource(Resource.Drawable.LobbyLayout);
         }
 
         private void Mzznnbtn_Click(object sender, EventArgs e)
         {
-            imageViewBAView.SetImageResource(Resource.Drawable.Mezzanine);
+            imageViewBAView.SetImageResource(Resource.Drawable.LibraryLayout);
         }
 
         private void Scndflrbtn_Click(object sender, EventArgs e)
         {
-            imageViewBAView.SetImageResource(Resource.Drawable.Floor2);
+            imageViewBAView.SetImageResource(Resource.Drawable.SecondFlrLayout);
         }
 
         private void Thrdflrbtn_Click(object sender, EventArgs e)
         {
-            imageViewBAView.SetImageResource(Resource.Drawable.Floor3);
+            imageViewBAView.SetImageResource(Resource.Drawable.ThirdFlrLayout);
         }
 
         private void Frthflrbtn_Click(object sender, EventArgs e)
         {
-            imageViewBAView.SetImageResource(Resource.Drawable.Floor4);
+            imageViewBAView.SetImageResource(Resource.Drawable.FourthFlrLayout);
         }
 
         private void Rfdckbtn_Click(object sender, EventArgs e)
         {
-            imageViewBAView.SetImageResource(Resource.Drawable.Roofdeck);
+            imageViewBAView.SetImageResource(Resource.Drawable.RoofDeckLayout);
         }
         private void Backbtnbldngaoview_Click(object sender, EventArgs e)
         {
