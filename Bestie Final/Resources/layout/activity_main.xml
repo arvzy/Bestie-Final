@@ -60,35 +60,41 @@
             android:imeOptions="actionDone"
             android:visibility="visible"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/AutoCompleteSearch"
-            android:layout_width="wrap_content"
+            android:layout_marginTop="5px"
+            android:layout_width="250px"
             android:layout_height="wrap_content"
             android:background="@drawable/button_design"
             android:text="Search"
+            app:cornerRadius="50px"
             android:visibility="visible"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/BuildingOverviewButton"
-            android:layout_width="wrap_content"
+            android:layout_width="250px"
             android:layout_height="wrap_content"
             android:background="@drawable/button_design"
+            app:cornerRadius="50px"
             android:text="Building Overview"/>
 
-            <Button
-                android:id="@+id/InstructionsButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_design"
-                android:text="Instructions"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="250px"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="Emergency Exits"
+            app:cornerRadius="50px"
+            android:id="@+id/EmergencyExitButton"/>
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Emergency Exits"
-                android:id="@+id/EmergencyExitButton"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/InstructionsButton"
+            android:layout_width="250px"
+            android:layout_height="wrap_content"
+            app:cornerRadius="50px"
+            android:background="@drawable/button_design"
+            android:text="Instructions"/>
 
-            <TextView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="left"
@@ -119,11 +125,17 @@
             <ImageView
                 android:layout_width="50px"
                 android:layout_height="40px"
-                android:layout_marginTop="393px"
+                android:layout_marginTop="370px"
                 android:layout_marginLeft="166px"
                 android:src="@drawable/search_icon"/>
-
+           
+            <ImageButton
+                 android:layout_width="150px"
+                android:layout_height="80px"
+                android:layout_marginTop="650px"
+                android:layout_marginLeft="12px"
+                android:background="@drawable/contacts"/>
         </RelativeLayout>
     </RelativeLayout>
-
+   
 </RelativeLayout>

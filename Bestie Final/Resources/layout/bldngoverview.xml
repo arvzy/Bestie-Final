@@ -71,41 +71,47 @@
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <ImageButton
             android:id="@+id/BuildingAOverviewPic"
             android:background="@drawable/top_a"
-            android:layout_width="128px"
-            android:layout_height="220px"
-            android:layout_marginLeft="855px"
-            android:layout_marginTop="230px"
+            android:layout_width="250px"
+            android:layout_height="320px"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="423px"
             android:text="Building D"/>
 
     <ImageButton
             android:id="@+id/BuildingBOverviewPic"
             android:background="@drawable/top_b"
-            android:layout_width="128px"
-            android:layout_height="220px"
-            android:layout_marginLeft="855px"
-            android:layout_marginTop="230px"
+            android:layout_width="260px"
+            android:layout_height="253px"
+            android:layout_marginLeft="270px"
+            android:layout_marginTop="490px"
             android:text="Building D"/>
 
     <ImageButton
             android:id="@+id/BuildingCOverviewPic"
             android:background="@drawable/top_c"
-            android:layout_width="128px"
-            android:layout_height="220px"
-            android:layout_marginLeft="855px"
-            android:layout_marginTop="230px"
+            android:layout_width="235px"
+            android:layout_height="260px"
+            android:layout_marginLeft="540px"
+            android:layout_marginTop="483px"
             android:text="Building D"/>
 
     <ImageButton
             android:id="@+id/BuildingDOverviewPic"
             android:background="@drawable/top_d"
-            android:layout_width="128px"
-            android:layout_height="220px"
-            android:layout_marginLeft="855px"
-            android:layout_marginTop="230px"
+            android:layout_width="240px"
+            android:layout_height="290px"
+            android:layout_marginLeft="785px"
+            android:layout_marginTop="453px"
             android:text="Building D"/>
+
+    </RelativeLayout>
 
     <!--<ImageButton
         android:layout_width="700px"
