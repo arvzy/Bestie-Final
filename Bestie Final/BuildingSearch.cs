@@ -325,10 +325,32 @@ namespace Bestie_Final
             else
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("NOTICE:");
-                builder.SetMessage("The place you searched for doesn't exist!");
-                builder.SetPositiveButton("OK", (dialog, which) =>
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                // Create a container layout for the button
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                // Create positive button programmatically
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                // Set layout rules for the button within the container layout
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470; 
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                // Add the button to the container layout
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
                 {
+                    // Handle positive button click event
                     Intent intent = new Intent(this, typeof(MainActivity));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivity(intent);
@@ -337,7 +359,22 @@ namespace Bestie_Final
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                // Set the container layout as the custom view of the dialog
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
                 dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+                    // Handle positive button click event
+                    Intent intent = new Intent(this, typeof(MainActivity));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivity(intent);
+
+                    Finish();
+                };
             }
 
         }

@@ -130,12 +130,20 @@
                 android:src="@drawable/search_icon"/>
            
             <ImageButton
-                 android:layout_width="150px"
+                android:layout_width="80px"
                 android:layout_height="80px"
                 android:layout_marginTop="650px"
                 android:layout_marginLeft="12px"
-                android:background="@drawable/contacts"/>
+                android:background="@drawable/contact_facebook"/>
+
+            <ImageButton
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginTop="650px"
+                android:layout_marginLeft="102px"
+                android:background="@drawable/contact_gmail"/>
+
         </RelativeLayout>
     </RelativeLayout>
    
-</RelativeLayout>
+</RelativeLayout> 

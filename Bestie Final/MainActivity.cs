@@ -18,6 +18,7 @@ using Android.Content.Res;
 using Android.Util;
 using System.Threading.Tasks;
 using Android.Media.TV;
+using Android.Graphics.Drawables;
 
 namespace Bestie_Final
 {
@@ -104,8 +105,8 @@ namespace Bestie_Final
                     if (string.IsNullOrEmpty(text))
                     {
                         AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                        builder.SetTitle("Alert");
-                        builder.SetMessage("Please enter a destination");
+                        builder.SetTitle("Oops!");
+                        builder.SetMessage("You don't have any input yet. Can you try again?");
                         builder.SetPositiveButton("OK", (dialog, which) =>
                                 {
 
@@ -188,14 +189,14 @@ namespace Bestie_Final
             if (string.IsNullOrEmpty(text))
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Alert");
-                builder.SetMessage("Please enter a destination");
+                builder.SetTitle("Oops!");
+                builder.SetMessage("You don't have any input yet. Can you try again?");
                 builder.SetPositiveButton("OK", (dialog, which) =>
                 {
 
                 });
 
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();     
                 dialog.Show();
             }   
             else
