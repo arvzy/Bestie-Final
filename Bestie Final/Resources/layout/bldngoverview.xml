@@ -36,55 +36,37 @@
         <ImageButton
             android:id="@+id/BuildingAOverview"
             android:background="@drawable/Top_a"
-            android:layout_width="295px"
-            android:layout_height="332px"
-            android:layout_marginLeft="72px"
-            android:layout_marginTop="130px"
+            android:layout_width="140px"
+            android:layout_height="230px"
+            android:layout_marginLeft="70px"
+            android:layout_marginTop="220px"
             android:text="Building A"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
         <ImageButton
             android:id="@+id/BuildingBOverview"
             android:background="@drawable/top_b"
-            android:layout_width="167px"
-            android:layout_height="290px"
-            android:layout_marginLeft="364px"
-            android:layout_marginTop="165px"
+            android:layout_width="128px"
+            android:layout_height="220px"
+            android:layout_marginLeft="350px"
+            android:layout_marginTop="265px"
             android:text="Building B"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
         <ImageButton
             android:id="@+id/BuildingCOverview"
             android:background="@drawable/top_c"
-            android:layout_width="185px"
-            android:layout_height="402px"
-            android:layout_marginLeft="505px"
-            android:layout_marginTop="63px"
+            android:layout_width="128px"
+            android:layout_height="220px"
+            android:layout_marginLeft="625px"
+            android:layout_marginTop="255px"
             android:text="Building C"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
         <ImageButton
             android:id="@+id/BuildingDOverview"
             android:background="@drawable/top_d"
-            android:layout_width="325px"
-            android:layout_height="298px"
-            android:layout_marginLeft="687px"
-            android:layout_marginTop="164px"
+            android:layout_width="128px"
+            android:layout_height="220px"
+            android:layout_marginLeft="855px"
+            android:layout_marginTop="230px"
             android:text="Building D"/>
 
     </RelativeLayout>

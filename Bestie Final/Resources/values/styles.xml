@@ -17,6 +17,10 @@
 		<item name="backgroundTint">#A0B6E9</item>
 	</style>
 
+	<style name="ButtonO" parent="Widget.MaterialComponents.Button">
+		<item name="backgroundTint">#8e918f</item>
+	</style>
+
 	<style name="ButtonOve" parent="Widget.MaterialComponents.Button">
 		<item name="backgroundTint">#eb040c</item>
 	</style>
