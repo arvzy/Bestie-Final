@@ -72,12 +72,48 @@
     </RelativeLayout>
 
     <ImageButton
+            android:id="@+id/BuildingAOverviewPic"
+            android:background="@drawable/top_a"
+            android:layout_width="128px"
+            android:layout_height="220px"
+            android:layout_marginLeft="855px"
+            android:layout_marginTop="230px"
+            android:text="Building D"/>
+
+    <ImageButton
+            android:id="@+id/BuildingBOverviewPic"
+            android:background="@drawable/top_b"
+            android:layout_width="128px"
+            android:layout_height="220px"
+            android:layout_marginLeft="855px"
+            android:layout_marginTop="230px"
+            android:text="Building D"/>
+
+    <ImageButton
+            android:id="@+id/BuildingCOverviewPic"
+            android:background="@drawable/top_c"
+            android:layout_width="128px"
+            android:layout_height="220px"
+            android:layout_marginLeft="855px"
+            android:layout_marginTop="230px"
+            android:text="Building D"/>
+
+    <ImageButton
+            android:id="@+id/BuildingDOverviewPic"
+            android:background="@drawable/top_d"
+            android:layout_width="128px"
+            android:layout_height="220px"
+            android:layout_marginLeft="855px"
+            android:layout_marginTop="230px"
+            android:text="Building D"/>
+
+    <!--<ImageButton
         android:layout_width="700px"
         android:layout_height="100px"
         android:layout_marginLeft="200px"
         android:layout_marginTop="625px"
         android:background="@drawable/emergency_exit"
-    android:id="@+id/EmergencyExitButton"/>
+    android:id="@+id/EmergencyExitButton"/>-->
 
 
 </RelativeLayout>

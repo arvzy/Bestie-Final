@@ -16,7 +16,7 @@ namespace Bestie_Final
     [Activity(Label = "BuildingOverview")]
     public class BuildingOverview : Activity
     {
-
+        ImageButton bldngApic, bldngBpic, bldngCpic, bldngDpic;
         
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,24 +34,55 @@ namespace Bestie_Final
             ImageButton bldngB = FindViewById<ImageButton>(Resource.Id.BuildingBOverview);
             ImageButton bldngC = FindViewById<ImageButton>(Resource.Id.BuildingCOverview);
             ImageButton bldngD = FindViewById<ImageButton>(Resource.Id.BuildingDOverview);
-            ImageButton eebtn = FindViewById<ImageButton>(Resource.Id.EmergencyExitButton);
+            bldngApic = FindViewById<ImageButton>(Resource.Id.BuildingAOverviewPic);
+            bldngBpic = FindViewById<ImageButton>(Resource.Id.BuildingBOverviewPic);
+            bldngCpic = FindViewById<ImageButton>(Resource.Id.BuildingCOverviewPic);
+            bldngDpic = FindViewById<ImageButton>(Resource.Id.BuildingDOverviewPic);
+
+            //ImageButton eebtn = FindViewById<ImageButton>(Resource.Id.EmergencyExitButton);
 
             backbtnbldngoviw.Click += Backbtnbldngoviw_Click;
             bldngA.Click += BldngA_Click;
             bldngB.Click += BldngB_Click;
             bldngC.Click += BldngC_Click;
             bldngD.Click += BldngD_Click;
-            eebtn.Click += Eebtn_Click;
+            bldngApic.Click += BldngApic_Click;
+            bldngBpic.Click += BldngBpic_Click;
+            bldngCpic.Click += BldngCpic_Click;
+            bldngDpic.Click += BldngDpic_Click;
+            //eebtn.Click += Eebtn_Click;
 
 
         }
 
-        private void Eebtn_Click(object sender, EventArgs e)
+        private void BldngDpic_Click(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(EmergencyExits));
+            ShowBuildingAlertDialog(Resource.Drawable.Locked);
+        }
+
+        private void BldngCpic_Click(object sender, EventArgs e)
+        {
+            ShowBuildingAlertDialog(Resource.Drawable.Locked);
+        }
+
+        private void BldngBpic_Click(object sender, EventArgs e)
+        {
+            ShowBuildingAlertDialog(Resource.Drawable.Locked);
+        }
+
+        private void BldngApic_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(BuildingAOverview));
             this.StartActivity(intent);
             Finish();
         }
+
+        //private void Eebtn_Click(object sender, EventArgs e)
+        //{
+        //    var intent = new Intent(this, typeof(EmergencyExits));
+        //    this.StartActivity(intent);
+        //    Finish();
+        //}
 
         private void Backbtnbldngoviw_Click(object sender, EventArgs e)
         {
