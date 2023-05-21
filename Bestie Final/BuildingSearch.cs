@@ -249,24 +249,33 @@ namespace Bestie_Final
 
                     frstflrbtn.Click += (sender, args) =>
                     {
-                        
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A201_1_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     mzznnbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A201_2_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     scndflrbtn.Click += (sender, args) =>
                     {
-                        
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A201_3_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
                 }
             }
             else if (text == "202")
             {
                 Glide.With(this)
-                .Load(Resource.Drawable.A202GIF)
+                .Load(Resource.Drawable.A202FullGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
 
@@ -278,24 +287,33 @@ namespace Bestie_Final
 
                     frstflrbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A202_1_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     mzznnbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A202_2_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     scndflrbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A202_3_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
                 }
             }
             else if (text == "203")
             {
                 Glide.With(this)
-                .Load(Resource.Drawable.A203GIF)
+                .Load(Resource.Drawable.A203FullGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
 
@@ -307,24 +325,33 @@ namespace Bestie_Final
 
                     frstflrbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A203_1_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     mzznnbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A203_2_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     scndflrbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A203_3_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
                 }
             }
             else if (text == "204")
             {
                 Glide.With(this)
-                .Load(Resource.Drawable.A204GIF)
+                .Load(Resource.Drawable.A204FullGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
 
@@ -336,24 +363,33 @@ namespace Bestie_Final
 
                     frstflrbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A204_1_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     mzznnbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A204_2_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     scndflrbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A204_3_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
                 }
             }
             else if (text == "205")
             {
                 Glide.With(this)
-                .Load(Resource.Drawable.A205GIF)
+                .Load(Resource.Drawable.A205FullGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
 
@@ -365,24 +401,33 @@ namespace Bestie_Final
 
                     frstflrbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A205_1_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     mzznnbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A205_2_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     scndflrbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A205_3_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
                 }
             }
             else if (text == "206")
             {
                 Glide.With(this)
-                .Load(Resource.Drawable.A206GIF)
+                .Load(Resource.Drawable.A206FullGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
 
@@ -394,24 +439,33 @@ namespace Bestie_Final
 
                     frstflrbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A206_1_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     mzznnbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A206_2_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     scndflrbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A206_3_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
                 }
             }
             else if (text == "Female Toilet 2nd Floor" || text == "female toilet 2nd floor" || text == "femaletoilet2ndfloor" || text == "femaletoiletsecondfloor" || text == "female toilet second floor")
             {
                 Glide.With(this)
-                .Load(Resource.Drawable.FemaleToilet2ndFloorGIF)
+                .Load(Resource.Drawable.FemToilet2ndFloorFullGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
 
@@ -423,24 +477,33 @@ namespace Bestie_Final
 
                     frstflrbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.FemToilet2nd_1_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     mzznnbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.FemToilet2nd_2_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     scndflrbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.FemToilet2nd_3_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
                 }
             }
             else if (text == "Male Toilet 2nd Floor" || text == "male toilet 2nd floor" || text == "maletoilet2ndfloor" || text == "maletoiletsecondfloor" || text == "male toilet second floor")
             {
                 Glide.With(this)
-                .Load(Resource.Drawable.MaleToilet2ndFloorGIF)
+                .Load(Resource.Drawable.MaleToilet2ndFloorFullGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
 
@@ -452,17 +515,26 @@ namespace Bestie_Final
 
                     frstflrbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.MaleToilet2nd_1_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     mzznnbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.MaleToilet2nd_2_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     scndflrbtn.Click += (sender, args) =>
                     {
-
+                        Glide.With(this)
+                        .Load(Resource.Drawable.MaleToilet2nd_3_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
                 }
             }
