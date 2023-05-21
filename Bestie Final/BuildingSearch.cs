@@ -141,6 +141,10 @@ namespace Bestie_Final
                         .Load(Resource.Drawable.LibraryGIF)
                         .Listener(new MyRequestListener())
                         .Into(new DrawableImageViewTarget(imageViewM));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
                     };
                 }
             }
