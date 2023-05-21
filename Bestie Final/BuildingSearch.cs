@@ -137,15 +137,15 @@ namespace Bestie_Final
                     mzznnbtn.Visibility = ViewStates.Visible;
 
                     frstflrbtn.Click += (sender, args) =>
-                    {
-                        Glide.With(this)
-                        .Load(Resource.Drawable.Library1GIF)
-                        .Listener(new MyRequestListener())
-                        .Into(new DrawableImageViewTarget(imageViewM));
+                    {                                               
+                            Glide.With(this)
+                            .Load(Resource.Drawable.Library1GIF)
+                            .Listener(new MyRequestListener())
+                            .Into(new DrawableImageViewTarget(imageViewM));
 
-                        Button button = (Button)sender;
-                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
-                        button.StartAnimation(animation);
+                            Button button = (Button)sender;
+                            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                            button.StartAnimation(animation);
                     };
 
                     mzznnbtn.Click += (sender, args) =>
@@ -257,7 +257,7 @@ namespace Bestie_Final
                         Glide.With(this)
                         .Load(Resource.Drawable.A201_1_GIF)
                         .Listener(new MyRequestListener())
-                        .Into(new DrawableImageViewTarget(imageViewM));
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     mzznnbtn.Click += (sender, args) =>
@@ -265,7 +265,7 @@ namespace Bestie_Final
                         Glide.With(this)
                         .Load(Resource.Drawable.A201_2_GIF)
                         .Listener(new MyRequestListener())
-                        .Into(new DrawableImageViewTarget(imageViewM));
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
 
                     scndflrbtn.Click += (sender, args) =>
@@ -273,7 +273,7 @@ namespace Bestie_Final
                         Glide.With(this)
                         .Load(Resource.Drawable.A201_3_GIF)
                         .Listener(new MyRequestListener())
-                        .Into(new DrawableImageViewTarget(imageViewM));
+                        .Into(new DrawableImageViewTarget(imageViewS));
                     };
                 }
             }
@@ -723,6 +723,7 @@ namespace Bestie_Final
         public class MyRequestListener : Java.Lang.Object, IRequestListener
         {
             private bool mActivityPaused = false;
+            private bool mGifFinishedPlaying = false;
 
             public bool OnLoadFailed(GlideException p0, Java.Lang.Object p1, Com.Bumptech.Glide.Request.Target.ITarget p2, bool p3)
             {
@@ -757,6 +758,7 @@ namespace Bestie_Final
             {
                 mActivityPaused = false;
             }
+
         }
     }
 }

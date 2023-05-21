@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Util;
 using Android.Views;
+using Android.Views.Animations;
 using Android.Widget;
 using System;
 using System.Collections.Generic;
@@ -52,6 +53,10 @@ namespace Bestie_Final
             var intent = new Intent(this, typeof(MainActivity));
             this.StartActivity(intent);
             Finish();
+
+            Button button = (Button)sender;
+            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+            button.StartAnimation(animation);
         }
 
         private void Frstflrbtn_Click(object sender, EventArgs e)
@@ -88,6 +93,10 @@ namespace Bestie_Final
             var intent = new Intent(this, typeof(BuildingOverview));
             this.StartActivity(intent);
             Finish();
+
+            Button button = (Button)sender;
+            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+            button.StartAnimation(animation);
         }
         
     }

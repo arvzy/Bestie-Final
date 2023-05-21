@@ -19,6 +19,7 @@ using Android.Util;
 using System.Threading.Tasks;
 using Android.Media.TV;
 using Android.Graphics.Drawables;
+using Android.Views.Animations;
 
 namespace Bestie_Final
 {
@@ -135,6 +136,10 @@ namespace Bestie_Final
             var intent = new Intent(this, typeof(EmergencyExits));
             this.StartActivity(intent);
             Finish();
+
+            Button button = (Button)sender;
+            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+            button.StartAnimation(animation);
         }
 
         private void Btninstructions_Click(object sender, EventArgs e)
@@ -142,6 +147,10 @@ namespace Bestie_Final
             var intent = new Intent(this, typeof(InstructionsC));
             this.StartActivity(intent);
             Finish();
+
+            Button button = (Button)sender;
+            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+            button.StartAnimation(animation);
         }
 
         private void Btnabout_Click(object sender, EventArgs e)
@@ -156,6 +165,10 @@ namespace Bestie_Final
             var intent = new Intent(this, typeof(BuildingOverview));
             this.StartActivity(intent);
             Finish();
+
+            Button button = (Button)sender;
+            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+            button.StartAnimation(animation);
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)

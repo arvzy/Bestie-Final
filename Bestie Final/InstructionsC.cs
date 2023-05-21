@@ -3,6 +3,7 @@ using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
+using Android.Views.Animations;
 using Android.Widget;
 using Java.Util;
 using System;
@@ -32,6 +33,10 @@ namespace Bestie_Final
             var intent = new Intent(this, typeof(MainActivity));
             this.StartActivity(intent);
             Finish();
+
+            Button button = (Button)sender;
+            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+            button.StartAnimation(animation);
         }
     }
 }
