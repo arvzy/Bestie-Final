@@ -73,7 +73,7 @@ namespace Bestie_Final
             {
                 //Lobby
                 Glide.With(this)
-                .Load(Resource.Drawable.AdmissionsOfficeGIF)
+                .Load(Resource.Drawable.AdmissionsGIF)
                 .Into(new DrawableImageViewTarget(imageView));
             }
             else if (text == "Cashier" || text == "cashier" || text == "CASHIER" || text == "cahsier")
@@ -107,13 +107,13 @@ namespace Bestie_Final
             else if (text == "Registrar" || text == "registrar")
             {
                 Glide.With(this)
-                .Load(Resource.Drawable.RegistrarGIF)
+                .Load(Resource.Drawable.RegGIF)
                 .Into(new DrawableImageViewTarget(imageView));
             }
             else if (text == "Female Toilet Lobby" || text == "female toilet lobby" || text == "femaletoiletlobby")
             {
                 Glide.With(this)
-                .Load(Resource.Drawable.FemaleToiletLobbyGIF)
+                .Load(Resource.Drawable.FemToiletLobbyGIF)
                 .Into(new DrawableImageViewTarget(imageView));
             }
             else if (text == "Male Toilet Lobby" || text == "male toilet lobby" || text == "maletoiletlobby")
