@@ -154,6 +154,23 @@ namespace Bestie_Final
                 .Load(Resource.Drawable.CommunicationGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewM));
+
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+
+                    frstflrbtn.Click += (sender, args) =>
+                    {
+                        Glide.With(this)
+                        .Load(Resource.Drawable.CommunicationGIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewM));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    };
+                }
             }
             else if (text == "School Administrator" || text == "school administrator" || text == "schooladministrator" || text == "schooladmin" || text == "admin")
             {
