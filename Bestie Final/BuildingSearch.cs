@@ -200,9 +200,39 @@ namespace Bestie_Final
             {
                 //2nd Floor
                 Glide.With(this)
-                .Load(Resource.Drawable.A201GIF)
+                .Load(Resource.Drawable.A201_1_GIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
+
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    scndflrbtn.Visibility = ViewStates.Visible;
+
+                    frstflrbtn.Click += (sender, args) =>
+                    {
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A201_1_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    };
+
+                    scndflrbtn.Click += (sender, args) =>
+                    {
+                        Glide.With(this)
+                        .Load(Resource.Drawable.A201_2_GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewS));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    };
+                }
             }
             else if (text == "202")
             {

@@ -382,16 +382,22 @@
     <AndroidResource Include="Resources\drawable\AdmissionsGIF.gif" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\CommunicationGIF.gif" />
+    <AndroidResource Include="Resources\drawable\animationbutton.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\LibraryGIF.gif" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CommunicationGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
     <AndroidResource Include="Resources\drawable\SchoolAdminGIF.gif" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\buttonpressanimation.xml" />
+    <AndroidResource Include="Resources\drawable\A201_1_GIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\A201_2_GIF.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
