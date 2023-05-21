@@ -141,15 +141,6 @@ namespace Bestie_Final
                         .Load(Resource.Drawable.LibraryGIF)
                         .Listener(new MyRequestListener())
                         .Into(new DrawableImageViewTarget(imageViewM));
-
-                        Button button = (Button)sender;
-
-                        ScaleAnimation scaleAnimation = new ScaleAnimation(1.0f, 0.9f, 1.0f, 0.9f, Dimension.RelativeToSelf, 0.5f, Dimension.RelativeToSelf, 0.5f);
-                        scaleAnimation.Duration = 100;
-                        scaleAnimation.RepeatCount = 1;
-                        scaleAnimation.RepeatMode = RepeatMode.Reverse;
-
-                        button.StartAnimation(scaleAnimation);
                     };
                 }
             }
