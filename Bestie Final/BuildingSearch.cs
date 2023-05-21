@@ -66,7 +66,7 @@ namespace Bestie_Final
             scndflrbtn = FindViewById<Button>(Resource.Id.scndfButton);
             thrdflrbtn = FindViewById<Button>(Resource.Id.thrdfButton);
             frthflrbtn = FindViewById<Button>(Resource.Id.frthfButton);
-            rfdckbtn = FindViewById<Button>(Resource.Id.rfdckButton);            
+            rfdckbtn = FindViewById<Button>(Resource.Id.rfdckButton);
 
 
             if (text == "Admissions Office" || text == "admissions office" || text == "admisions office" || text == "ADMISSIONS OFFICE")
@@ -129,6 +129,22 @@ namespace Bestie_Final
                 .Load(Resource.Drawable.LibraryGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewM));
+
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+
+                    frstflrbtn.Click += (sender, args) =>
+                    {
+                        Glide.With(this)
+                        .Load(Resource.Drawable.LibraryGIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewM));
+
+                        Button button = (Button)sender;
+                        button.StartAnimation(Android.Views.Animations.AnimationUtils.LoadAnimation(this, Resource.Drawable.buttonpressanimation));
+                    };
+                }
             }
             else if (text == "Communication" || text == "communication")
             {

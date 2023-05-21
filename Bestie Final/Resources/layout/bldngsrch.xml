@@ -90,6 +90,7 @@
                 app:cornerRadius="50px"
                 android:text="1f"
                 android:layout_width="wrap_content"
+                android:visibility="gone"
                 android:layout_height="100px"
                 android:layout_marginBottom="20dp"
                 android:id="@+id/frstfButton"/>
@@ -97,6 +98,7 @@
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
+                android:visibility="gone"
                 android:text="M"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
@@ -106,6 +108,7 @@
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
+                android:visibility="gone"
                 android:text="2f"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
@@ -115,6 +118,7 @@
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
+                android:visibility="gone"
                 android:text="3f"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
@@ -124,6 +128,7 @@
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
+                android:visibility="gone"
                 android:text="4f"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
@@ -133,6 +138,7 @@
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
+                android:visibility="gone"
                 android:text="rf"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"

@@ -209,12 +209,6 @@
     <AndroidResource Include="Resources\drawable\Roofdeck.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\CommunicationGIF.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\LibraryGIF.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\A201GIF.gif" />
   </ItemGroup>
   <ItemGroup>
@@ -237,9 +231,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\MaleToilet2ndFloorGIF.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\SchoolAdminGIF.gif" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\FemaleToilet3rdFloorGIF.gif" />
@@ -389,6 +380,18 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\AdmissionsGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CommunicationGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LibraryGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\SchoolAdminGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\buttonpressanimation.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
