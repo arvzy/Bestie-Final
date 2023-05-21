@@ -168,9 +168,13 @@ namespace Bestie_Final
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewM));
 
+                frstflrbtn.Visibility = ViewStates.Visible;
+                mzznnbtn.Visibility = ViewStates.Visible;
+
                 if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
                 {
                     frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
 
                     frstflrbtn.Click += (sender, args) =>
                     {
@@ -207,6 +211,7 @@ namespace Bestie_Final
                 if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
                 {
                     frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
 
                     frstflrbtn.Click += (sender, args) =>
                     {
@@ -252,7 +257,7 @@ namespace Bestie_Final
                         Glide.With(this)
                         .Load(Resource.Drawable.A201_1_GIF)
                         .Listener(new MyRequestListener())
-                        .Into(new DrawableImageViewTarget(imageViewS));
+                        .Into(new DrawableImageViewTarget(imageViewM));
                     };
 
                     mzznnbtn.Click += (sender, args) =>
@@ -260,7 +265,7 @@ namespace Bestie_Final
                         Glide.With(this)
                         .Load(Resource.Drawable.A201_2_GIF)
                         .Listener(new MyRequestListener())
-                        .Into(new DrawableImageViewTarget(imageViewS));
+                        .Into(new DrawableImageViewTarget(imageViewM));
                     };
 
                     scndflrbtn.Click += (sender, args) =>
@@ -268,7 +273,7 @@ namespace Bestie_Final
                         Glide.With(this)
                         .Load(Resource.Drawable.A201_3_GIF)
                         .Listener(new MyRequestListener())
-                        .Into(new DrawableImageViewTarget(imageViewS));
+                        .Into(new DrawableImageViewTarget(imageViewM));
                     };
                 }
             }
