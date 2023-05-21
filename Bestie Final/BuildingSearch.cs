@@ -134,11 +134,24 @@ namespace Bestie_Final
                 if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
                 {
                     frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
 
                     frstflrbtn.Click += (sender, args) =>
                     {
                         Glide.With(this)
-                        .Load(Resource.Drawable.LibraryGIF)
+                        .Load(Resource.Drawable.Library1GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewM));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    };
+
+                    mzznnbtn.Click += (sender, args) =>
+                    {
+                        Glide.With(this)
+                        .Load(Resource.Drawable.Library2GIF)
                         .Listener(new MyRequestListener())
                         .Into(new DrawableImageViewTarget(imageViewM));
 
@@ -162,7 +175,19 @@ namespace Bestie_Final
                     frstflrbtn.Click += (sender, args) =>
                     {
                         Glide.With(this)
-                        .Load(Resource.Drawable.CommunicationGIF)
+                        .Load(Resource.Drawable.Communication1GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewM));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    };
+
+                    mzznnbtn.Click += (sender, args) =>
+                    {
+                        Glide.With(this)
+                        .Load(Resource.Drawable.Communication2GIF)
                         .Listener(new MyRequestListener())
                         .Into(new DrawableImageViewTarget(imageViewM));
 
@@ -186,7 +211,19 @@ namespace Bestie_Final
                     frstflrbtn.Click += (sender, args) =>
                     {
                         Glide.With(this)
-                        .Load(Resource.Drawable.SchoolAdminGIF)
+                        .Load(Resource.Drawable.SchoolAdmin1GIF)
+                        .Listener(new MyRequestListener())
+                        .Into(new DrawableImageViewTarget(imageViewM));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    };
+
+                    mzznnbtn.Click += (sender, args) =>
+                    {
+                        Glide.With(this)
+                        .Load(Resource.Drawable.SchoolAdmin2GIF)
                         .Listener(new MyRequestListener())
                         .Into(new DrawableImageViewTarget(imageViewM));
 
@@ -200,37 +237,29 @@ namespace Bestie_Final
             {
                 //2nd Floor
                 Glide.With(this)
-                .Load(Resource.Drawable.A201_1_GIF)
+                .Load(Resource.Drawable.A201FullGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
 
                 if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
                 {
                     frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
                     scndflrbtn.Visibility = ViewStates.Visible;
 
                     frstflrbtn.Click += (sender, args) =>
                     {
-                        Glide.With(this)
-                        .Load(Resource.Drawable.A201_1_GIF)
-                        .Listener(new MyRequestListener())
-                        .Into(new DrawableImageViewTarget(imageViewS));
+                        
+                    };
 
-                        Button button = (Button)sender;
-                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
-                        button.StartAnimation(animation);
+                    mzznnbtn.Click += (sender, args) =>
+                    {
+
                     };
 
                     scndflrbtn.Click += (sender, args) =>
                     {
-                        Glide.With(this)
-                        .Load(Resource.Drawable.A201_2_GIF)
-                        .Listener(new MyRequestListener())
-                        .Into(new DrawableImageViewTarget(imageViewS));
-
-                        Button button = (Button)sender;
-                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
-                        button.StartAnimation(animation);
+                        
                     };
                 }
             }
@@ -240,6 +269,28 @@ namespace Bestie_Final
                 .Load(Resource.Drawable.A202GIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
+
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
+                    scndflrbtn.Visibility = ViewStates.Visible;
+
+                    frstflrbtn.Click += (sender, args) =>
+                    {
+
+                    };
+
+                    mzznnbtn.Click += (sender, args) =>
+                    {
+
+                    };
+
+                    scndflrbtn.Click += (sender, args) =>
+                    {
+
+                    };
+                }
             }
             else if (text == "203")
             {
@@ -247,6 +298,28 @@ namespace Bestie_Final
                 .Load(Resource.Drawable.A203GIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
+
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
+                    scndflrbtn.Visibility = ViewStates.Visible;
+
+                    frstflrbtn.Click += (sender, args) =>
+                    {
+
+                    };
+
+                    mzznnbtn.Click += (sender, args) =>
+                    {
+
+                    };
+
+                    scndflrbtn.Click += (sender, args) =>
+                    {
+
+                    };
+                }
             }
             else if (text == "204")
             {
@@ -254,6 +327,28 @@ namespace Bestie_Final
                 .Load(Resource.Drawable.A204GIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
+
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
+                    scndflrbtn.Visibility = ViewStates.Visible;
+
+                    frstflrbtn.Click += (sender, args) =>
+                    {
+
+                    };
+
+                    mzznnbtn.Click += (sender, args) =>
+                    {
+
+                    };
+
+                    scndflrbtn.Click += (sender, args) =>
+                    {
+
+                    };
+                }
             }
             else if (text == "205")
             {
@@ -261,6 +356,28 @@ namespace Bestie_Final
                 .Load(Resource.Drawable.A205GIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
+
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
+                    scndflrbtn.Visibility = ViewStates.Visible;
+
+                    frstflrbtn.Click += (sender, args) =>
+                    {
+
+                    };
+
+                    mzznnbtn.Click += (sender, args) =>
+                    {
+
+                    };
+
+                    scndflrbtn.Click += (sender, args) =>
+                    {
+
+                    };
+                }
             }
             else if (text == "206")
             {
@@ -268,6 +385,28 @@ namespace Bestie_Final
                 .Load(Resource.Drawable.A206GIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
+
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
+                    scndflrbtn.Visibility = ViewStates.Visible;
+
+                    frstflrbtn.Click += (sender, args) =>
+                    {
+
+                    };
+
+                    mzznnbtn.Click += (sender, args) =>
+                    {
+
+                    };
+
+                    scndflrbtn.Click += (sender, args) =>
+                    {
+
+                    };
+                }
             }
             else if (text == "Female Toilet 2nd Floor" || text == "female toilet 2nd floor" || text == "femaletoilet2ndfloor" || text == "femaletoiletsecondfloor" || text == "female toilet second floor")
             {
@@ -275,6 +414,28 @@ namespace Bestie_Final
                 .Load(Resource.Drawable.FemaleToilet2ndFloorGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
+
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
+                    scndflrbtn.Visibility = ViewStates.Visible;
+
+                    frstflrbtn.Click += (sender, args) =>
+                    {
+
+                    };
+
+                    mzznnbtn.Click += (sender, args) =>
+                    {
+
+                    };
+
+                    scndflrbtn.Click += (sender, args) =>
+                    {
+
+                    };
+                }
             }
             else if (text == "Male Toilet 2nd Floor" || text == "male toilet 2nd floor" || text == "maletoilet2ndfloor" || text == "maletoiletsecondfloor" || text == "male toilet second floor")
             {
@@ -282,6 +443,28 @@ namespace Bestie_Final
                 .Load(Resource.Drawable.MaleToilet2ndFloorGIF)
                 .Listener(new MyRequestListener())
                 .Into(new DrawableImageViewTarget(imageViewS));
+
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
+                    scndflrbtn.Visibility = ViewStates.Visible;
+
+                    frstflrbtn.Click += (sender, args) =>
+                    {
+
+                    };
+
+                    mzznnbtn.Click += (sender, args) =>
+                    {
+
+                    };
+
+                    scndflrbtn.Click += (sender, args) =>
+                    {
+
+                    };
+                }
             }
             else if (text == "Computer Laboratory B" || text == "computer laboratory b" || text == "complab b" || text == "comlabb" || text == "complaboratory b")
             {
