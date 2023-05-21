@@ -1,5 +1,5 @@
 ﻿<set xmlns:android="http://schemas.android.com/apk/res/android"
-     android:shareInterpolator="false">
+    android:shareInterpolator="false">
 	<objectAnimator
         android:propertyName="scaleX"
         android:valueFrom="1.0"
