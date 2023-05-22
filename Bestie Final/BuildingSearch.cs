@@ -142,9 +142,7 @@ namespace Bestie_Final
                 .Into(new DrawableImageViewTarget(imageViewM));
 
                 if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
-                {
-                    frstflrbtn.Visibility = ViewStates.Visible;
-                    mzznnbtn.Visibility = ViewStates.Visible;
+                {                    
 
                     frstflrbtn.Click += (sender, args) =>
                     {
