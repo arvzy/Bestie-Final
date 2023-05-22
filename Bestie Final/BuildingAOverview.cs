@@ -17,7 +17,7 @@ namespace Bestie_Final
     {        
         Button backbtnbldngaoview, frstflrbtn, mzznnbtn, scndflrbtn, thrdflrbtn, frthflrbtn, rfdckbtn, homebtn;
         ImageView imageViewBAView;
-        ImageButton regimgbtn, cshrimgbtn, dptyimgbtn, admssnsoffcimgbtn, cmplbAimgbtn, femtoillbbyimgbtn, maltoillbbyimgbtn, guidimgbtn, stdntsrvcimgbtn;
+        ImageButton regimgbtn, cshrimgbtn, dptyimgbtn, admssnsoffcimgbtn, complbAimgbtn, femtoillbbyimgbtn, maltoillbbyimgbtn, guidimgbtn, stdntsrvcimgbtn;
         ImageButton lbryimgbtn, cmmnctnimgbtn, schladmnimgbtn;
         ImageButton a201imgbtn, a202imgbtn, a203imgbtn, a204imgbtn, a205imgbtn, a206imgbtn, femtoil2ndflrimgbtn, maltoil2ndflrimgbtn;
         ImageButton complabBimgbtn, complabCimgbtn, complabDimgbtn, complabEimgbtn, complabFimgbtn, femtoil3rdflrimgbtn, maltoil3rdflrimgbtn;
@@ -55,7 +55,7 @@ namespace Bestie_Final
             regimgbtn = FindViewById<ImageButton>(Resource.Id.RegistrarClick);
             cshrimgbtn = FindViewById<ImageButton>(Resource.Id.CashierClick);
             dptyimgbtn = FindViewById<ImageButton>(Resource.Id.DeputyClick);
-            cmplbAimgbtn = FindViewById<ImageButton>(Resource.Id.CompLabAClick);
+            complbAimgbtn = FindViewById<ImageButton>(Resource.Id.CompLabAClick);
             admssnsoffcimgbtn = FindViewById<ImageButton>(Resource.Id.AdmissionsOfficeClick);
             femtoillbbyimgbtn = FindViewById<ImageButton>(Resource.Id.FemToiletLobbyClick);
             maltoillbbyimgbtn = FindViewById<ImageButton>(Resource.Id.MaleToiletLobbyClick);
@@ -81,6 +81,15 @@ namespace Bestie_Final
             femtoil2ndflrimgbtn = FindViewById<ImageButton>(Resource.Id.FemToilet2ndFloorClick);
             maltoil2ndflrimgbtn = FindViewById<ImageButton>(Resource.Id.MaleToilet2ndFloorClick);
 
+            a201imgbtn.Visibility = ViewStates.Gone;
+            a202imgbtn.Visibility = ViewStates.Gone;
+            a203imgbtn.Visibility = ViewStates.Gone;
+            a204imgbtn.Visibility = ViewStates.Gone;
+            a205imgbtn.Visibility = ViewStates.Gone;
+            a206imgbtn.Visibility = ViewStates.Gone;
+            femtoil2ndflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil2ndflrimgbtn.Visibility = ViewStates.Gone;
+
             //Third Floor
             complabBimgbtn = FindViewById<ImageButton>(Resource.Id.CompLabBClick);
             complabCimgbtn = FindViewById<ImageButton>(Resource.Id.CompLabCClick);
@@ -89,6 +98,14 @@ namespace Bestie_Final
             complabFimgbtn = FindViewById<ImageButton>(Resource.Id.CompLabFClick);
             femtoil3rdflrimgbtn = FindViewById<ImageButton>(Resource.Id.FemToilet3rdFloorClick);
             maltoil3rdflrimgbtn = FindViewById<ImageButton>(Resource.Id.MaleToilet3rdFloorClick);
+
+            complabBimgbtn.Visibility = ViewStates.Gone;
+            complabCimgbtn.Visibility = ViewStates.Gone;
+            complabDimgbtn.Visibility = ViewStates.Gone;
+            complabEimgbtn.Visibility = ViewStates.Gone;
+            complabFimgbtn.Visibility = ViewStates.Gone;
+            femtoil3rdflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil3rdflrimgbtn.Visibility = ViewStates.Gone;
 
             //Fourth Floor
             a401imgbtn = FindViewById<ImageButton>(Resource.Id.A401);
@@ -100,8 +117,21 @@ namespace Bestie_Final
             femtoil4thflrimgbtn = FindViewById<ImageButton>(Resource.Id.FemToilet4thFloorClick);
             maltoil4thflrimgbtn = FindViewById<ImageButton>(Resource.Id.MaleToilet4thFloorClick);
 
+            a401imgbtn.Visibility = ViewStates.Gone;
+            a402imgbtn.Visibility = ViewStates.Gone;
+            a403imgbtn.Visibility = ViewStates.Gone;
+            a404imgbtn.Visibility = ViewStates.Gone;
+            a405imgbtn.Visibility = ViewStates.Gone;
+            a406imgbtn.Visibility = ViewStates.Gone;
+            femtoil4thflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil4thflrimgbtn.Visibility = ViewStates.Gone;
+
             //Roofdeck
             rfdckimgbtn = FindViewById<ImageButton>(Resource.Id.RoofdeckClick);
+
+            rfdckimgbtn.Visibility = ViewStates.Gone;
+
+
 
             regimgbtn.Click += (sender, args) =>
             {
@@ -109,14 +139,11 @@ namespace Bestie_Final
                 builder.SetTitle("Oops!");
                 builder.SetMessage("");
 
-                // Create a container layout for the button
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
-                // Create positive button programmatically
                 Button positiveButton = new Button(this);
                 positiveButton.Text = "OK";
 
-                // Set layout rules for the button within the container layout
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
@@ -126,12 +153,10 @@ namespace Bestie_Final
 
                 positiveButton.LayoutParameters = buttonParams;
 
-                // Add the button to the container layout
                 containerLayout.AddView(positiveButton);
 
                 builder.SetPositiveButton("", (dialog, which) =>
                 {
-                    // Handle positive button click event
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
@@ -139,7 +164,6 @@ namespace Bestie_Final
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
-                // Set the container layout as the custom view of the dialog
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
                 dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
@@ -147,14 +171,375 @@ namespace Bestie_Final
 
                 positiveButton.Click += (sender, e) =>
                 {
-                    // Handle positive button click event
-                    dialog.Dismiss(); // Dismiss the dialog
 
-                    // Optionally, remove the following line to prevent the current activity from being finished
+                    dialog.Dismiss(); 
+
+                    // Finish();
+                };
+            };
+
+            cshrimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            dptyimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            admssnsoffcimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            complbAimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            femtoillbbyimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            maltoillbbyimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            stdntsrvcimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            guidimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
                     // Finish();
                 };
             };
         }
+
+
 
         private void Homebtn_Click(object sender, EventArgs e)
         {
@@ -166,31 +551,1862 @@ namespace Bestie_Final
         private void Frstflrbtn_Click(object sender, EventArgs e)
         {
             imageViewBAView.SetImageResource(Resource.Drawable.LobbyLayout);
+
+            regimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            cshrimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            dptyimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            admssnsoffcimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            complbAimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            femtoillbbyimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            maltoillbbyimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            stdntsrvcimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            guidimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            lbryimgbtn.Visibility = ViewStates.Gone;
+            cmmnctnimgbtn.Visibility = ViewStates.Gone;
+            schladmnimgbtn.Visibility = ViewStates.Gone;
+
+            a201imgbtn.Visibility = ViewStates.Gone;
+            a202imgbtn.Visibility = ViewStates.Gone;
+            a203imgbtn.Visibility = ViewStates.Gone;
+            a204imgbtn.Visibility = ViewStates.Gone;
+            a205imgbtn.Visibility = ViewStates.Gone;
+            a206imgbtn.Visibility = ViewStates.Gone;
+            femtoil2ndflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil2ndflrimgbtn.Visibility = ViewStates.Gone;
+
+            complabBimgbtn.Visibility = ViewStates.Gone;
+            complabCimgbtn.Visibility = ViewStates.Gone;
+            complabDimgbtn.Visibility = ViewStates.Gone;
+            complabEimgbtn.Visibility = ViewStates.Gone;
+            complabFimgbtn.Visibility = ViewStates.Gone;
+            femtoil3rdflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil3rdflrimgbtn.Visibility = ViewStates.Gone;
+
+            a401imgbtn.Visibility = ViewStates.Gone;
+            a402imgbtn.Visibility = ViewStates.Gone;
+            a403imgbtn.Visibility = ViewStates.Gone;
+            a404imgbtn.Visibility = ViewStates.Gone;
+            a405imgbtn.Visibility = ViewStates.Gone;
+            a406imgbtn.Visibility = ViewStates.Gone;
+            femtoil4thflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil4thflrimgbtn.Visibility = ViewStates.Gone;
+
+            rfdckimgbtn.Visibility = ViewStates.Gone;
         }
 
         private void Mzznnbtn_Click(object sender, EventArgs e)
         {
             imageViewBAView.SetImageResource(Resource.Drawable.LibraryLayout);
+
+            lbryimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            schladmnimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            cmmnctnimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            regimgbtn.Visibility = ViewStates.Gone;
+            cshrimgbtn.Visibility = ViewStates.Gone;
+            dptyimgbtn.Visibility = ViewStates.Gone;
+            complbAimgbtn.Visibility = ViewStates.Gone;
+            admssnsoffcimgbtn.Visibility = ViewStates.Gone;
+            femtoillbbyimgbtn.Visibility = ViewStates.Gone;
+            maltoillbbyimgbtn.Visibility = ViewStates.Gone;
+            guidimgbtn.Visibility = ViewStates.Gone;
+            stdntsrvcimgbtn.Visibility = ViewStates.Gone;
+
+            a201imgbtn.Visibility = ViewStates.Gone;
+            a202imgbtn.Visibility = ViewStates.Gone;
+            a203imgbtn.Visibility = ViewStates.Gone;
+            a204imgbtn.Visibility = ViewStates.Gone;
+            a205imgbtn.Visibility = ViewStates.Gone;
+            a206imgbtn.Visibility = ViewStates.Gone;
+            femtoil2ndflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil2ndflrimgbtn.Visibility = ViewStates.Gone;
+
+            complabBimgbtn.Visibility = ViewStates.Gone;
+            complabCimgbtn.Visibility = ViewStates.Gone;
+            complabDimgbtn.Visibility = ViewStates.Gone;
+            complabEimgbtn.Visibility = ViewStates.Gone;
+            complabFimgbtn.Visibility = ViewStates.Gone;
+            femtoil3rdflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil3rdflrimgbtn.Visibility = ViewStates.Gone;
+
+            a401imgbtn.Visibility = ViewStates.Gone;
+            a402imgbtn.Visibility = ViewStates.Gone;
+            a403imgbtn.Visibility = ViewStates.Gone;
+            a404imgbtn.Visibility = ViewStates.Gone;
+            a405imgbtn.Visibility = ViewStates.Gone;
+            a406imgbtn.Visibility = ViewStates.Gone;
+            femtoil4thflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil4thflrimgbtn.Visibility = ViewStates.Gone;
+
+            rfdckimgbtn.Visibility = ViewStates.Gone;
         }
 
         private void Scndflrbtn_Click(object sender, EventArgs e)
         {
             imageViewBAView.SetImageResource(Resource.Drawable.SecondFlrLayout);
+
+            a201imgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            a202imgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            a203imgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            a204imgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            a205imgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            a206imgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            maltoil2ndflrimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            femtoil2ndflrimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            regimgbtn.Visibility = ViewStates.Gone;
+            cshrimgbtn.Visibility = ViewStates.Gone;
+            dptyimgbtn.Visibility = ViewStates.Gone;
+            complbAimgbtn.Visibility = ViewStates.Gone;
+            admssnsoffcimgbtn.Visibility = ViewStates.Gone;
+            femtoillbbyimgbtn.Visibility = ViewStates.Gone;
+            maltoillbbyimgbtn.Visibility = ViewStates.Gone;
+            guidimgbtn.Visibility = ViewStates.Gone;
+            stdntsrvcimgbtn.Visibility = ViewStates.Gone;
+
+            lbryimgbtn.Visibility = ViewStates.Gone;
+            cmmnctnimgbtn.Visibility = ViewStates.Gone;
+            schladmnimgbtn.Visibility = ViewStates.Gone;
+
+            complabBimgbtn.Visibility = ViewStates.Gone;
+            complabCimgbtn.Visibility = ViewStates.Gone;
+            complabDimgbtn.Visibility = ViewStates.Gone;
+            complabEimgbtn.Visibility = ViewStates.Gone;
+            complabFimgbtn.Visibility = ViewStates.Gone;
+            femtoil3rdflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil3rdflrimgbtn.Visibility = ViewStates.Gone;
+
+            a401imgbtn.Visibility = ViewStates.Gone;
+            a402imgbtn.Visibility = ViewStates.Gone;
+            a403imgbtn.Visibility = ViewStates.Gone;
+            a404imgbtn.Visibility = ViewStates.Gone;
+            a405imgbtn.Visibility = ViewStates.Gone;
+            a406imgbtn.Visibility = ViewStates.Gone;
+            femtoil4thflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil4thflrimgbtn.Visibility = ViewStates.Gone;
+
+            rfdckimgbtn.Visibility = ViewStates.Gone;
         }
 
         private void Thrdflrbtn_Click(object sender, EventArgs e)
         {
             imageViewBAView.SetImageResource(Resource.Drawable.ThirdFlrLayout);
+
+            complabBimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            complabCimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            complabDimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            complabEimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            complabFimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            maltoil3rdflrimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            femtoil3rdflrimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            regimgbtn.Visibility = ViewStates.Gone;
+            cshrimgbtn.Visibility = ViewStates.Gone;
+            dptyimgbtn.Visibility = ViewStates.Gone;
+            complbAimgbtn.Visibility = ViewStates.Gone;
+            admssnsoffcimgbtn.Visibility = ViewStates.Gone;
+            femtoillbbyimgbtn.Visibility = ViewStates.Gone;
+            maltoillbbyimgbtn.Visibility = ViewStates.Gone;
+            guidimgbtn.Visibility = ViewStates.Gone;
+            stdntsrvcimgbtn.Visibility = ViewStates.Gone;
+
+            lbryimgbtn.Visibility = ViewStates.Gone;
+            cmmnctnimgbtn.Visibility = ViewStates.Gone;
+            schladmnimgbtn.Visibility = ViewStates.Gone;
+
+            a201imgbtn.Visibility = ViewStates.Gone;
+            a202imgbtn.Visibility = ViewStates.Gone;
+            a203imgbtn.Visibility = ViewStates.Gone;
+            a204imgbtn.Visibility = ViewStates.Gone;
+            a205imgbtn.Visibility = ViewStates.Gone;
+            a206imgbtn.Visibility = ViewStates.Gone;
+            femtoil2ndflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil2ndflrimgbtn.Visibility = ViewStates.Gone;
+
+            a401imgbtn.Visibility = ViewStates.Gone;
+            a402imgbtn.Visibility = ViewStates.Gone;
+            a403imgbtn.Visibility = ViewStates.Gone;
+            a404imgbtn.Visibility = ViewStates.Gone;
+            a405imgbtn.Visibility = ViewStates.Gone;
+            a406imgbtn.Visibility = ViewStates.Gone;
+            femtoil4thflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil4thflrimgbtn.Visibility = ViewStates.Gone;
+
+            rfdckimgbtn.Visibility = ViewStates.Gone;
         }
 
         private void Frthflrbtn_Click(object sender, EventArgs e)
         {
             imageViewBAView.SetImageResource(Resource.Drawable.FourthFlrLayout);
+
+            a401imgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            a402imgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            a403imgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            a404imgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            a405imgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            a406imgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            maltoil4thflrimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            femtoil4thflrimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            regimgbtn.Visibility = ViewStates.Gone;
+            cshrimgbtn.Visibility = ViewStates.Gone;
+            dptyimgbtn.Visibility = ViewStates.Gone;
+            complbAimgbtn.Visibility = ViewStates.Gone;
+            admssnsoffcimgbtn.Visibility = ViewStates.Gone;
+            femtoillbbyimgbtn.Visibility = ViewStates.Gone;
+            maltoillbbyimgbtn.Visibility = ViewStates.Gone;
+            guidimgbtn.Visibility = ViewStates.Gone;
+            stdntsrvcimgbtn.Visibility = ViewStates.Gone;
+
+            lbryimgbtn.Visibility = ViewStates.Gone;
+            cmmnctnimgbtn.Visibility = ViewStates.Gone;
+            schladmnimgbtn.Visibility = ViewStates.Gone;
+
+            a201imgbtn.Visibility = ViewStates.Gone;
+            a202imgbtn.Visibility = ViewStates.Gone;
+            a203imgbtn.Visibility = ViewStates.Gone;
+            a204imgbtn.Visibility = ViewStates.Gone;
+            a205imgbtn.Visibility = ViewStates.Gone;
+            a206imgbtn.Visibility = ViewStates.Gone;
+            femtoil2ndflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil2ndflrimgbtn.Visibility = ViewStates.Gone;
+
+            complabBimgbtn.Visibility = ViewStates.Gone;
+            complabCimgbtn.Visibility = ViewStates.Gone;
+            complabDimgbtn.Visibility = ViewStates.Gone;
+            complabEimgbtn.Visibility = ViewStates.Gone;
+            complabFimgbtn.Visibility = ViewStates.Gone;
+            femtoil3rdflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil3rdflrimgbtn.Visibility = ViewStates.Gone;
+
+            rfdckimgbtn.Visibility = ViewStates.Gone;
         }
 
         private void Rfdckbtn_Click(object sender, EventArgs e)
         {
             imageViewBAView.SetImageResource(Resource.Drawable.RoofDeckLayout);
+
+            rfdckbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            regimgbtn.Visibility = ViewStates.Gone;
+            cshrimgbtn.Visibility = ViewStates.Gone;
+            dptyimgbtn.Visibility = ViewStates.Gone;
+            complbAimgbtn.Visibility = ViewStates.Gone;
+            admssnsoffcimgbtn.Visibility = ViewStates.Gone;
+            femtoillbbyimgbtn.Visibility = ViewStates.Gone;
+            maltoillbbyimgbtn.Visibility = ViewStates.Gone;
+            guidimgbtn.Visibility = ViewStates.Gone;
+            stdntsrvcimgbtn.Visibility = ViewStates.Gone;
+
+            lbryimgbtn.Visibility = ViewStates.Gone;
+            cmmnctnimgbtn.Visibility = ViewStates.Gone;
+            schladmnimgbtn.Visibility = ViewStates.Gone;
+
+            a201imgbtn.Visibility = ViewStates.Gone;
+            a202imgbtn.Visibility = ViewStates.Gone;
+            a203imgbtn.Visibility = ViewStates.Gone;
+            a204imgbtn.Visibility = ViewStates.Gone;
+            a205imgbtn.Visibility = ViewStates.Gone;
+            a206imgbtn.Visibility = ViewStates.Gone;
+            femtoil2ndflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil2ndflrimgbtn.Visibility = ViewStates.Gone;
+
+            complabBimgbtn.Visibility = ViewStates.Gone;
+            complabCimgbtn.Visibility = ViewStates.Gone;
+            complabDimgbtn.Visibility = ViewStates.Gone;
+            complabEimgbtn.Visibility = ViewStates.Gone;
+            complabFimgbtn.Visibility = ViewStates.Gone;
+            femtoil3rdflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil3rdflrimgbtn.Visibility = ViewStates.Gone;
+
+            a401imgbtn.Visibility = ViewStates.Gone;
+            a402imgbtn.Visibility = ViewStates.Gone;
+            a403imgbtn.Visibility = ViewStates.Gone;
+            a404imgbtn.Visibility = ViewStates.Gone;
+            a405imgbtn.Visibility = ViewStates.Gone;
+            a406imgbtn.Visibility = ViewStates.Gone;
+            femtoil4thflrimgbtn.Visibility = ViewStates.Gone;
+            maltoil4thflrimgbtn.Visibility = ViewStates.Gone;
+
         }
         private void Backbtnbldngaoview_Click(object sender, EventArgs e)
         {
