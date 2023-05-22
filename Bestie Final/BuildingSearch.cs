@@ -138,37 +138,32 @@ namespace Bestie_Final
                                     
                     frstflrbtn.Click += (sender, args) =>
                     {
-                        if (!isLibraryGifPlaying)
-                        {
-                            if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                         if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                             {
                                 Glide.With(this)
                                     .Load(Resource.Drawable.Library1GIF)
                                     .Listener(new MyRequestListener())
-                                    .Into(new DrawableImageViewTarget(imageViewM));
+                                    .Into(new DrawableImageViewTarget(imageView));
 
                                 Button button = (Button)sender;
                                 Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
                                 button.StartAnimation(animation);
-                            }
-                        }
+                         }                       
                     };
 
                     mzznnbtn.Click += (sender, args) =>
                     {
-                        if (!isLibraryGifPlaying)
-                        {
-                            if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
-                            {
-                                Glide.With(this)
-                                    .Load(Resource.Drawable.Library2GIF)
-                                    .Listener(new MyRequestListener())
-                                    .Into(new DrawableImageViewTarget(imageViewM));
 
-                                Button button = (Button)sender;
-                                Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
-                                button.StartAnimation(animation);
-                            }
+                        if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                        {
+                            Glide.With(this)
+                                .Load(Resource.Drawable.Library2GIF)
+                                .Listener(new MyRequestListener())
+                                .Into(new DrawableImageViewTarget(imageView));
+
+                            Button button = (Button)sender;
+                            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                            button.StartAnimation(animation);
                         }
                     };
                 }
