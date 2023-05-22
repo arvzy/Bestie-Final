@@ -128,11 +128,9 @@ namespace Bestie_Final
                 builder.SetPositiveButton("", (dialog, which) =>
                 {
                     // Handle positive button click event
-                    Intent intent = new Intent(this, typeof(MainActivity));
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivity(intent);
-
-                    Finish();
+                    StartActivityForResult(intent, 1);
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
@@ -146,13 +144,24 @@ namespace Bestie_Final
                 positiveButton.Click += (sender, e) =>
                 {
                     // Handle positive button click event
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivity(intent);
+                    dialog.Dismiss(); // Dismiss the dialog
 
-                    Finish();
+                    // Optionally, remove the following line to prevent the current activity from being finished
+                    // Finish();
                 };
             };
+        }
+
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+
+            if (requestCode == 1 && resultCode == Result.Ok)
+            {
+                // Handle the result from MainActivity
+                // Optionally, finish the current activity here if needed
+                // Finish();
+            }
         }
 
         private void Homebtn_Click(object sender, EventArgs e)
