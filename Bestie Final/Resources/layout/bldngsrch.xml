@@ -7,6 +7,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px">
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/BuildingSearchBackButton"
         android:layout_width="100px"
@@ -16,7 +20,20 @@
         android:layout_marginLeft="12px"
         style="@style/Button"
         android:text="Back"/>
-     <LinearLayout
+        <TextView
+            android:text="Note: Once the pointers stop moving, you can only click or interact with the buttons below"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12px"
+            android:textSize="17px"
+            android:textColor="#808080"
+            android:id="@+id/textView1" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
