@@ -263,31 +263,50 @@ namespace Bestie_Final
                         frstflrbtn.Visibility = ViewStates.Visible;
                         mzznnbtn.Visibility = ViewStates.Visible;
                         scndflrbtn.Visibility = ViewStates.Visible;
-
-                        frstflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.A201_1_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
-
-                        mzznnbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.A201_2_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
-
-                        scndflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.A201_3_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
                     }
+
+                    frstflrbtn.Click += (sender, args) =>
+                    {
+                        if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                        {
+                            Glide.With(this)
+                                .Load(Resource.Drawable.A201_1_GIF)
+                                .Into(new DrawableImageViewTarget(imageViewR));
+
+                            Button button = (Button)sender;
+                            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                            button.StartAnimation(animation);
+                        }
+                    };
+
+                    mzznnbtn.Click += (sender, args) =>
+                    {
+
+                        if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                        {
+                            Glide.With(this)
+                                .Load(Resource.Drawable.A201_2_GIF)
+                                .Into(new DrawableImageViewTarget(imageViewR));
+
+                            Button button = (Button)sender;
+                            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                            button.StartAnimation(animation);
+                        }
+                    };
+
+                scndflrbtn.Click += (sender, args) =>
+                {
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    {
+                        Glide.With(this)
+                            .Load(Resource.Drawable.A201_3_GIF)
+                            .Into(new DrawableImageViewTarget(imageViewR));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    }
+                };
                 }
                 else if (text == "202")
                 {
@@ -296,36 +315,55 @@ namespace Bestie_Final
                     .Listener(new MyRequestListener())
                     .Into(new DrawableImageViewTarget(imageViewS));
 
-                    if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
+                    scndflrbtn.Visibility = ViewStates.Visible;
+                }
+
+                frstflrbtn.Click += (sender, args) =>
+                {
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
-                        frstflrbtn.Visibility = ViewStates.Visible;
-                        mzznnbtn.Visibility = ViewStates.Visible;
-                        scndflrbtn.Visibility = ViewStates.Visible;
-
-                        frstflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
+                        Glide.With(this)
                             .Load(Resource.Drawable.A202_1_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
+                            .Into(new DrawableImageViewTarget(imageViewR));
 
-                        mzznnbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.A202_2_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
-
-                        scndflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.A202_3_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
                     }
+                };
+
+                mzznnbtn.Click += (sender, args) =>
+                {
+
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    {
+                        Glide.With(this)
+                            .Load(Resource.Drawable.A202_2_GIF)
+                            .Into(new DrawableImageViewTarget(imageViewR));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    }
+                };
+
+                scndflrbtn.Click += (sender, args) =>
+                {
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    {
+                        Glide.With(this)
+                            .Load(Resource.Drawable.A202_3_GIF)
+                            .Into(new DrawableImageViewTarget(imageViewR));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    }
+                };
                 }
                 else if (text == "203")
                 {
@@ -334,36 +372,55 @@ namespace Bestie_Final
                     .Listener(new MyRequestListener())
                     .Into(new DrawableImageViewTarget(imageViewS));
 
-                    if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
+                    scndflrbtn.Visibility = ViewStates.Visible;
+                }
+
+                frstflrbtn.Click += (sender, args) =>
+                {
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
-                        frstflrbtn.Visibility = ViewStates.Visible;
-                        mzznnbtn.Visibility = ViewStates.Visible;
-                        scndflrbtn.Visibility = ViewStates.Visible;
-
-                        frstflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
+                        Glide.With(this)
                             .Load(Resource.Drawable.A203_1_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
+                            .Into(new DrawableImageViewTarget(imageViewR));
 
-                        mzznnbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.A203_2_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
-
-                        scndflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.A203_3_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
                     }
+                };
+
+                mzznnbtn.Click += (sender, args) =>
+                {
+
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    {
+                        Glide.With(this)
+                            .Load(Resource.Drawable.A203_2_GIF)
+                            .Into(new DrawableImageViewTarget(imageViewR));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    }
+                };
+
+                scndflrbtn.Click += (sender, args) =>
+                {
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    {
+                        Glide.With(this)
+                            .Load(Resource.Drawable.A203_3_GIF)
+                            .Into(new DrawableImageViewTarget(imageViewR));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    }
+                };
                 }
                 else if (text == "204")
                 {
@@ -372,36 +429,55 @@ namespace Bestie_Final
                     .Listener(new MyRequestListener())
                     .Into(new DrawableImageViewTarget(imageViewS));
 
-                    if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
+                    scndflrbtn.Visibility = ViewStates.Visible;
+                }
+
+                frstflrbtn.Click += (sender, args) =>
+                {
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
-                        frstflrbtn.Visibility = ViewStates.Visible;
-                        mzznnbtn.Visibility = ViewStates.Visible;
-                        scndflrbtn.Visibility = ViewStates.Visible;
-
-                        frstflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
+                        Glide.With(this)
                             .Load(Resource.Drawable.A204_1_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
+                            .Into(new DrawableImageViewTarget(imageViewR));
 
-                        mzznnbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.A204_2_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
-
-                        scndflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.A204_3_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
                     }
+                };
+
+                mzznnbtn.Click += (sender, args) =>
+                {
+
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    {
+                        Glide.With(this)
+                            .Load(Resource.Drawable.A204_2_GIF)
+                            .Into(new DrawableImageViewTarget(imageViewR));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    }
+                };
+
+                scndflrbtn.Click += (sender, args) =>
+                {
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    {
+                        Glide.With(this)
+                            .Load(Resource.Drawable.A204_3_GIF)
+                            .Into(new DrawableImageViewTarget(imageViewR));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    }
+                };
                 }
                 else if (text == "205")
                 {
@@ -410,36 +486,55 @@ namespace Bestie_Final
                     .Listener(new MyRequestListener())
                     .Into(new DrawableImageViewTarget(imageViewS));
 
-                    if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
+                    scndflrbtn.Visibility = ViewStates.Visible;
+                }
+
+                frstflrbtn.Click += (sender, args) =>
+                {
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
-                        frstflrbtn.Visibility = ViewStates.Visible;
-                        mzznnbtn.Visibility = ViewStates.Visible;
-                        scndflrbtn.Visibility = ViewStates.Visible;
-
-                        frstflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
+                        Glide.With(this)
                             .Load(Resource.Drawable.A205_1_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
+                            .Into(new DrawableImageViewTarget(imageViewR));
 
-                        mzznnbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.A205_2_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
-
-                        scndflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.A205_3_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
                     }
+                };
+
+                mzznnbtn.Click += (sender, args) =>
+                {
+
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    {
+                        Glide.With(this)
+                            .Load(Resource.Drawable.A205_2_GIF)
+                            .Into(new DrawableImageViewTarget(imageViewR));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    }
+                };
+
+                scndflrbtn.Click += (sender, args) =>
+                {
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    {
+                        Glide.With(this)
+                            .Load(Resource.Drawable.A205_3_GIF)
+                            .Into(new DrawableImageViewTarget(imageViewR));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    }
+                };
                 }
                 else if (text == "206")
                 {
@@ -448,36 +543,55 @@ namespace Bestie_Final
                     .Listener(new MyRequestListener())
                     .Into(new DrawableImageViewTarget(imageViewS));
 
-                    if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
+                    scndflrbtn.Visibility = ViewStates.Visible;
+                }
+
+                frstflrbtn.Click += (sender, args) =>
+                {
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
-                        frstflrbtn.Visibility = ViewStates.Visible;
-                        mzznnbtn.Visibility = ViewStates.Visible;
-                        scndflrbtn.Visibility = ViewStates.Visible;
-
-                        frstflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
+                        Glide.With(this)
                             .Load(Resource.Drawable.A206_1_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
+                            .Into(new DrawableImageViewTarget(imageViewR));
 
-                        mzznnbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.A206_2_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
-
-                        scndflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.A206_3_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
                     }
+                };
+
+                mzznnbtn.Click += (sender, args) =>
+                {
+
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    {
+                        Glide.With(this)
+                            .Load(Resource.Drawable.A206_2_GIF)
+                            .Into(new DrawableImageViewTarget(imageViewR));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    }
+                };
+
+                scndflrbtn.Click += (sender, args) =>
+                {
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    {
+                        Glide.With(this)
+                            .Load(Resource.Drawable.A206_3_GIF)
+                            .Into(new DrawableImageViewTarget(imageViewR));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    }
+                };
                 }
                 else if (text == "Female Toilet 2nd Floor" || text == "female toilet 2nd floor" || text == "femaletoilet2ndfloor" || text == "femaletoiletsecondfloor" || text == "female toilet second floor")
                 {
@@ -486,36 +600,55 @@ namespace Bestie_Final
                     .Listener(new MyRequestListener())
                     .Into(new DrawableImageViewTarget(imageViewS));
 
-                    if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
+                    scndflrbtn.Visibility = ViewStates.Visible;
+                }
+
+                frstflrbtn.Click += (sender, args) =>
+                {
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
-                        frstflrbtn.Visibility = ViewStates.Visible;
-                        mzznnbtn.Visibility = ViewStates.Visible;
-                        scndflrbtn.Visibility = ViewStates.Visible;
-
-                        frstflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
+                        Glide.With(this)
                             .Load(Resource.Drawable.FemToilet2nd_1_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
+                            .Into(new DrawableImageViewTarget(imageViewR));
 
-                        mzznnbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.FemToilet2nd_2_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
-
-                        scndflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.FemToilet2nd_3_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
                     }
+                };
+
+                mzznnbtn.Click += (sender, args) =>
+                {
+
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    {
+                        Glide.With(this)
+                            .Load(Resource.Drawable.FemToilet2nd_2_GIF)
+                            .Into(new DrawableImageViewTarget(imageViewR));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    }
+                };
+
+                scndflrbtn.Click += (sender, args) =>
+                {
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    {
+                        Glide.With(this)
+                            .Load(Resource.Drawable.FemToilet2nd_3_GIF)
+                            .Into(new DrawableImageViewTarget(imageViewR));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    }
+                };
                 }
                 else if (text == "Male Toilet 2nd Floor" || text == "male toilet 2nd floor" || text == "maletoilet2ndfloor" || text == "maletoiletsecondfloor" || text == "male toilet second floor")
                 {
@@ -524,36 +657,55 @@ namespace Bestie_Final
                     .Listener(new MyRequestListener())
                     .Into(new DrawableImageViewTarget(imageViewS));
 
-                    if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
+                    scndflrbtn.Visibility = ViewStates.Visible;
+                }
+
+                frstflrbtn.Click += (sender, args) =>
+                {
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
-                        frstflrbtn.Visibility = ViewStates.Visible;
-                        mzznnbtn.Visibility = ViewStates.Visible;
-                        scndflrbtn.Visibility = ViewStates.Visible;
-
-                        frstflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
+                        Glide.With(this)
                             .Load(Resource.Drawable.MaleToilet2nd_1_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
+                            .Into(new DrawableImageViewTarget(imageViewR));
 
-                        mzznnbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.MaleToilet2nd_2_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
-
-                        scndflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.MaleToilet2nd_3_GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewS));
-                        };
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
                     }
+                };
+
+                mzznnbtn.Click += (sender, args) =>
+                {
+
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    {
+                        Glide.With(this)
+                            .Load(Resource.Drawable.MaleToilet2nd_2_GIF)
+                            .Into(new DrawableImageViewTarget(imageViewR));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    }
+                };
+
+                scndflrbtn.Click += (sender, args) =>
+                {
+                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    {
+                        Glide.With(this)
+                            .Load(Resource.Drawable.MaleToilet2nd_3_GIF)
+                            .Into(new DrawableImageViewTarget(imageViewR));
+
+                        Button button = (Button)sender;
+                        Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                        button.StartAnimation(animation);
+                    }
+                };
                 }
                 else if (text == "Computer Laboratory B" || text == "computer laboratory b" || text == "complab b" || text == "comlabb" || text == "complaboratory b")
                 {
