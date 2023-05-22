@@ -38,6 +38,8 @@ namespace Bestie_Final
             // Create your application here
             SetContentView(Resource.Layout.bldngsrch);
 
+            bool isLibraryGifPlaying = false;
+
             string text = Intent.GetStringExtra("text");
 
             bldngsrchbckbtn = FindViewById<Button>(Resource.Id.BuildingSearchBackButton);
@@ -121,6 +123,7 @@ namespace Bestie_Final
             }
             else if (text == "Library" || text == "library")
             {
+
                 //Mezzanine               
                 Glide.With(this)
                 .Load(Resource.Drawable.LibraryGIF)
@@ -135,31 +138,37 @@ namespace Bestie_Final
                                     
                     frstflrbtn.Click += (sender, args) =>
                     {
-                        if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                        if (!isLibraryGifPlaying)
                         {
-                            Glide.With(this)
-                                .Load(Resource.Drawable.Library1GIF)
-                                .Listener(new MyRequestListener())
-                                .Into(new DrawableImageViewTarget(imageViewM));
+                            if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                            {
+                                Glide.With(this)
+                                    .Load(Resource.Drawable.Library1GIF)
+                                    .Listener(new MyRequestListener())
+                                    .Into(new DrawableImageViewTarget(imageViewM));
 
-                            Button button = (Button)sender;
-                            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
-                            button.StartAnimation(animation);
+                                Button button = (Button)sender;
+                                Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                                button.StartAnimation(animation);
+                            }
                         }
                     };
 
                     mzznnbtn.Click += (sender, args) =>
                     {
-                        if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                        if (!isLibraryGifPlaying)
                         {
-                            Glide.With(this)
-                                .Load(Resource.Drawable.Library2GIF)
-                                .Listener(new MyRequestListener())
-                                .Into(new DrawableImageViewTarget(imageViewM));
+                            if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                            {
+                                Glide.With(this)
+                                    .Load(Resource.Drawable.Library2GIF)
+                                    .Listener(new MyRequestListener())
+                                    .Into(new DrawableImageViewTarget(imageViewM));
 
-                            Button button = (Button)sender;
-                            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
-                            button.StartAnimation(animation);
+                                Button button = (Button)sender;
+                                Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                                button.StartAnimation(animation);
+                            }
                         }
                     };
                 }
@@ -174,15 +183,15 @@ namespace Bestie_Final
                     mzznnbtn.Visibility = ViewStates.Visible;
 
                     if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
-                    {
-                        frstflrbtn.Visibility = ViewStates.Visible;
-                        mzznnbtn.Visibility = ViewStates.Visible;
+                    {                    
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
 
                         frstflrbtn.Click += (sender, args) =>
                         {
                             Glide.With(this)
                             .Load(Resource.Drawable.Communication1GIF)
-                            .Listener(new MyRequestListener())
+                            .Listener(new MyRequestListener())                                                        
                             .Into(new DrawableImageViewTarget(imageViewM));
 
                             Button button = (Button)sender;
@@ -724,43 +733,43 @@ namespace Bestie_Final
             }
         }
 
-        public class MyRequestListener : Java.Lang.Object, IRequestListener
+    public class MyRequestListener : Java.Lang.Object, IRequestListener
+    {
+        private bool mActivityPaused = false;
+
+        public bool OnLoadFailed(GlideException p0, Java.Lang.Object p1, Com.Bumptech.Glide.Request.Target.ITarget p2, bool p3)
         {
-            private bool mActivityPaused = false;
-
-            public bool OnLoadFailed(GlideException p0, Java.Lang.Object p1, Com.Bumptech.Glide.Request.Target.ITarget p2, bool p3)
-            {
-                return true;
-            }
-
-            public bool OnResourceReady(Java.Lang.Object p0, Java.Lang.Object p1, Com.Bumptech.Glide.Request.Target.ITarget p2, DataSource p3, bool p4)
-            {
-                if (p0 is GifDrawable)
-                {
-                    GifDrawable gifDrawable = (GifDrawable)p0;
-
-                    if (!mActivityPaused)
-                    {
-                        gifDrawable.SetLoopCount(1);
-                    }
-                    else
-                    {
-                        gifDrawable.Start();
-                    }
-                }
-
-                return false;
-            }
-
-            public void OnActivityPaused(Activity activity)
-            {
-                mActivityPaused = true;
-            }
-
-            public void OnActivityResumed(Activity activity)
-            {
-                mActivityPaused = false;
-            }
+            return true;
         }
 
+        public bool OnResourceReady(Java.Lang.Object p0, Java.Lang.Object p1, Com.Bumptech.Glide.Request.Target.ITarget p2, DataSource p3, bool p4)
+        {
+            if (p0 is GifDrawable)
+            {
+                GifDrawable gifDrawable = (GifDrawable)p0;
+
+                if (!mActivityPaused)
+                {
+                    gifDrawable.SetLoopCount(1);
+                }
+                else
+                {
+                    gifDrawable.Start();
+                }
+            }
+
+            return false;
+        }
+
+        public void OnActivityPaused(Activity activity)
+        {
+            mActivityPaused = true;
+        }
+
+        public void OnActivityResumed(Activity activity)
+        {
+            mActivityPaused = false;
+        }
     }
+
+}
