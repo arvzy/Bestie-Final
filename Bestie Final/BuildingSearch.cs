@@ -140,10 +140,7 @@ namespace Bestie_Final
                     scndflrbtn.Visibility = ViewStates.Visible;
                 }))
                 .Into(new DrawableImageViewTarget(imageViewM));
-
-                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
-                {                    
-
+                                  
                     frstflrbtn.Click += (sender, args) =>
                     {
                         if (!isGifPlaying)
@@ -158,8 +155,7 @@ namespace Bestie_Final
                         {
                             LoadGifAndEnableButtons(Resource.Drawable.Library2GIF);
                         }
-                    };
-                }
+                    };                
             }
             //else if (text == "Communication" || text == "communication")
             //{
@@ -735,7 +731,6 @@ namespace Bestie_Final
 
         public class MyRequestListener : Java.Lang.Object, IRequestListener
         {
-            private bool mActivityPaused = false;
             private Action onFinishCallback;
 
             public MyRequestListener(Action onFinishCallback)
@@ -758,7 +753,6 @@ namespace Bestie_Final
 
                 return false;
             }
-            
         }
     }
 }
