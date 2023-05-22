@@ -61,11 +61,15 @@ namespace Bestie_Final
             maltoillbbyimgbtn = FindViewById<ImageButton>(Resource.Id.MaleToiletLobbyClick);
             guidimgbtn = FindViewById<ImageButton>(Resource.Id.GuidanceClick);
             stdntsrvcimgbtn = FindViewById<ImageButton>(Resource.Id.StudentServicesClick);
-
+            
             //Mezzanine
             lbryimgbtn = FindViewById<ImageButton>(Resource.Id.LibraryClick);
             cmmnctnimgbtn = FindViewById<ImageButton>(Resource.Id.CommunicationClick);
             schladmnimgbtn = FindViewById<ImageButton>(Resource.Id.SchoolAdminClick);
+
+            lbryimgbtn.Visibility = ViewStates.Gone;
+            cmmnctnimgbtn.Visibility = ViewStates.Gone;
+            schladmnimgbtn.Visibility = ViewStates.Gone;
 
             //Second Floor
             a201imgbtn = FindViewById<ImageButton>(Resource.Id.A201Click);
@@ -152,18 +156,6 @@ namespace Bestie_Final
             };
         }
 
-        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
-        {
-            base.OnActivityResult(requestCode, resultCode, data);
-
-            if (requestCode == 1 && resultCode == Result.Ok)
-            {
-                // Handle the result from MainActivity
-                // Optionally, finish the current activity here if needed
-                // Finish();
-            }
-        }
-
         private void Homebtn_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(MainActivity));
@@ -206,6 +198,17 @@ namespace Bestie_Final
             this.StartActivity(intent);
             Finish();
         }
-        
+
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+
+            if (requestCode == 1 && resultCode == Result.Ok)
+            {
+                // Handle the result from MainActivity
+                // Optionally, finish the current activity here if needed
+                // Finish();
+            }
+        }
     }
 }
