@@ -36,15 +36,10 @@ namespace Bestie_Final
 
             imgviewback = FindViewById<ImageView>(Resource.Id.EEImageViewBack);
             imgviewfront = FindViewById<ImageView>(Resource.Id.EEImageViewBack);
-            wrnngimgview = FindViewById<ImageView>(Resource.Id.warningImageView);
 
             Glide.With(this)
                 .Load(Resource.Drawable.FireExitLobby)
                 .Into(new DrawableImageViewTarget(imgviewback));
-
-            Glide.With(this)
-                .Load(Resource.Drawable.Warning)
-                .Into(new DrawableImageViewTarget(wrnngimgview));
 
             eebckbtn.Click += Eebckbtn_Click;
             hmeEbtn.Click += HmeEbtn_Click;

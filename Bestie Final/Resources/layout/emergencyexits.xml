@@ -36,14 +36,16 @@
     
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <RelativeLayout
-            android:layout_marginLeft="15px"
-            android:layout_width="900px"
-            android:layout_height="700px">
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="580px">
             <ImageView
                 android:layout_height="wrap_content"
                 android:layout_width="1200dp"
@@ -64,12 +66,12 @@
 
 
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:gravity="center_vertical"
+            android:gravity="center_horizontal"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp">
 
@@ -77,10 +79,12 @@
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="1f"
-                android:textColor="#ffff"
+                android:textColor="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="170dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
                 style="@style/ButtonOve"
                 android:id="@+id/frstfEButton"/>
 
@@ -88,10 +92,12 @@
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="M"
-                android:textColor="#ffff"
+                android:textColor="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
                 style="@style/ButtonOve"
                 android:id="@+id/mzznnEButton" />
 
@@ -99,10 +105,12 @@
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="2f"
-                android:textColor="#ffff"
+                android:textColor="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
                 style="@style/ButtonOve"
                 android:id="@+id/scndfEButton" />
 
@@ -110,10 +118,12 @@
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="3f"
-                android:textColor="#ffff"
+                android:textColor="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
                 style="@style/ButtonOve"
                 android:id="@+id/thrdfEButton" />
 
@@ -121,10 +131,12 @@
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="4f"
-                android:textColor="#ffff"
+                android:textColor="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
                 style="@style/ButtonOve"
                 android:id="@+id/frthfEButton"  />
 
@@ -132,10 +144,12 @@
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="rf"
-                android:textColor="#ffff"
+                android:textColor="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:layout_marginBottom="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
                 style="@style/ButtonOve"
                 android:id="@+id/rfdckEButton"  />
 
@@ -143,18 +157,5 @@
         </LinearLayout> 
 
     </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-
-        <ImageView
-            android:layout_marginTop="635px"
-            android:layout_width="1200px"
-            android:layout_height="1000px"
-            android:id="@+id/warningImageView"/>
-
-    </RelativeLayout>
 
 </RelativeLayout>
