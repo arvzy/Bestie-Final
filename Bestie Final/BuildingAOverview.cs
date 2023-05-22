@@ -17,6 +17,12 @@ namespace Bestie_Final
     {        
         Button backbtnbldngaoview, frstflrbtn, mzznnbtn, scndflrbtn, thrdflrbtn, frthflrbtn, rfdckbtn, homebtn;
         ImageView imageViewBAView;
+        ImageButton regimgbtn, cshrimgbtn, dptyimgbtn, admssnsoffcimgbtn, cmplbAimgbtn, femtoillbbyimgbtn, maltoillbbyimgbtn, guidimgbtn, stdntsrvcimgbtn;
+        ImageButton lbryimgbtn, cmmnctnimgbtn, schladmnimgbtn;
+        ImageButton a201imgbtn, a202imgbtn, a203imgbtn, a204imgbtn, a205imgbtn, a206imgbtn, femtoil2ndflrimgbtn, maltoil2ndflrimgbtn;
+        ImageButton complabBimgbtn, complabCimgbtn, complabDimgbtn, complabEimgbtn, complabFimgbtn, femtoil3rdflrimgbtn, maltoil3rdflrimgbtn;
+        ImageButton a401imgbtn, a402imgbtn, a403imgbtn, a404imgbtn, a405imgbtn, a406imgbtn, femtoil4thflrimgbtn, maltoil4thflrimgbtn;
+        ImageButton rfdckimgbtn;
         
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -44,7 +50,109 @@ namespace Bestie_Final
             thrdflrbtn.Click += Thrdflrbtn_Click;
             frthflrbtn.Click += Frthflrbtn_Click;
             rfdckbtn.Click += Rfdckbtn_Click;
-         
+
+            //Lobby
+            regimgbtn = FindViewById<ImageButton>(Resource.Id.RegistrarClick);
+            cshrimgbtn = FindViewById<ImageButton>(Resource.Id.CashierClick);
+            dptyimgbtn = FindViewById<ImageButton>(Resource.Id.DeputyClick);
+            cmplbAimgbtn = FindViewById<ImageButton>(Resource.Id.CompLabAClick);
+            admssnsoffcimgbtn = FindViewById<ImageButton>(Resource.Id.AdmissionsOfficeClick);
+            femtoillbbyimgbtn = FindViewById<ImageButton>(Resource.Id.FemToiletLobbyClick);
+            maltoillbbyimgbtn = FindViewById<ImageButton>(Resource.Id.MaleToiletLobbyClick);
+            guidimgbtn = FindViewById<ImageButton>(Resource.Id.GuidanceClick);
+            stdntsrvcimgbtn = FindViewById<ImageButton>(Resource.Id.StudentServicesClick);
+
+            //Mezzanine
+            lbryimgbtn = FindViewById<ImageButton>(Resource.Id.LibraryClick);
+            cmmnctnimgbtn = FindViewById<ImageButton>(Resource.Id.CommunicationClick);
+            schladmnimgbtn = FindViewById<ImageButton>(Resource.Id.SchoolAdminClick);
+
+            //Second Floor
+            a201imgbtn = FindViewById<ImageButton>(Resource.Id.A201Click);
+            a202imgbtn = FindViewById<ImageButton>(Resource.Id.A202Click);
+            a203imgbtn = FindViewById<ImageButton>(Resource.Id.A203Click);
+            a204imgbtn = FindViewById<ImageButton>(Resource.Id.A204Click);
+            a205imgbtn = FindViewById<ImageButton>(Resource.Id.A205Click);
+            a206imgbtn = FindViewById<ImageButton>(Resource.Id.A206Click);
+            femtoil2ndflrimgbtn = FindViewById<ImageButton>(Resource.Id.FemToilet2ndFloorClick);
+            maltoil2ndflrimgbtn = FindViewById<ImageButton>(Resource.Id.MaleToilet2ndFloorClick);
+
+            //Third Floor
+            complabBimgbtn = FindViewById<ImageButton>(Resource.Id.CompLabBClick);
+            complabCimgbtn = FindViewById<ImageButton>(Resource.Id.CompLabCClick);
+            complabDimgbtn = FindViewById<ImageButton>(Resource.Id.CompLabDClick);
+            complabEimgbtn = FindViewById<ImageButton>(Resource.Id.CompLabEClick);
+            complabFimgbtn = FindViewById<ImageButton>(Resource.Id.CompLabFClick);
+            femtoil3rdflrimgbtn = FindViewById<ImageButton>(Resource.Id.FemToilet3rdFloorClick);
+            maltoil3rdflrimgbtn = FindViewById<ImageButton>(Resource.Id.MaleToilet3rdFloorClick);
+
+            //Fourth Floor
+            a401imgbtn = FindViewById<ImageButton>(Resource.Id.A401);
+            a402imgbtn = FindViewById<ImageButton>(Resource.Id.A402);
+            a403imgbtn = FindViewById<ImageButton>(Resource.Id.A403);
+            a404imgbtn = FindViewById<ImageButton>(Resource.Id.A404ElecLabClick);
+            a405imgbtn = FindViewById<ImageButton>(Resource.Id.A405PhysLabClick);
+            a406imgbtn = FindViewById<ImageButton>(Resource.Id.A406ChemLabClick);
+            femtoil4thflrimgbtn = FindViewById<ImageButton>(Resource.Id.FemToilet4thFloorClick);
+            maltoil4thflrimgbtn = FindViewById<ImageButton>(Resource.Id.MaleToilet4thFloorClick);
+
+            //Roofdeck
+            rfdckimgbtn = FindViewById<ImageButton>(Resource.Id.RoofdeckClick);
+
+            regimgbtn.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                // Create a container layout for the button
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                // Create positive button programmatically
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                // Set layout rules for the button within the container layout
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                // Add the button to the container layout
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    // Handle positive button click event
+                    Intent intent = new Intent(this, typeof(MainActivity));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivity(intent);
+
+                    Finish();
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                // Set the container layout as the custom view of the dialog
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+                    // Handle positive button click event
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivity(intent);
+
+                    Finish();
+                };
+            };
         }
 
         private void Homebtn_Click(object sender, EventArgs e)

@@ -47,6 +47,7 @@
             android:layout_marginTop="50px"
             android:layout_width="wrap_content"
             android:layout_height="580px">
+
             <ImageView
                 android:layout_height="wrap_content"
                 android:layout_width="1200dp"
@@ -63,7 +64,297 @@
                 android:id="@+id/imageViewBuildingView"               
             />
 
+            <!--Lobby-->
 
+            <ImageButton
+                android:id="@+id/RegistrarClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/CashierClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/DeputyClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="150dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/AdmissionsOfficeClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="200dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/CompLabAClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="250dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/MaleToiletLobbyClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="300dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/FemToiletLobbyClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="350dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/GuidanceClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="400dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/StudentServicesClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="450dp"
+                android:src="@drawable/top_a"/>
+            
+
+            <!--Mezzanine-->
+
+            <ImageButton
+                android:id="@+id/LibraryClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/CommunicationClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/SchoolAdminClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="150dp"
+                android:src="@drawable/top_a"/>
+
+            <!--2nd Floor-->
+
+            <ImageButton
+                android:id="@+id/A201Click"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/A202Click"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/A203Click"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="150dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/A204Click"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="200dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/A205Click"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="250dp"
+                android:src="@drawable/top_a"/>
+
+           <ImageButton
+                android:id="@+id/A206Click"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="300dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/MaleToilet2ndFloorClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="350dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/FemToilet2ndFloorClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="400dp"
+                android:src="@drawable/top_a"/>
+
+            <!--3rd Floor-->
+
+            <ImageButton
+                android:id="@+id/CompLabBClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/CompLabCClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/CompLabDClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="150dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/CompLabEClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="200dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/CompLabFClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="250dp"
+                android:src="@drawable/top_a"/>
+
+           <ImageButton
+                android:id="@+id/MaleToilet3rdFloorClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="300dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/FemToilet3rdFloorClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="350dp"
+                android:src="@drawable/top_a"/>
+
+            <!--4th Floor-->
+
+            <ImageButton
+                android:id="@+id/A401"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/A402"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/A403"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="150dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/A404ElecLabClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="200dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/A405PhysLabClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="250dp"
+                android:src="@drawable/top_a"/>
+
+           <ImageButton
+                android:id="@+id/A406ChemLabClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="300dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/MaleToilet4thFloorClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="350dp"
+                android:src="@drawable/top_a"/>
+
+            <ImageButton
+                android:id="@+id/FemToilet4thFloorClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="400dp"
+                android:src="@drawable/top_a"/>
+
+            <!--Roofdeck-->
+
+            <ImageButton
+                android:id="@+id/RoofdeckClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/top_a"/>
         </RelativeLayout>
 
 
