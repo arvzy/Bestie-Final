@@ -1944,7 +1944,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewR.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.Roofdeck2GIF)
@@ -1958,7 +1958,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewR.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.Roofdeck3GIF)
@@ -1972,7 +1972,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewR.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.Roofdeck4GIF)
@@ -1986,7 +1986,7 @@ namespace Bestie_Final
 
                 frthflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewR.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.Roofdeck5GIF)
@@ -2000,7 +2000,7 @@ namespace Bestie_Final
 
                 rfdckbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewR.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.Roofdeck6GIF)
