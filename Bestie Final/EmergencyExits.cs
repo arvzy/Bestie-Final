@@ -38,7 +38,7 @@ namespace Bestie_Final
             imgviewfront = FindViewById<ImageView>(Resource.Id.EEImageViewBack);
 
             Glide.With(this)
-                .Load(Resource.Drawable.FireExitLobby)
+                .Load(Resource.Drawable.EExitLobby)
                 .Into(new DrawableImageViewTarget(imgviewback));
 
             eebckbtn.Click += Eebckbtn_Click;
@@ -54,42 +54,42 @@ namespace Bestie_Final
         private void FrstflrEbtn_Click(object sender, EventArgs e)
         {
             Glide.With(this)
-                .Load(Resource.Drawable.FireExitLobby)                
+                .Load(Resource.Drawable.EExitLobby)                
                 .Into(new DrawableImageViewTarget(imgviewfront));
         }
 
         private void MzznneEbtn_Click(object sender, EventArgs e)
         {
             Glide.With(this)
-                .Load(Resource.Drawable.FireExitMezzanine)
+                .Load(Resource.Drawable.EExitMezzanine)
                 .Into(new DrawableImageViewTarget(imgviewfront));
         }
 
         private void ScndflrEbtn_Click(object sender, EventArgs e)
         {
             Glide.With(this)
-                .Load(Resource.Drawable.FireExit2ndfloor)
+                .Load(Resource.Drawable.EExit2ndFloor)
                 .Into(new DrawableImageViewTarget(imgviewfront));
         }
 
         private void ThrdflrEbtn_Click(object sender, EventArgs e)
         {
             Glide.With(this)
-                .Load(Resource.Drawable.FireExit3rdfloor)
+                .Load(Resource.Drawable.EExit3rdFloor)
                 .Into(new DrawableImageViewTarget(imgviewfront));
         }
 
         private void FrthflrEbtn_Click(object sender, EventArgs e)
         {
             Glide.With(this)
-                .Load(Resource.Drawable.FireExit4thfloor)
+                .Load(Resource.Drawable.EExit4thFloor)
                 .Into(new DrawableImageViewTarget(imgviewfront));
         }
 
         private void RfdckEbtn_Click(object sender, EventArgs e)
         {
             Glide.With(this)
-                .Load(Resource.Drawable.FireExitRoofDeck)
+                .Load(Resource.Drawable.EExitRoofdeck)
                 .Into(new DrawableImageViewTarget(imgviewfront));
         }
 
