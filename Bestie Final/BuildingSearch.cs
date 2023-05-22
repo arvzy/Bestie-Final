@@ -172,38 +172,41 @@ namespace Bestie_Final
                     .Listener(new MyRequestListener())
                     .Into(new DrawableImageViewTarget(imageViewM));
 
+
+                if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
+                {
                     frstflrbtn.Visibility = ViewStates.Visible;
                     mzznnbtn.Visibility = ViewStates.Visible;
+                }
 
-                    if (frstflrbtn.Visibility == ViewStates.Gone && mzznnbtn.Visibility == ViewStates.Gone && scndflrbtn.Visibility == ViewStates.Gone && thrdflrbtn.Visibility == ViewStates.Gone && frthflrbtn.Visibility == ViewStates.Gone && rfdckbtn.Visibility == ViewStates.Gone)
-                    {                    
-                    frstflrbtn.Visibility = ViewStates.Visible;
-                    mzznnbtn.Visibility = ViewStates.Visible;
-
-                        frstflrbtn.Click += (sender, args) =>
+                    frstflrbtn.Click += (sender, args) =>
+                    {
+                        if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                         {
                             Glide.With(this)
-                            .Load(Resource.Drawable.Communication1GIF)
-                            .Listener(new MyRequestListener())                                                        
-                            .Into(new DrawableImageViewTarget(imageViewM));
+                                .Load(Resource.Drawable.Communication1GIF)
+                                .Into(new DrawableImageViewTarget(imageViewR));
 
                             Button button = (Button)sender;
                             Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
                             button.StartAnimation(animation);
-                        };
+                        }
+                    };
 
-                        mzznnbtn.Click += (sender, args) =>
+                    mzznnbtn.Click += (sender, args) =>
+                    {
+
+                        if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                         {
                             Glide.With(this)
-                            .Load(Resource.Drawable.Communication2GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewM));
+                                .Load(Resource.Drawable.Communication2GIF)
+                                .Into(new DrawableImageViewTarget(imageViewR));
 
                             Button button = (Button)sender;
                             Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
                             button.StartAnimation(animation);
-                        };
-                    }
+                        }
+                    };
                 }
                 else if (text == "School Administrator" || text == "school administrator" || text == "schooladministrator" || text == "schooladmin" || text == "admin")
                 {
@@ -216,31 +219,36 @@ namespace Bestie_Final
                     {
                         frstflrbtn.Visibility = ViewStates.Visible;
                         mzznnbtn.Visibility = ViewStates.Visible;
-
-                        frstflrbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.SchoolAdmin1GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewM));
-
-                            Button button = (Button)sender;
-                            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
-                            button.StartAnimation(animation);
-                        };
-
-                        mzznnbtn.Click += (sender, args) =>
-                        {
-                            Glide.With(this)
-                            .Load(Resource.Drawable.SchoolAdmin2GIF)
-                            .Listener(new MyRequestListener())
-                            .Into(new DrawableImageViewTarget(imageViewM));
-
-                            Button button = (Button)sender;
-                            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
-                            button.StartAnimation(animation);
-                        };
                     }
+
+                    frstflrbtn.Click += (sender, args) =>
+                    {
+                        if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                        {
+                            Glide.With(this)
+                                .Load(Resource.Drawable.SchoolAdmin1GIF)
+                                .Into(new DrawableImageViewTarget(imageViewR));
+
+                            Button button = (Button)sender;
+                            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                            button.StartAnimation(animation);
+                        }
+                    };
+
+                    mzznnbtn.Click += (sender, args) =>
+                    {
+
+                        if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                        {
+                            Glide.With(this)
+                                .Load(Resource.Drawable.SchoolAdmin2GIF)
+                                .Into(new DrawableImageViewTarget(imageViewR));
+
+                            Button button = (Button)sender;
+                            Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
+                            button.StartAnimation(animation);
+                        }
+                    };
                 }
                 else if (text == "201")
                 {
