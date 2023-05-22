@@ -1216,21 +1216,21 @@ namespace Bestie_Final
                 {
                     //Fourth Floor
                     Glide.With(this)
-                    .Load(Resource.Drawable.A401GIF)
+                    .Load(Resource.Drawable.A401FullGIF)
                     .Listener(new MyRequestListener())
                     .Into(new DrawableImageViewTarget(imageViewF));
                 }
                 else if (text == "402")
                 {
                     Glide.With(this)
-                    .Load(Resource.Drawable.A402GIF)
+                    .Load(Resource.Drawable.A402FullGIF)
                     .Listener(new MyRequestListener())
                     .Into(new DrawableImageViewTarget(imageViewF));
                 }
                 else if (text == "403")
                 {
                     Glide.With(this)
-                    .Load(Resource.Drawable.A403GIF)
+                    .Load(Resource.Drawable.A403FullGIF)
                     .Listener(new MyRequestListener())
                     .Into(new DrawableImageViewTarget(imageViewF));
                 }
