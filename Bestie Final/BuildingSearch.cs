@@ -143,7 +143,7 @@ namespace Bestie_Final
                                 Glide.With(this)
                                     .Load(Resource.Drawable.Library1GIF)
                                     .Listener(new MyRequestListener())
-                                    .Into(new DrawableImageViewTarget(imageView));
+                                    .Into(new DrawableImageViewTarget(imageViewR));
 
                                 Button button = (Button)sender;
                                 Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
@@ -159,7 +159,7 @@ namespace Bestie_Final
                             Glide.With(this)
                                 .Load(Resource.Drawable.Library2GIF)
                                 .Listener(new MyRequestListener())
-                                .Into(new DrawableImageViewTarget(imageView));
+                                .Into(new DrawableImageViewTarget(imageViewR));
 
                             Button button = (Button)sender;
                             Animation animation = AnimationUtils.LoadAnimation(this, Resource.Drawable.animationbutton);
