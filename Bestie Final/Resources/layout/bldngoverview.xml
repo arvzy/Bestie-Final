@@ -22,7 +22,7 @@
             app:cornerRadius="20px"
             android:layout_marginLeft="12px"
             android:textColor="@android:color/black"
-            style="@style/Button"
+            style="@style/Invert"
             android:text="Back"/>
 
 
