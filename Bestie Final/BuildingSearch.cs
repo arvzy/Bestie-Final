@@ -730,7 +730,7 @@ namespace Bestie_Final
                 {
                     isGifPlaying = false;
                 }))
-                .Into(new DrawableImageViewTarget(imageViewS));
+                .Into(new DrawableImageViewTarget(imageViewM));
         }
 
         public class MyRequestListener : Java.Lang.Object, IRequestListener
