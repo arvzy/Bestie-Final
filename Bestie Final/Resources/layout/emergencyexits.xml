@@ -21,7 +21,7 @@
         android:textSize="30px"
         app:cornerRadius="60px"
         android:layout_marginLeft="12px"
-        style="@style/Button"
+        style="@style/Invert"
         android:text="⌂"/>
 
     <com.google.android.material.button.MaterialButton
@@ -31,7 +31,7 @@
         android:textColor="@android:color/black"
         app:cornerRadius="20px"
         android:layout_marginLeft="80px"
-        style="@style/Button"
+        style="@style/Invert"
         android:text="Back"/>
     
 
