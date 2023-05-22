@@ -74,6 +74,9 @@ namespace Bestie_Final
             frstflrbtn.Visibility = ViewStates.Gone;
             mzznnbtn.Visibility = ViewStates.Gone;
             scndflrbtn.Visibility = ViewStates.Gone;
+            thrdflrbtn.Visibility = ViewStates.Gone;    
+            frthflrbtn.Visibility = ViewStates.Gone;
+            rfdckbtn.Visibility = ViewStates.Gone;
 
             if (text == "Admissions Office" || text == "admissions office" || text == "admisions office" || text == "ADMISSIONS OFFICE")
             {
@@ -83,14 +86,10 @@ namespace Bestie_Final
                 .Into(new DrawableImageViewTarget(imageView));
             }
             else if (text == "Cashier" || text == "cashier" || text == "CASHIER" || text == "cahsier")
-            {
-                {
-                    Glide.With(this)
-                    .Load(Resource.Drawable.CashierGIF)
-                    .Into(new DrawableImageViewTarget(imageView));
-
-
-                }
+            {                
+                Glide.With(this)
+                .Load(Resource.Drawable.CashierGIF)
+                .Into(new DrawableImageViewTarget(imageView));                
             }
             else if (text == "Computer Laboratory A" || text == "computer laboratory a" || text == "complab a" || text == "comlaba" || text == "complaboratory a")
             {
@@ -134,10 +133,9 @@ namespace Bestie_Final
                 Glide.With(this)
                 .Load(Resource.Drawable.LibraryGIF)
                 .Listener(new MyRequestListener(() =>
-        {
+                {
                     frstflrbtn.Visibility = ViewStates.Visible;
                     mzznnbtn.Visibility = ViewStates.Visible;
-                    scndflrbtn.Visibility = ViewStates.Visible;
                 }))
                 .Into(new DrawableImageViewTarget(imageViewM));
                                   
@@ -726,7 +724,47 @@ namespace Bestie_Final
                 {
                     isGifPlaying = false;
                 }))
+                .Into(new DrawableImageViewTarget(imageView));
+
+            Glide.With(this)
+                .Load(resourceId)
+                .Listener(new MyRequestListener(() =>
+                {
+                    isGifPlaying = false;
+                }))
                 .Into(new DrawableImageViewTarget(imageViewM));
+
+            Glide.With(this)
+                .Load(resourceId)
+                .Listener(new MyRequestListener(() =>
+                {
+                    isGifPlaying = false;
+                }))
+                .Into(new DrawableImageViewTarget(imageViewS));
+
+            Glide.With(this)
+                .Load(resourceId)
+                .Listener(new MyRequestListener(() =>
+                {
+                    isGifPlaying = false;
+                }))
+                .Into(new DrawableImageViewTarget(imageViewT));
+
+            Glide.With(this)
+                .Load(resourceId)
+                .Listener(new MyRequestListener(() =>
+                {
+                    isGifPlaying = false;
+                }))
+                .Into(new DrawableImageViewTarget(imageViewF));
+
+            Glide.With(this)
+                .Load(resourceId)
+                .Listener(new MyRequestListener(() =>
+                {
+                    isGifPlaying = false;
+                }))
+                .Into(new DrawableImageViewTarget(imageViewR));
         }
 
         public class MyRequestListener : Java.Lang.Object, IRequestListener
