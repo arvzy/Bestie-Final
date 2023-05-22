@@ -267,7 +267,7 @@ namespace Bestie_Final
 
                     frstflrbtn.Click += (sender, args) =>
                     {
-                        if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                        if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                         {
                             Glide.With(this)
                                 .Load(Resource.Drawable.A201_1_GIF)
@@ -282,7 +282,7 @@ namespace Bestie_Final
                     mzznnbtn.Click += (sender, args) =>
                     {
 
-                        if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                        if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                         {
                             Glide.With(this)
                                 .Load(Resource.Drawable.A201_2_GIF)
@@ -296,7 +296,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A201_3_GIF)
@@ -324,7 +324,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A202_1_GIF)
@@ -339,7 +339,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A202_2_GIF)
@@ -353,7 +353,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A202_3_GIF)
@@ -381,7 +381,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A203_1_GIF)
@@ -396,7 +396,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A203_2_GIF)
@@ -410,7 +410,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A203_3_GIF)
@@ -438,7 +438,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A204_1_GIF)
@@ -453,7 +453,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A204_2_GIF)
@@ -467,7 +467,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A204_3_GIF)
@@ -495,7 +495,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A205_1_GIF)
@@ -510,7 +510,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A205_2_GIF)
@@ -524,7 +524,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A205_3_GIF)
@@ -552,7 +552,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A206_1_GIF)
@@ -567,7 +567,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A206_2_GIF)
@@ -581,7 +581,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A206_3_GIF)
@@ -609,7 +609,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.FemToilet2nd_1_GIF)
@@ -624,7 +624,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.FemToilet2nd_2_GIF)
@@ -638,7 +638,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.FemToilet2nd_3_GIF)
@@ -666,7 +666,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.MaleToilet2nd_1_GIF)
@@ -681,7 +681,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.MaleToilet2nd_2_GIF)
@@ -695,7 +695,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewS.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.MaleToilet2nd_3_GIF)
@@ -725,7 +725,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabB1GIF)
@@ -740,7 +740,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabB2GIF)
@@ -754,7 +754,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabB3GIF)
@@ -768,7 +768,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabB4GIF)
@@ -797,7 +797,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabC1GIF)
@@ -812,7 +812,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabC2GIF)
@@ -826,7 +826,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabC3GIF)
@@ -840,7 +840,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabC4GIF)
@@ -869,7 +869,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabD1GIF)
@@ -884,7 +884,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabD2GIF)
@@ -898,7 +898,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabD3GIF)
@@ -912,7 +912,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabD4GIF)
@@ -941,7 +941,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabE1GIF)
@@ -956,7 +956,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabE2GIF)
@@ -970,7 +970,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabE3GIF)
@@ -984,7 +984,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabE4GIF)
@@ -1013,7 +1013,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabF1GIF)
@@ -1028,7 +1028,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabF2GIF)
@@ -1042,7 +1042,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabF3GIF)
@@ -1056,7 +1056,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.CompLabF4GIF)
@@ -1085,7 +1085,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.MaleToilet3rd_1_GIF)
@@ -1100,7 +1100,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.MaleToilet3rd_2_GIF)
@@ -1114,7 +1114,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.MaleToilet3rd_3_GIF)
@@ -1128,7 +1128,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.MaleToilet3rd_4_GIF)
@@ -1157,7 +1157,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.FemToilet3rd_1_GIF)
@@ -1172,7 +1172,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.FemToilet3rd_2_GIF)
@@ -1186,7 +1186,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.FemToilet3rd_3_GIF)
@@ -1200,7 +1200,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewT.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.FemToilet3rd_4_GIF)
@@ -1231,7 +1231,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A401_1_GIF)
@@ -1246,7 +1246,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A401_2_GIF)
@@ -1260,7 +1260,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A401_3_GIF)
@@ -1274,7 +1274,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A401_4_GIF)
@@ -1288,7 +1288,7 @@ namespace Bestie_Final
 
                 frthflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A401_5_GIF)
@@ -1318,7 +1318,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A402_1_GIF)
@@ -1333,7 +1333,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A402_2_GIF)
@@ -1347,7 +1347,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A402_3_GIF)
@@ -1361,7 +1361,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A402_4_GIF)
@@ -1375,7 +1375,7 @@ namespace Bestie_Final
 
                 frthflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A402_5_GIF)
@@ -1405,7 +1405,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A403_1_GIF)
@@ -1420,7 +1420,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A403_2_GIF)
@@ -1434,7 +1434,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A403_3_GIF)
@@ -1448,7 +1448,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A403_4_GIF)
@@ -1462,7 +1462,7 @@ namespace Bestie_Final
 
                 frthflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A403_5_GIF)
@@ -1492,7 +1492,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A405PhysLab_1_GIF)
@@ -1507,7 +1507,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A405PhysLab_2_GIF)
@@ -1521,7 +1521,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A405PhysLab_3_GIF)
@@ -1535,7 +1535,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A405PhysLab_4_GIF)
@@ -1549,7 +1549,7 @@ namespace Bestie_Final
 
                 frthflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A405PhysLab_5_GIF)
@@ -1579,7 +1579,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A406ChemLab_1_GIF)
@@ -1594,7 +1594,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A406ChemLab_2_GIF)
@@ -1608,7 +1608,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A406ChemLab_3_GIF)
@@ -1622,7 +1622,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A406ChemLab_4_GIF)
@@ -1636,7 +1636,7 @@ namespace Bestie_Final
 
                 frthflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A406ChemLab_5_GIF)
@@ -1666,7 +1666,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A404ElecLab_1_GIF)
@@ -1681,7 +1681,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A404ElecLab_2_GIF)
@@ -1695,7 +1695,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A404ElecLab_3_GIF)
@@ -1709,7 +1709,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A404ElecLab_4_GIF)
@@ -1723,7 +1723,7 @@ namespace Bestie_Final
 
                 frthflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.A404ElecLab_5_GIF)
@@ -1753,7 +1753,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.FemToilet4th_1_GIF)
@@ -1768,7 +1768,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.FemToilet4th_2_GIF)
@@ -1782,7 +1782,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.FemToilet4th_3_GIF)
@@ -1796,7 +1796,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.FemToilet4th_4_GIF)
@@ -1810,7 +1810,7 @@ namespace Bestie_Final
 
                 frthflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.FemToilet4th_5_GIF)
@@ -1840,7 +1840,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.MaleToilet4th_1_GIF)
@@ -1855,7 +1855,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.MaleToilet4th_2_GIF)
@@ -1869,7 +1869,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.MaleToilet4th_3_GIF)
@@ -1883,7 +1883,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.MaleToilet4th_4_GIF)
@@ -1897,7 +1897,7 @@ namespace Bestie_Final
 
                 frthflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewF.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.MaleToilet4th_5_GIF)
@@ -1929,7 +1929,7 @@ namespace Bestie_Final
 
                 frstflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewR.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.Roofdeck1GIF)
@@ -1944,7 +1944,7 @@ namespace Bestie_Final
                 mzznnbtn.Click += (sender, args) =>
                 {
 
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewR.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.Roofdeck2GIF)
@@ -1958,7 +1958,7 @@ namespace Bestie_Final
 
                 scndflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewR.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.Roofdeck3GIF)
@@ -1972,7 +1972,7 @@ namespace Bestie_Final
 
                 thrdflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewR.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.Roofdeck4GIF)
@@ -1986,7 +1986,7 @@ namespace Bestie_Final
 
                 frthflrbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewR.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.Roofdeck5GIF)
@@ -2000,7 +2000,7 @@ namespace Bestie_Final
 
                 rfdckbtn.Click += (sender, args) =>
                 {
-                    if (imageViewM.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
+                    if (imageViewR.Drawable is GifDrawable gifDrawable && !gifDrawable.IsRunning)
                     {
                         Glide.With(this)
                             .Load(Resource.Drawable.Roofdeck6GIF)
