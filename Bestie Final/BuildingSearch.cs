@@ -133,9 +133,7 @@ namespace Bestie_Final
                 Glide.With(this)
                 .Load(Resource.Drawable.LibraryGIF)
                 .Listener(new MyRequestListener(() =>
-                {
-                    frstflrbtn.Visibility = ViewStates.Visible;
-                    mzznnbtn.Visibility = ViewStates.Visible;
+                {                    
                 }))
                 .Into(new DrawableImageViewTarget(imageViewM));
                                   
@@ -730,6 +728,8 @@ namespace Bestie_Final
                 .Load(resourceId)
                 .Listener(new MyRequestListener(() =>
                 {
+                    frstflrbtn.Visibility = ViewStates.Visible;
+                    mzznnbtn.Visibility = ViewStates.Visible;
                     isGifPlaying = false;
                 }))
                 .Into(new DrawableImageViewTarget(imageViewM));
