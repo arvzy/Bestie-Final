@@ -2414,7 +2414,7 @@ namespace Bestie_Final
         {
             imageViewBAView.SetImageResource(Resource.Drawable.RoofDeckLayout);
 
-            rfdckbtn.Click += (sender, args) =>
+            rfdckimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
                 builder.SetTitle("Oops!");
