@@ -17,8 +17,8 @@ namespace Bestie_Final
     {        
         Button backbtnbldngaoview, frstflrbtn, mzznnbtn, scndflrbtn, thrdflrbtn, frthflrbtn, rfdckbtn, homebtn;
         ImageView imageViewBAView;
-        ImageButton regimgbtn, cshrimgbtn, dptyimgbtn, admssnsoffcimgbtn, complbAimgbtn, femtoillbbyimgbtn, maltoillbbyimgbtn, guidimgbtn, stdntsrvcimgbtn;
-        ImageButton lbryimgbtn, lbryimgbtn2, cmmnctnimgbtn, schladmnimgbtn;
+        ImageButton regimgbtn, regimgbtn2, cshrimgbtn, dptyimgbtn, admssnsoffcimgbtn, complbAimgbtn, femtoillbbyimgbtn, maltoillbbyimgbtn, guidimgbtn, stdntsrvcimgbtn;
+        ImageButton lbryimgbtn, lbryimgbtn2, lbryimgbtn3, lbryimgbtn4, cmmnctnimgbtn, schladmnimgbtn;
         ImageButton a201imgbtn, a202imgbtn, a203imgbtn, a204imgbtn, a205imgbtn, a206imgbtn, femtoil2ndflrimgbtn, maltoil2ndflrimgbtn;
         ImageButton complabBimgbtn, complabCimgbtn, complabDimgbtn, complabEimgbtn, complabFimgbtn, femtoil3rdflrimgbtn, maltoil3rdflrimgbtn;
         ImageButton a401imgbtn, a402imgbtn, a403imgbtn, a404imgbtn, a405imgbtn, a406imgbtn, femtoil4thflrimgbtn, maltoil4thflrimgbtn;
@@ -53,6 +53,7 @@ namespace Bestie_Final
 
             //Lobby
             regimgbtn = FindViewById<ImageButton>(Resource.Id.RegistrarClick);
+            regimgbtn2 = FindViewById<ImageButton>(Resource.Id.RegistrartwoClick);
             cshrimgbtn = FindViewById<ImageButton>(Resource.Id.CashierClick);
             dptyimgbtn = FindViewById<ImageButton>(Resource.Id.DeputyClick);
             complbAimgbtn = FindViewById<ImageButton>(Resource.Id.CompLabAClick);
@@ -65,11 +66,15 @@ namespace Bestie_Final
             //Mezzanine
             lbryimgbtn = FindViewById<ImageButton>(Resource.Id.LibraryClick);
             lbryimgbtn2 = FindViewById<ImageButton>(Resource.Id.LibraryClick2);
+            lbryimgbtn3 = FindViewById<ImageButton>(Resource.Id.LibraryClick3);
+            lbryimgbtn4 = FindViewById<ImageButton>(Resource.Id.LibraryClick4);
             cmmnctnimgbtn = FindViewById<ImageButton>(Resource.Id.CommunicationClick);
             schladmnimgbtn = FindViewById<ImageButton>(Resource.Id.SchoolAdminClick);
 
             lbryimgbtn.Visibility = ViewStates.Gone;
             lbryimgbtn2.Visibility = ViewStates.Gone;
+            lbryimgbtn3.Visibility = ViewStates.Gone;
+            lbryimgbtn4.Visibility = ViewStates.Gone;
             cmmnctnimgbtn.Visibility = ViewStates.Gone;
             schladmnimgbtn.Visibility = ViewStates.Gone;
 
@@ -175,6 +180,51 @@ namespace Bestie_Final
                 {
 
                     dialog.Dismiss(); 
+
+                    // Finish();
+                };
+            };
+
+            regimgbtn2.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
 
                     // Finish();
                 };
@@ -599,6 +649,51 @@ namespace Bestie_Final
                 };
             };
 
+            regimgbtn2.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
             cshrimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
@@ -971,6 +1066,8 @@ namespace Bestie_Final
 
             lbryimgbtn.Visibility = ViewStates.Gone;
             lbryimgbtn2.Visibility = ViewStates.Gone;
+            lbryimgbtn3.Visibility = ViewStates.Gone;
+            lbryimgbtn4.Visibility = ViewStates.Gone;
             cmmnctnimgbtn.Visibility = ViewStates.Gone;
             schladmnimgbtn.Visibility = ViewStates.Gone;
 
@@ -1053,6 +1150,96 @@ namespace Bestie_Final
             };
 
             lbryimgbtn2.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            lbryimgbtn3.Click += (sender, args) =>
+            {
+                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+                builder.SetTitle("Oops!");
+                builder.SetMessage("");
+
+                RelativeLayout containerLayout = new RelativeLayout(this);
+
+                Button positiveButton = new Button(this);
+                positiveButton.Text = "OK";
+
+                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WrapContent,
+                    RelativeLayout.LayoutParams.WrapContent
+                );
+                buttonParams.LeftMargin = 470;
+                buttonParams.TopMargin = 520;
+
+                positiveButton.LayoutParameters = buttonParams;
+
+                containerLayout.AddView(positiveButton);
+
+                builder.SetPositiveButton("", (dialog, which) =>
+                {
+                    Intent intent = new Intent(this, typeof(BuildingAOverview));
+                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                    StartActivityForResult(intent, 1);
+                });
+
+                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+                dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Show();
+
+                positiveButton.Click += (sender, e) =>
+                {
+
+                    dialog.Dismiss();
+
+                    // Finish();
+                };
+            };
+
+            lbryimgbtn4.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
                 builder.SetTitle("Oops!");
@@ -1199,6 +1386,8 @@ namespace Bestie_Final
 
             lbryimgbtn.Visibility = ViewStates.Visible;
             lbryimgbtn2.Visibility = ViewStates.Visible;
+            lbryimgbtn3.Visibility = ViewStates.Visible;
+            lbryimgbtn4.Visibility = ViewStates.Visible;
             cmmnctnimgbtn.Visibility = ViewStates.Visible;
             schladmnimgbtn.Visibility = ViewStates.Visible;
 
@@ -1607,6 +1796,8 @@ namespace Bestie_Final
 
             lbryimgbtn.Visibility = ViewStates.Gone;
             lbryimgbtn2.Visibility = ViewStates.Gone;
+            lbryimgbtn3.Visibility = ViewStates.Gone;
+            lbryimgbtn4.Visibility = ViewStates.Gone;
             cmmnctnimgbtn.Visibility = ViewStates.Gone;
             schladmnimgbtn.Visibility = ViewStates.Gone;
 
@@ -1970,6 +2161,8 @@ namespace Bestie_Final
 
             lbryimgbtn.Visibility = ViewStates.Gone;
             lbryimgbtn2.Visibility = ViewStates.Gone;
+            lbryimgbtn3.Visibility = ViewStates.Gone;
+            lbryimgbtn4.Visibility = ViewStates.Gone;
             cmmnctnimgbtn.Visibility = ViewStates.Gone;
             schladmnimgbtn.Visibility = ViewStates.Gone;
 
@@ -2378,6 +2571,8 @@ namespace Bestie_Final
 
             lbryimgbtn.Visibility = ViewStates.Gone;
             lbryimgbtn2.Visibility = ViewStates.Gone;
+            lbryimgbtn3.Visibility = ViewStates.Gone;
+            lbryimgbtn4.Visibility = ViewStates.Gone;
             cmmnctnimgbtn.Visibility = ViewStates.Gone;
             schladmnimgbtn.Visibility = ViewStates.Gone;
 
@@ -2471,6 +2666,8 @@ namespace Bestie_Final
 
             lbryimgbtn.Visibility = ViewStates.Gone;
             lbryimgbtn2.Visibility = ViewStates.Gone;
+            lbryimgbtn3.Visibility = ViewStates.Gone;
+            lbryimgbtn4.Visibility = ViewStates.Gone;
             cmmnctnimgbtn.Visibility = ViewStates.Gone;
             schladmnimgbtn.Visibility = ViewStates.Gone;
 
