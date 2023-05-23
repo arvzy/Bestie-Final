@@ -1055,6 +1055,7 @@ namespace Bestie_Final
             };
 
             regimgbtn.Visibility = ViewStates.Visible;
+            regimgbtn2.Visibility = ViewStates.Visible;
             cshrimgbtn.Visibility = ViewStates.Visible;
             dptyimgbtn.Visibility = ViewStates.Visible;
             complbAimgbtn.Visibility = ViewStates.Visible;
@@ -1375,6 +1376,7 @@ namespace Bestie_Final
             };
 
             regimgbtn.Visibility = ViewStates.Gone;
+            regimgbtn2.Visibility = ViewStates.Gone;
             cshrimgbtn.Visibility = ViewStates.Gone;
             dptyimgbtn.Visibility = ViewStates.Gone;
             complbAimgbtn.Visibility = ViewStates.Gone;
@@ -1785,6 +1787,7 @@ namespace Bestie_Final
             };
 
             regimgbtn.Visibility = ViewStates.Gone;
+            regimgbtn2.Visibility = ViewStates.Gone;
             cshrimgbtn.Visibility = ViewStates.Gone;
             dptyimgbtn.Visibility = ViewStates.Gone;
             complbAimgbtn.Visibility = ViewStates.Gone;
@@ -2150,6 +2153,7 @@ namespace Bestie_Final
             };
 
             regimgbtn.Visibility = ViewStates.Gone;
+            regimgbtn2.Visibility = ViewStates.Gone;
             cshrimgbtn.Visibility = ViewStates.Gone;
             dptyimgbtn.Visibility = ViewStates.Gone;
             complbAimgbtn.Visibility = ViewStates.Gone;
@@ -2560,6 +2564,7 @@ namespace Bestie_Final
             };
 
             regimgbtn.Visibility = ViewStates.Gone;
+            regimgbtn2.Visibility = ViewStates.Gone;
             cshrimgbtn.Visibility = ViewStates.Gone;
             dptyimgbtn.Visibility = ViewStates.Gone;
             complbAimgbtn.Visibility = ViewStates.Gone;
@@ -2655,6 +2660,7 @@ namespace Bestie_Final
             };
 
             regimgbtn.Visibility = ViewStates.Gone;
+            regimgbtn2.Visibility = ViewStates.Gone;
             cshrimgbtn.Visibility = ViewStates.Gone;
             dptyimgbtn.Visibility = ViewStates.Gone;
             complbAimgbtn.Visibility = ViewStates.Gone;
