@@ -81,7 +81,7 @@
         <com.google.android.material.button.MaterialButton
             android:layout_width="250px"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/holo_red_light"
+            style="@style/ButtonOve"
             android:text="Emergency Exits"
             app:cornerRadius="50px"
             android:id="@+id/EmergencyExitButton"/>
@@ -121,13 +121,6 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="50px"
-                android:layout_height="40px"
-                android:layout_marginTop="370px"
-                android:layout_marginLeft="166px"
-                android:src="@drawable/search_icon"/>
            
             <ImageButton
                 android:layout_width="80px"

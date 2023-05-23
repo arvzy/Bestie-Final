@@ -5,4 +5,6 @@
     <color name="colorAccent">#3498db</color>
 	<color name="lightBlue">#b6cfda</color>
 	<color name="darkerBlue">#3073b2</color>
+	<color name="activeButtonColor">#3073b2</color>
+	<color name="inactiveButtonColor">#fff</color>
 </resources>

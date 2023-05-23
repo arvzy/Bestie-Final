@@ -68,31 +68,42 @@
 
             <ImageButton
                 android:id="@+id/RegistrarClick"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="50dp"
-                android:src="@drawable/top_a"/>
+                android:layout_width="200dp"
+                android:layout_height="126dp"
+                android:layout_marginLeft="508dp"
+                android:layout_marginTop="184dp"
+                android:background="@drawable/top_a"/>
 
             <ImageButton
                 android:id="@+id/CashierClick"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="100dp"
-                android:src="@drawable/top_a"/>
+                android:layout_width="133dp"
+                android:layout_height="108dp"
+                android:layout_marginLeft="375dp"
+                android:layout_marginTop="202dp"
+                android:background="@drawable/top_a"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="410dp"
+                android:layout_marginTop="185dp"
+                android:background="@drawable/top_a"/>
 
             <ImageButton
                 android:id="@+id/DeputyClick"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="150dp"
-                android:src="@drawable/top_a"/>
+                android:layout_width="103dp"
+                android:layout_height="108dp"
+                android:layout_marginLeft="272dp"
+                android:layout_marginTop="202dp"
+                android:background="@drawable/top_a"/>
 
             <ImageButton
                 android:id="@+id/AdmissionsOfficeClick"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="200dp"
-                android:src="@drawable/top_a"/>
+                android:layout_width="240dp"
+                android:layout_height="170dp"
+                android:layout_marginLeft="457dp"
+                android:layout_marginTop="355dp"
+                android:background="@drawable/top_a"/>
 
             <ImageButton
                 android:id="@+id/CompLabAClick"
@@ -354,9 +365,10 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="250dp"
                 android:layout_marginLeft="50dp"
-                android:src="@drawable/top_a"/>
+                android:src="@drawable/top_a"/>-->
         </RelativeLayout>
 
+        <!--Floor Buttons-->
 
         <LinearLayout
             android:orientation="horizontal"
@@ -444,13 +456,13 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
-                style="@style/Invert"
-                android:id="@+id/rfdckButton"  />
+                android:id="@+id/rfdckButton"
+                android:background="@drawable/active_button"/>
 
 
         </LinearLayout> 
 
     </LinearLayout>
 
-    
+  
 </RelativeLayout>

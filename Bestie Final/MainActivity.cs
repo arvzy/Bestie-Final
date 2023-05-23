@@ -170,7 +170,6 @@ namespace Bestie_Final
             if (view is TextView)
             {
                 ((TextView)view).Typeface = typeface;
-                ((TextView)view).SetShadowLayer(20, 0, 0, Color.Black);
             }
 
             else if (view is ViewGroup)
