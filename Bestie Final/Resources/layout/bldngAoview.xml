@@ -60,7 +60,7 @@
                 android:layout_width="1200dp"
                 android:padding="12dp"
                 android:layout_weight="1"
-                android:src="@drawable/roofdecklayout"
+                android:src="@drawable/lobbylayout"
                 android:id="@+id/imageViewBuildingView"               
             />
 
@@ -487,8 +487,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
-                android:id="@+id/rfdckButton"
-                android:background="@drawable/active_button"/>
+                style="@style/Invert"
+                android:id="@+id/rfdckButton"/>
 
 
         </LinearLayout> 
