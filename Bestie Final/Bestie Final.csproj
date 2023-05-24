@@ -85,10 +85,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\drawable\TopViewBuilding.png">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-    </AndroidResource>
     <AndroidResource Include="Resources\drawable\Top_A.png">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
@@ -206,9 +202,6 @@
     <AndroidResource Include="Resources\drawable\Floor3.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Roofdeck.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\FemaleToilet3rdFloorGIF.gif" />
   </ItemGroup>
   <ItemGroup>
@@ -246,9 +239,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Locked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Warning.gif" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\FireExitRoofDeck.gif" />
@@ -757,106 +747,112 @@
     <AndroidResource Include="Resources\drawable\active_button_text.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A404.png" />
+    <AndroidResource Include="Resources\drawable\DeputySchoolAdministrator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\AA404.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\A405Physics.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A406Physics.png" />
+    <AndroidResource Include="Resources\drawable\AA406Physics.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A202.png" />
+    <AndroidResource Include="Resources\drawable\AA202.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A203.png" />
+    <AndroidResource Include="Resources\drawable\AA203.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A204.png" />
+    <AndroidResource Include="Resources\drawable\AA204.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A206.png" />
+    <AndroidResource Include="Resources\drawable\AA206.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A301.png" />
+    <AndroidResource Include="Resources\drawable\AA301.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A302.png" />
+    <AndroidResource Include="Resources\drawable\AA302.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A303.png" />
+    <AndroidResource Include="Resources\drawable\AA303.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A305.png" />
+    <AndroidResource Include="Resources\drawable\AA305.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A401.png" />
+    <AndroidResource Include="Resources\drawable\AA401.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A402.png" />
+    <AndroidResource Include="Resources\drawable\AA402.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A403.png" />
+    <AndroidResource Include="Resources\drawable\AA403.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\DeputySchoolAdministrator.png" />
+    <AndroidResource Include="Resources\drawable\ADeputySchoolAdministrator.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\LabA.png" />
+    <AndroidResource Include="Resources\drawable\ALabA.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Library.png" />
+    <AndroidResource Include="Resources\drawable\ALibrary.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\LobbyCorridor.png" />
+    <AndroidResource Include="Resources\drawable\ALobbyCorridor.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Registrar.png" />
+    <AndroidResource Include="Resources\drawable\ARegistrar.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ToiletF_1f.png" />
+    <AndroidResource Include="Resources\drawable\AToiletF_1f.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ToiletM_1f.png" />
+    <AndroidResource Include="Resources\drawable\AToiletM_1f.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A304.png" />
+    <AndroidResource Include="Resources\drawable\AA304.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Lobby.png" />
+    <AndroidResource Include="Resources\drawable\ALobby.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ToiletM_4f.png" />
+    <AndroidResource Include="Resources\drawable\AToiletM_4f.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ToiletM_3f.png" />
+    <AndroidResource Include="Resources\drawable\AToiletM_3f.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ToiletM_2f.png" />
+    <AndroidResource Include="Resources\drawable\AToiletM_2f.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ToiletF_4f.png" />
+    <AndroidResource Include="Resources\drawable\AToiletF_4f.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ToiletF_3f.png" />
+    <AndroidResource Include="Resources\drawable\AToiletF_3f.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ToiletF_2f.png" />
+    <AndroidResource Include="Resources\drawable\AToiletF_2f.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Communication.png" />
+    <AndroidResource Include="Resources\drawable\ARoofdeck.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A201.png" />
+    <AndroidResource Include="Resources\drawable\ACommunication.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\A205.png" />
+    <AndroidResource Include="Resources\drawable\AA201.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\BuildingAdmin.png" />
+    <AndroidResource Include="Resources\drawable\AA205.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Cashier.png" />
+    <AndroidResource Include="Resources\drawable\ABuildingAdmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ACashier.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
