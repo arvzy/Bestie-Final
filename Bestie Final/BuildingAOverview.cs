@@ -173,7 +173,7 @@ namespace Bestie_Final
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.ARegistrar);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
