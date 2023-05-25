@@ -1908,405 +1908,24 @@ namespace Bestie_Final
         {
             imageViewBAView.SetImageResource(Resource.Drawable.FourthFlrLayout);
 
-            a401imgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "BACK";
-
-                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
-                roundedShape.SetCornerRadius(20);
-                roundedShape.SetColor(Android.Graphics.Color.White);
-                positiveButton.Background = roundedShape;
-
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 10;
-                buttonParams.TopMargin = 10;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-
-                    Finish();
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A401_bg);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                };
-            };
-
-            a402imgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "BACK";
-
-                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
-                roundedShape.SetCornerRadius(20);
-                roundedShape.SetColor(Android.Graphics.Color.White);
-                positiveButton.Background = roundedShape;
-
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 10;
-                buttonParams.TopMargin = 10;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-
-                    Finish();
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A402_bg);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                };
-            };
-
-            a403imgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "BACK";
-
-                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
-                roundedShape.SetCornerRadius(20);
-                roundedShape.SetColor(Android.Graphics.Color.White);
-                positiveButton.Background = roundedShape;
-
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 10;
-                buttonParams.TopMargin = 10;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-
-                    Finish();
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A403_bg);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                };
-            };
-
-            a404imgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "BACK";
-
-                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
-                roundedShape.SetCornerRadius(20);
-                roundedShape.SetColor(Android.Graphics.Color.White);
-                positiveButton.Background = roundedShape;
-
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 10;
-                buttonParams.TopMargin = 10;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-
-                    Finish();
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A404_bg);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                };
-            };
-
-            a405imgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "BACK";
-
-                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
-                roundedShape.SetCornerRadius(20);
-                roundedShape.SetColor(Android.Graphics.Color.White);
-                positiveButton.Background = roundedShape;
-
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 10;
-                buttonParams.TopMargin = 10;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-
-                    Finish();
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A405Physics_bg);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                };
-            };
-
-            a406imgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "BACK";
-
-                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
-                roundedShape.SetCornerRadius(20);
-                roundedShape.SetColor(Android.Graphics.Color.White);
-                positiveButton.Background = roundedShape;
-
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 10;
-                buttonParams.TopMargin = 10;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-
-                    Finish();
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A406Physics_bg);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                };
-            };
-
-            maltoil4thflrimgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "BACK";
-
-                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
-                roundedShape.SetCornerRadius(20);
-                roundedShape.SetColor(Android.Graphics.Color.White);
-                positiveButton.Background = roundedShape;
-
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 10;
-                buttonParams.TopMargin = 10;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-
-                    Finish();
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.ToiletM_2f_bg);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                };
-            };
-
-            femtoil4thflrimgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "BACK";
-
-                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
-                roundedShape.SetCornerRadius(20);
-                roundedShape.SetColor(Android.Graphics.Color.White);
-                positiveButton.Background = roundedShape;
-
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 10;
-                buttonParams.TopMargin = 10;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-
-                    Finish();
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.ToiletF_2f_bg);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                };
-            };
+            a401imgbtn.Click -= A401imgbtn_Click;
+            a402imgbtn.Click -= A402imgbtn_Click;
+            a403imgbtn.Click -= A403imgbtn_Click;
+            a404imgbtn.Click -= A404imgbtn_Click;
+            a405imgbtn.Click -= A405imgbtn_Click;
+            a406imgbtn.Click -= A406imgbtn_Click;
+            maltoil4thflrimgbtn.Click -= Maltoil4thflrimgbtn_Click;
+            femtoil4thflrimgbtn.Click -= Femtoil4thflrimgbtn_Click;
+
+            
+            a401imgbtn.Click += A401imgbtn_Click;
+            a402imgbtn.Click += A402imgbtn_Click;
+            a403imgbtn.Click += A403imgbtn_Click;
+            a404imgbtn.Click += A404imgbtn_Click;
+            a405imgbtn.Click += A405imgbtn_Click;
+            a406imgbtn.Click += A406imgbtn_Click;
+            maltoil4thflrimgbtn.Click += Maltoil4thflrimgbtn_Click;
+            femtoil4thflrimgbtn.Click += Femtoil4thflrimgbtn_Click;
 
             regimgbtn.Visibility = ViewStates.Gone;
             regimgbtn2.Visibility = ViewStates.Gone;
@@ -2355,17 +1974,393 @@ namespace Bestie_Final
             rfdckimgbtn.Visibility = ViewStates.Gone;
         }
 
+            private void A401imgbtn_Click(object sender, EventArgs e)
+        {
+            AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+
+            RelativeLayout containerLayout = new RelativeLayout(this);
+
+            Button positiveButton = new Button(this);
+            positiveButton.Text = "BACK";
+
+            var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+            roundedShape.SetCornerRadius(20);
+            roundedShape.SetColor(Android.Graphics.Color.White);
+            positiveButton.Background = roundedShape;
+
+            RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WrapContent,
+                RelativeLayout.LayoutParams.WrapContent
+            );
+            buttonParams.LeftMargin = 10;
+            buttonParams.TopMargin = 10;
+
+            positiveButton.LayoutParameters = buttonParams;
+
+            containerLayout.AddView(positiveButton);
+
+            builder.SetPositiveButton("", (dialog, which) =>
+            {
+                Intent intent = new Intent(this, typeof(BuildingAOverview));
+                intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                StartActivityForResult(intent, 1);
+
+                Finish();
+            });
+
+            AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+            dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+            dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A401_bg);
+            dialog.Show();
+
+            positiveButton.Click += (s, args) =>
+            {
+                dialog.Dismiss();
+            };
+        }
+
+        private void A402imgbtn_Click(object sender, EventArgs e)
+        {
+            AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+
+            RelativeLayout containerLayout = new RelativeLayout(this);
+
+            Button positiveButton = new Button(this);
+            positiveButton.Text = "BACK";
+
+            var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+            roundedShape.SetCornerRadius(20);
+            roundedShape.SetColor(Android.Graphics.Color.White);
+            positiveButton.Background = roundedShape;
+
+            RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WrapContent,
+                RelativeLayout.LayoutParams.WrapContent
+            );
+            buttonParams.LeftMargin = 10;
+            buttonParams.TopMargin = 10;
+
+            positiveButton.LayoutParameters = buttonParams;
+
+            containerLayout.AddView(positiveButton);
+
+            builder.SetPositiveButton("", (dialog, which) =>
+            {
+                Intent intent = new Intent(this, typeof(BuildingAOverview));
+                intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                StartActivityForResult(intent, 1);
+
+                Finish();
+            });
+
+            AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+            dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+            dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A402_bg);
+            dialog.Show();
+
+            positiveButton.Click += (s, args) =>
+            {
+                dialog.Dismiss();
+            };
+        }
+
+
+        private void A403imgbtn_Click(object sender, EventArgs e)
+        {
+            AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+
+            RelativeLayout containerLayout = new RelativeLayout(this);
+
+            Button positiveButton = new Button(this);
+            positiveButton.Text = "BACK";
+
+            var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+            roundedShape.SetCornerRadius(20);
+            roundedShape.SetColor(Android.Graphics.Color.White);
+            positiveButton.Background = roundedShape;
+
+            RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WrapContent,
+                RelativeLayout.LayoutParams.WrapContent
+            );
+            buttonParams.LeftMargin = 10;
+            buttonParams.TopMargin = 10;
+
+            positiveButton.LayoutParameters = buttonParams;
+
+            containerLayout.AddView(positiveButton);
+
+            builder.SetPositiveButton("", (dialog, which) =>
+            {
+                Intent intent = new Intent(this, typeof(BuildingAOverview));
+                intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                StartActivityForResult(intent, 1);
+
+                Finish();
+            });
+
+            AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+            dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+            dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A403_bg);
+            dialog.Show();
+
+            positiveButton.Click += (s, args) =>
+            {
+                dialog.Dismiss();
+            };
+        }
+    
+
+        private void A404imgbtn_Click(object sender, EventArgs e)
+        {
+            AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+
+            RelativeLayout containerLayout = new RelativeLayout(this);
+
+            Button positiveButton = new Button(this);
+            positiveButton.Text = "BACK";
+
+            var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+            roundedShape.SetCornerRadius(20);
+            roundedShape.SetColor(Android.Graphics.Color.White);
+            positiveButton.Background = roundedShape;
+
+            RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WrapContent,
+                RelativeLayout.LayoutParams.WrapContent
+            );
+            buttonParams.LeftMargin = 10;
+            buttonParams.TopMargin = 10;
+
+            positiveButton.LayoutParameters = buttonParams;
+
+            containerLayout.AddView(positiveButton);
+
+            builder.SetPositiveButton("", (dialog, which) =>
+            {
+                Intent intent = new Intent(this, typeof(BuildingAOverview));
+                intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                StartActivityForResult(intent, 1);
+
+                Finish();
+            });
+
+            AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+            dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+            dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A404_bg);
+            dialog.Show();
+
+            positiveButton.Click += (s, args) =>
+            {
+                dialog.Dismiss();
+            };
+        }
+    
+        private void A405imgbtn_Click(object sender, EventArgs e)
+        {
+            AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+
+            RelativeLayout containerLayout = new RelativeLayout(this);
+
+            Button positiveButton = new Button(this);
+            positiveButton.Text = "BACK";
+
+            var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+            roundedShape.SetCornerRadius(20);
+            roundedShape.SetColor(Android.Graphics.Color.White);
+            positiveButton.Background = roundedShape;
+
+            RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WrapContent,
+                RelativeLayout.LayoutParams.WrapContent
+            );
+            buttonParams.LeftMargin = 10;
+            buttonParams.TopMargin = 10;
+
+            positiveButton.LayoutParameters = buttonParams;
+
+            containerLayout.AddView(positiveButton);
+
+            builder.SetPositiveButton("", (dialog, which) =>
+            {
+                Intent intent = new Intent(this, typeof(BuildingAOverview));
+                intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                StartActivityForResult(intent, 1);
+
+                Finish();
+            });
+
+            AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+            dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+            dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A405Physics_bg);
+            dialog.Show();
+
+            positiveButton.Click += (s, args) =>
+            {
+                dialog.Dismiss();
+            };
+        }
+    
+
+        private void A406imgbtn_Click(object sender, EventArgs e)
+        {
+            AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+
+            RelativeLayout containerLayout = new RelativeLayout(this);
+
+            Button positiveButton = new Button(this);
+            positiveButton.Text = "BACK";
+
+            var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+            roundedShape.SetCornerRadius(20);
+            roundedShape.SetColor(Android.Graphics.Color.White);
+            positiveButton.Background = roundedShape;
+
+            RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WrapContent,
+                RelativeLayout.LayoutParams.WrapContent
+            );
+            buttonParams.LeftMargin = 10;
+            buttonParams.TopMargin = 10;
+
+            positiveButton.LayoutParameters = buttonParams;
+
+            containerLayout.AddView(positiveButton);
+
+            builder.SetPositiveButton("", (dialog, which) =>
+            {
+                Intent intent = new Intent(this, typeof(BuildingAOverview));
+                intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                StartActivityForResult(intent, 1);
+
+                Finish();
+            });
+
+            AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+            dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+            dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A406Physics_bg);
+            dialog.Show();
+
+            positiveButton.Click += (s, args) =>
+            {
+                dialog.Dismiss();
+            };
+        }
+
+        private void Maltoil4thflrimgbtn_Click(object sender, EventArgs e)
+        {
+            AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+
+            RelativeLayout containerLayout = new RelativeLayout(this);
+
+            Button positiveButton = new Button(this);
+            positiveButton.Text = "BACK";
+
+            var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+            roundedShape.SetCornerRadius(20);
+            roundedShape.SetColor(Android.Graphics.Color.White);
+            positiveButton.Background = roundedShape;
+
+            RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WrapContent,
+                RelativeLayout.LayoutParams.WrapContent
+            );
+            buttonParams.LeftMargin = 10;
+            buttonParams.TopMargin = 10;
+
+            positiveButton.LayoutParameters = buttonParams;
+
+            containerLayout.AddView(positiveButton);
+
+            builder.SetPositiveButton("", (dialog, which) =>
+            {
+                Intent intent = new Intent(this, typeof(BuildingAOverview));
+                intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                StartActivityForResult(intent, 1);
+
+                Finish();
+            });
+
+            AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+            dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+            dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.ToiletM_2f_bg);
+            dialog.Show();
+
+            positiveButton.Click += (s, args) =>
+            {
+                dialog.Dismiss();
+            };
+        }
+
+        private void Femtoil4thflrimgbtn_Click(object sender, EventArgs e)
+        {
+            AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+
+            RelativeLayout containerLayout = new RelativeLayout(this);
+
+            Button positiveButton = new Button(this);
+            positiveButton.Text = "BACK";
+
+            var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+            roundedShape.SetCornerRadius(20);
+            roundedShape.SetColor(Android.Graphics.Color.White);
+            positiveButton.Background = roundedShape;
+
+            RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WrapContent,
+                RelativeLayout.LayoutParams.WrapContent
+            );
+            buttonParams.LeftMargin = 10;
+            buttonParams.TopMargin = 10;
+
+            positiveButton.LayoutParameters = buttonParams;
+
+            containerLayout.AddView(positiveButton);
+
+            builder.SetPositiveButton("", (dialog, which) =>
+            {
+                Intent intent = new Intent(this, typeof(BuildingAOverview));
+                intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                StartActivityForResult(intent, 1);
+
+                Finish();
+            });
+
+            AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+            dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+            dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.ToiletF_2f_bg);
+            dialog.Show();
+
+            positiveButton.Click += (s, args) =>
+            {
+                dialog.Dismiss();
+            };
+        }
+
         private void Rfdckbtn_Click(object sender, EventArgs e)
         {
             imageViewBAView.SetImageResource(Resource.Drawable.RoofDeckLayout);
 
-            // Detach the event handler if it was previously attached
             rfdckimgbtn.Click -= Rfdckimgbtn_Click;
 
-            // Attach the event handler to the button click event
             rfdckimgbtn.Click += Rfdckimgbtn_Click;
 
-            // Move the visibility changes outside the event handler
             regimgbtn.Visibility = ViewStates.Gone;
             regimgbtn2.Visibility = ViewStates.Gone;
             cshrimgbtn.Visibility = ViewStates.Gone;
@@ -2455,6 +2450,7 @@ namespace Bestie_Final
             dialog.Show();
 
             positiveButton.Click += (s, args) =>
+
             {
                 dialog.Dismiss();
             };
