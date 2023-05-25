@@ -2359,56 +2359,13 @@ namespace Bestie_Final
         {
             imageViewBAView.SetImageResource(Resource.Drawable.RoofDeckLayout);
 
-            rfdckimgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+            // Detach the event handler if it was previously attached
+            rfdckimgbtn.Click -= Rfdckimgbtn_Click;
 
-                RelativeLayout containerLayout = new RelativeLayout(this);
+            // Attach the event handler to the button click event
+            rfdckimgbtn.Click += Rfdckimgbtn_Click;
 
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "BACK";
-
-                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
-                roundedShape.SetCornerRadius(20);
-                roundedShape.SetColor(Android.Graphics.Color.White);
-                positiveButton.Background = roundedShape;
-
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 10;
-                buttonParams.TopMargin = 10;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-
-                    Finish();
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.Roofdeck_bg);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                };
-            };
-
+            // Move the visibility changes outside the event handler
             regimgbtn.Visibility = ViewStates.Gone;
             regimgbtn2.Visibility = ViewStates.Gone;
             cshrimgbtn.Visibility = ViewStates.Gone;
@@ -2454,7 +2411,53 @@ namespace Bestie_Final
             maltoil4thflrimgbtn.Visibility = ViewStates.Gone;
 
             rfdckimgbtn.Visibility = ViewStates.Visible;
+        }
 
+        private void Rfdckimgbtn_Click(object sender, EventArgs e)
+        {
+            AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
+
+            RelativeLayout containerLayout = new RelativeLayout(this);
+
+            Button positiveButton = new Button(this);
+            positiveButton.Text = "BACK";
+
+            var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+            roundedShape.SetCornerRadius(20);
+            roundedShape.SetColor(Android.Graphics.Color.White);
+            positiveButton.Background = roundedShape;
+
+            RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WrapContent,
+                RelativeLayout.LayoutParams.WrapContent
+            );
+            buttonParams.LeftMargin = 10;
+            buttonParams.TopMargin = 10;
+
+            positiveButton.LayoutParameters = buttonParams;
+
+            containerLayout.AddView(positiveButton);
+
+            builder.SetPositiveButton("", (dialog, which) =>
+            {
+                Intent intent = new Intent(this, typeof(BuildingAOverview));
+                intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+                StartActivityForResult(intent, 1);
+
+                Finish();
+            });
+
+            AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
+
+            dialog.SetView(containerLayout, 0, 0, 0, 0);
+
+            dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.Roofdeck_bg);
+            dialog.Show();
+
+            positiveButton.Click += (s, args) =>
+            {
+                dialog.Dismiss();
+            };
         }
         private void Backbtnbldngaoview_Click(object sender, EventArgs e)
         {
