@@ -143,20 +143,24 @@ namespace Bestie_Final
             regimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -167,41 +171,46 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.ARegistrar);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.Registrar_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
                 {
 
-                    dialog.Dismiss(); 
+                    dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             regimgbtn2.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -212,13 +221,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.Registrar_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -226,27 +237,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             cshrimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -257,13 +271,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.Cashier_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -271,27 +287,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             dptyimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -302,13 +321,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.Building_Admin_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -316,27 +337,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             admssnsoffcimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -347,13 +371,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.Lobby_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -361,27 +387,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             complbAimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -392,13 +421,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A_lab_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -406,27 +437,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             femtoillbbyimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -437,13 +471,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.ToiletF_1f_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -451,27 +487,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             maltoillbbyimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -482,13 +521,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.ToiletM_1f_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -496,27 +537,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             stdntsrvcimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -527,13 +571,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.LobbyCorridor_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -541,27 +587,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             guidimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -572,13 +621,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.LobbyCorridor_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -586,7 +637,6 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
         }
@@ -603,456 +653,6 @@ namespace Bestie_Final
         private void Frstflrbtn_Click(object sender, EventArgs e)
         {
             imageViewBAView.SetImageResource(Resource.Drawable.LobbyLayout);
-
-            regimgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                    // Finish();
-                };
-            };
-
-            regimgbtn2.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                    // Finish();
-                };
-            };
-
-            cshrimgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                    // Finish();
-                };
-            };
-
-            dptyimgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                    // Finish();
-                };
-            };
-
-            admssnsoffcimgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                    // Finish();
-                };
-            };
-
-            complbAimgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                    // Finish();
-                };
-            };
-
-            femtoillbbyimgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                    // Finish();
-                };
-            };
-
-            maltoillbbyimgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                    // Finish();
-                };
-            };
-
-            stdntsrvcimgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                    // Finish();
-                };
-            };
-
-            guidimgbtn.Click += (sender, args) =>
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
-
-                RelativeLayout containerLayout = new RelativeLayout(this);
-
-                Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
-
-                RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WrapContent,
-                    RelativeLayout.LayoutParams.WrapContent
-                );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
-
-                positiveButton.LayoutParameters = buttonParams;
-
-                containerLayout.AddView(positiveButton);
-
-                builder.SetPositiveButton("", (dialog, which) =>
-                {
-                    Intent intent = new Intent(this, typeof(BuildingAOverview));
-                    intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
-                    StartActivityForResult(intent, 1);
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
-
-                dialog.SetView(containerLayout, 0, 0, 0, 0);
-
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
-                dialog.Show();
-
-                positiveButton.Click += (sender, e) =>
-                {
-
-                    dialog.Dismiss();
-
-                    // Finish();
-                };
-            };
 
             regimgbtn.Visibility = ViewStates.Visible;
             regimgbtn2.Visibility = ViewStates.Visible;
@@ -1108,20 +708,24 @@ namespace Bestie_Final
             lbryimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1132,13 +736,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.Library_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1146,27 +752,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             lbryimgbtn2.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1177,13 +786,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.Library_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1191,27 +802,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             lbryimgbtn3.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1222,13 +836,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.Library_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1236,27 +852,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             lbryimgbtn4.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1267,13 +886,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.Library_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1281,27 +902,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             schladmnimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1312,13 +936,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.DeputySchoolAdministrator_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1326,27 +952,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             cmmnctnimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1357,13 +986,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.Communication_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1371,7 +1002,6 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
@@ -1429,20 +1059,24 @@ namespace Bestie_Final
             a201imgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1453,13 +1087,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A201_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1467,27 +1103,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             a202imgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1498,13 +1137,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A202_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1512,27 +1153,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             a203imgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1543,13 +1187,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A203_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1557,27 +1203,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             a204imgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1588,13 +1237,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A204_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1602,27 +1253,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             a205imgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1633,13 +1287,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A205_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1647,27 +1303,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             a206imgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1678,13 +1337,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A206_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1692,27 +1353,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             maltoil2ndflrimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1723,13 +1387,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.ToiletM_2f_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1737,27 +1403,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             femtoil2ndflrimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1768,13 +1437,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.ToiletF_2f_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1782,7 +1453,6 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
@@ -1840,20 +1510,24 @@ namespace Bestie_Final
             complabBimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1864,13 +1538,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A301_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1878,27 +1554,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             complabCimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1909,13 +1588,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A302_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1923,27 +1604,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             complabDimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1954,13 +1638,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A303_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -1968,27 +1654,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             complabEimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -1999,13 +1688,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A304_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -2013,27 +1704,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             complabFimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -2044,13 +1738,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A305_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -2058,27 +1754,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             maltoil3rdflrimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -2089,13 +1788,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.ToiletM_2f_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -2103,27 +1804,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             femtoil3rdflrimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -2134,13 +1838,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.ToiletF_2f_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -2148,7 +1854,6 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
@@ -2206,20 +1911,24 @@ namespace Bestie_Final
             a401imgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -2230,13 +1939,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A401_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -2244,27 +1955,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             a402imgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -2275,13 +1989,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A402_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -2289,27 +2005,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             a403imgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -2320,13 +2039,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A403_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -2334,27 +2055,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             a404imgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -2365,13 +2089,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A404_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -2379,27 +2105,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             a405imgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -2410,13 +2139,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A405Physics_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -2424,27 +2155,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             a406imgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -2455,13 +2189,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.A406Physics_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -2469,27 +2205,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             maltoil4thflrimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -2500,13 +2239,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.ToiletM_2f_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -2514,27 +2255,30 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
             femtoil4thflrimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -2545,13 +2289,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.ToiletF_2f_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -2559,7 +2305,6 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
@@ -2617,20 +2362,24 @@ namespace Bestie_Final
             rfdckimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("");
 
                 RelativeLayout containerLayout = new RelativeLayout(this);
 
                 Button positiveButton = new Button(this);
-                positiveButton.Text = "OK";
+                positiveButton.Text = "BACK";
+
+                var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
+                roundedShape.SetCornerRadius(20);
+                roundedShape.SetColor(Android.Graphics.Color.White);
+                positiveButton.Background = roundedShape;
+
 
                 RelativeLayout.LayoutParams buttonParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WrapContent,
                     RelativeLayout.LayoutParams.WrapContent
                 );
-                buttonParams.LeftMargin = 470;
-                buttonParams.TopMargin = 520;
+                buttonParams.LeftMargin = 10;
+                buttonParams.TopMargin = 10;
 
                 positiveButton.LayoutParameters = buttonParams;
 
@@ -2641,13 +2390,15 @@ namespace Bestie_Final
                     Intent intent = new Intent(this, typeof(BuildingAOverview));
                     intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
                     StartActivityForResult(intent, 1);
+
+                    Finish();
                 });
 
                 AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();
 
                 dialog.SetView(containerLayout, 0, 0, 0, 0);
 
-                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.PAGE_NOT_FOUND);
+                dialog.Window.SetBackgroundDrawableResource(Resource.Drawable.Roofdeck_bg);
                 dialog.Show();
 
                 positiveButton.Click += (sender, e) =>
@@ -2655,7 +2406,6 @@ namespace Bestie_Final
 
                     dialog.Dismiss();
 
-                    // Finish();
                 };
             };
 
@@ -2719,9 +2469,7 @@ namespace Bestie_Final
 
             if (requestCode == 1 && resultCode == Result.Ok)
             {
-                // Handle the result from MainActivity
-                // Optionally, finish the current activity here if needed
-                // Finish();
+            Finish();
             }
         }
     }
