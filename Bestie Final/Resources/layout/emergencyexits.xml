@@ -14,23 +14,12 @@
         android:background="@drawable/background_gradient2"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/homeE"
-        android:layout_width="60px"
-        android:layout_height="60px"
-        android:textColor="@android:color/black"
-        android:textSize="30px"
-        app:cornerRadius="60px"
-        android:layout_marginLeft="12px"
-        style="@style/Invert"
-        android:text="⌂"/>
-
-    <com.google.android.material.button.MaterialButton
         android:id="@+id/BackEmergencyExits"
         android:layout_width="100px"
         android:layout_height="60px"
         android:textColor="@android:color/black"
         app:cornerRadius="20px"
-        android:layout_marginLeft="80px"
+        android:layout_marginLeft="12px"
         style="@style/Invert"
         android:text="Back"/>
     

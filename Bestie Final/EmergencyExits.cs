@@ -17,7 +17,7 @@ namespace Bestie_Final
     [Activity(Label = "EmergencyExits")]
     public class EmergencyExits : Activity
     {
-        Button eebckbtn, frstflrEbtn, mzznneEbtn, scndflrEbtn, thrdflrEbtn, frthflrEbtn, rfdckEbtn, hmeEbtn;
+        Button eebckbtn, frstflrEbtn, mzznneEbtn, scndflrEbtn, thrdflrEbtn, frthflrEbtn, rfdckEbtn;
         ImageView imgviewback, imgviewfront, wrnngimgview;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -26,7 +26,6 @@ namespace Bestie_Final
             // Create your application here
 
             eebckbtn = FindViewById<Button>(Resource.Id.BackEmergencyExits);
-            hmeEbtn = FindViewById<Button>(Resource.Id.homeE);
             frstflrEbtn = FindViewById<Button>(Resource.Id.frstfEButton);
             mzznneEbtn = FindViewById<Button>(Resource.Id.mzznnEButton);
             scndflrEbtn = FindViewById<Button>(Resource.Id.scndfEButton); 
@@ -42,7 +41,6 @@ namespace Bestie_Final
                 .Into(new DrawableImageViewTarget(imgviewback));
 
             eebckbtn.Click += Eebckbtn_Click;
-            hmeEbtn.Click += HmeEbtn_Click;
             frstflrEbtn.Click += FrstflrEbtn_Click;
             mzznneEbtn.Click += MzznneEbtn_Click;
             scndflrEbtn.Click += ScndflrEbtn_Click;
@@ -93,13 +91,6 @@ namespace Bestie_Final
                 .Into(new DrawableImageViewTarget(imgviewfront));
         }
 
-
-        private void HmeEbtn_Click(object sender, EventArgs e)
-        {
-            var intent = new Intent(this, typeof(MainActivity));
-            this.StartActivity(intent);
-            Finish();
-        }
 
         private void Eebckbtn_Click(object sender, EventArgs e)
         {

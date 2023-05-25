@@ -401,7 +401,7 @@ namespace Bestie_Final
 
                 var roundedShape = new Android.Graphics.Drawables.GradientDrawable();
                 roundedShape.SetCornerRadius(20);
-                roundedShape.SetColor(Android.Graphics.Color.White);
+                roundedShape.SetColor(Android.Graphics.Color.LightGray);
                 positiveButton.Background = roundedShape;
 
 
