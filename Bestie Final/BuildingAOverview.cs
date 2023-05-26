@@ -57,9 +57,9 @@ namespace Bestie_Final
 
         private void Frstflrbtn_Click(object sender, EventArgs e)
         {
-<<<<<<< Updated upstream
+
             imageViewBAView.SetImageResource(Resource.Drawable.Floor1);
-=======
+
             imageViewBAView.SetImageResource(Resource.Drawable.LobbyLayout);
 
             frstflrbtn.Enabled = false;
