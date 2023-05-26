@@ -33,6 +33,7 @@ namespace Bestie_Final
 
             imageViewBAView = FindViewById<ImageView>(Resource.Id.imageViewBuildingView);
 
+            //Floor Buttons
             backbtnbldngaoview = FindViewById<Button>(Resource.Id.BackBuildingAOview);
             homebtn = FindViewById<Button>(Resource.Id.home);
             frstflrbtn = FindViewById<Button>(Resource.Id.frstfButton);
@@ -652,7 +653,25 @@ namespace Bestie_Final
 
         private void Frstflrbtn_Click(object sender, EventArgs e)
         {
+
             imageViewBAView.SetImageResource(Resource.Drawable.LobbyLayout);
+
+
+
+            imageViewBAView.SetImageResource(Resource.Drawable.Floor1);
+
+
+            imageViewBAView.SetImageResource(Resource.Drawable.Floor1);
+
+            imageViewBAView.SetImageResource(Resource.Drawable.LobbyLayout);
+
+            frstflrbtn.Enabled = false;
+            mzznnbtn.Enabled = true;
+            scndflrbtn.Enabled = true;
+            thrdflrbtn.Enabled = true;
+            frthflrbtn.Enabled = true;
+            rfdckbtn.Enabled = true;
+
 
             regimgbtn.Visibility = ViewStates.Visible;
             regimgbtn2.Visibility = ViewStates.Visible;
@@ -703,8 +722,19 @@ namespace Bestie_Final
 
         private void Mzznnbtn_Click(object sender, EventArgs e)
         {
+
             imageViewBAView.SetImageResource(Resource.Drawable.LibraryLayout);
 
+            imageViewBAView.SetImageResource(Resource.Drawable.Mezzanine);
+
+            imageViewBAView.SetImageResource(Resource.Drawable.LibraryLayout);
+
+            frstflrbtn.Enabled = true;
+            mzznnbtn.Enabled = false;
+            scndflrbtn.Enabled = true;
+            thrdflrbtn.Enabled = true;
+            frthflrbtn.Enabled = true;
+            rfdckbtn.Enabled = true;
             lbryimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
@@ -1055,6 +1085,17 @@ namespace Bestie_Final
         private void Scndflrbtn_Click(object sender, EventArgs e)
         {
             imageViewBAView.SetImageResource(Resource.Drawable.SecondFlrLayout);
+
+            imageViewBAView.SetImageResource(Resource.Drawable.Floor2);
+
+            imageViewBAView.SetImageResource(Resource.Drawable.SecondFlrLayout);
+
+            frstflrbtn.Enabled = true;
+            mzznnbtn.Enabled = true;
+            scndflrbtn.Enabled = false;
+            thrdflrbtn.Enabled = true;
+            frthflrbtn.Enabled = true;
+            rfdckbtn.Enabled = true;
 
             a201imgbtn.Click += (sender, args) =>
             {
@@ -1507,6 +1548,17 @@ namespace Bestie_Final
         {
             imageViewBAView.SetImageResource(Resource.Drawable.ThirdFlrLayout);
 
+            imageViewBAView.SetImageResource(Resource.Drawable.Floor3);
+
+            imageViewBAView.SetImageResource(Resource.Drawable.ThirdFlrLayout);
+
+            frstflrbtn.Enabled = true;
+            mzznnbtn.Enabled = true;
+            scndflrbtn.Enabled = true;
+            thrdflrbtn.Enabled = false;
+            frthflrbtn.Enabled = true;
+            rfdckbtn.Enabled = true;
+
             complabBimgbtn.Click += (sender, args) =>
             {
                 AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
@@ -1906,6 +1958,16 @@ namespace Bestie_Final
 
         private void Frthflrbtn_Click(object sender, EventArgs e)
         {
+
+            imageViewBAView.SetImageResource(Resource.Drawable.Floor4);
+
+            frstflrbtn.Enabled = true;
+            mzznnbtn.Enabled = true;
+            scndflrbtn.Enabled = true;
+            thrdflrbtn.Enabled = true;
+            frthflrbtn.Enabled = false;
+            rfdckbtn.Enabled = true;
+
             imageViewBAView.SetImageResource(Resource.Drawable.FourthFlrLayout);
 
             a401imgbtn.Click -= A401imgbtn_Click;
@@ -2351,11 +2413,23 @@ namespace Bestie_Final
             {
                 dialog.Dismiss();
             };
+
         }
 
         private void Rfdckbtn_Click(object sender, EventArgs e)
         {
             imageViewBAView.SetImageResource(Resource.Drawable.RoofDeckLayout);
+
+            //imageViewBAView.SetImageResource(Resource.Drawable.Roofdeck);
+
+            imageViewBAView.SetImageResource(Resource.Drawable.RoofDeckLayout);
+
+            frstflrbtn.Enabled = true;
+            mzznnbtn.Enabled = true;
+            scndflrbtn.Enabled = true;
+            thrdflrbtn.Enabled = true;
+            frthflrbtn.Enabled = true;
+            rfdckbtn.Enabled = false;
 
             rfdckimgbtn.Click -= Rfdckimgbtn_Click;
 
@@ -2454,6 +2528,7 @@ namespace Bestie_Final
             {
                 dialog.Dismiss();
             };
+
         }
         private void Backbtnbldngaoview_Click(object sender, EventArgs e)
         {
