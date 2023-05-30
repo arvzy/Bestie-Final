@@ -24,5 +24,14 @@
 	<style name="ButtonOve" parent="Widget.MaterialComponents.Button">
 		<item name="backgroundTint">@android:color/holo_red_light</item>
 	</style>
+	
+	<style name="Buttonem" parent="Widget.MaterialComponents.Button">
+		<item name="backgroundTint">#e8e337</item>
+	</style>
+
+	<style name="ButtonBes" parent="Widget.MaterialComponents.Button">
+		<item name="backgroundTint">#000000</item>
+	</style>
+
 </resources>
 

@@ -8,29 +8,28 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="60px">
+        android:layout_height="wrap_content">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/BuildingSearchBackButton"
-        android:layout_width="100px"
-        android:layout_height="60px"
-        android:textColor="@android:color/black"
-        app:cornerRadius="20px"
-        android:layout_marginLeft="12px"
-        style="@style/Button"
-        android:text="Back"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BuildingSearchBackButton"
+            android:layout_width="100px"
+            android:layout_height="60px"
+            android:textColor="@android:color/black"
+            app:cornerRadius="20px"
+            android:layout_marginLeft="12px"
+            style="@style/Button"
+            android:text="Back"/>
+
         <TextView
             android:text="Note: Once the pointers stop moving, you can only click or interact with the buttons below"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="12px"
             android:textSize="17px"
             android:textColor="#808080"
             android:id="@+id/textView1" />
-
-
     </LinearLayout>
 
     <LinearLayout
@@ -185,20 +184,6 @@
 
 
         </LinearLayout> 
-
-        
-       <!-- <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:id="@+id/linearLayout1">
-
-            <ImageView
-               android:layout_width="100px"
-               android:layout_height="100px"
-               android:src="@drawable/femaletoilet2ndfloorgif"/>
-            </LinearLayout>-->
 
         </LinearLayout>
  

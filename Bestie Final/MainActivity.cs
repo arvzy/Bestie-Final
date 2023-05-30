@@ -7,6 +7,7 @@ using Android.Views;
 using AndroidX.AppCompat.App;
 using Android.Content.PM;
 using Android.Graphics;
+using Android.Graphics.Drawables;
 using Javax.Security.Auth;
 using Android.Media.Metrics;
 using System;
@@ -28,8 +29,9 @@ namespace Bestie_Final
 
         string[] suggestions;
                         
-        Button btnoverview, btnautocompletesearch, btnabout, btninstructions, eebtn;
+        Button btnoverview, btninstructions, eebtn;
         AutoCompleteTextView searchBar;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -86,14 +88,10 @@ namespace Bestie_Final
             Window.DecorView.ViewTreeObserver.AddOnGlobalLayoutListener(new KeyboardVisibilityListener(searchBar));
 
             btnoverview = FindViewById<Button>(Resource.Id.BuildingOverviewButton);
-            btnautocompletesearch = FindViewById<Button>(Resource.Id.AutoCompleteSearch);
-            btnabout = FindViewById<Button>(Resource.Id.AboutButton);
             btninstructions = FindViewById<Button>(Resource.Id.InstructionsButton);
             eebtn = FindViewById<Button>(Resource.Id.EmergencyExitButton);
 
             btnoverview.Click += Btnoverview_Click;
-            btnautocompletesearch.Click += Btnautocompletesearch_Click;
-            btnabout.Click += Btnabout_Click;
             btninstructions.Click += Btninstructions_Click;
             eebtn.Click += Eebtn_Click;
 
@@ -132,6 +130,7 @@ namespace Bestie_Final
 
         private void Eebtn_Click(object sender, EventArgs e)
         {
+
             var intent = new Intent(this, typeof(EmergencyExits));
             this.StartActivity(intent);
             Finish();
@@ -140,13 +139,6 @@ namespace Bestie_Final
         private void Btninstructions_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(InstructionsC));
-            this.StartActivity(intent);
-            Finish();
-        }
-
-        private void Btnabout_Click(object sender, EventArgs e)
-        {
-            var intent = new Intent(this, typeof(AboutC));
             this.StartActivity(intent);
             Finish();
         }
@@ -182,34 +174,6 @@ namespace Bestie_Final
             } 
         }      
         
-        private void Btnautocompletesearch_Click(object sender, EventArgs e)
-        {
-            string text = searchBar.Text;
-            if (string.IsNullOrEmpty(text))
-            {
-                AndroidX.AppCompat.App.AlertDialog.Builder builder = new AndroidX.AppCompat.App.AlertDialog.Builder(this);
-                builder.SetTitle("Oops!");
-                builder.SetMessage("You don't have any input yet. Can you try again?");
-                builder.SetPositiveButton("OK", (dialog, which) =>
-                {
-
-                });
-
-                AndroidX.AppCompat.App.AlertDialog dialog = builder.Create();     
-                dialog.Show();
-            }   
-            else
-            {
-                var intent = new Intent(this, typeof(BuildingSearch));
-                intent.PutExtra("text", text);
-                intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.ClearTask | ActivityFlags.NewTask | ActivityFlags.TaskOnHome);
-                StartActivity(intent);
-
-                // Finish the current instance of the activity
-                FinishAffinity();
-            }
-        }
-
         private class KeyboardVisibilityListener : Java.Lang.Object, ViewTreeObserver.IOnGlobalLayoutListener
         {
             private readonly View _view;

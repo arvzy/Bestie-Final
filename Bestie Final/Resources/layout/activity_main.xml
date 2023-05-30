@@ -13,7 +13,19 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_gradient"/>
+        android:background="@drawable/Bestie_bg"/>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="215px"
+            android:layout_marginLeft="270px"
+            android:layout_width="120px"
+            android:layout_height="100px"
+            android:src="@drawable/bestietransparent"/>
+     </RelativeLayout>>
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -21,23 +33,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical"
-        android:background="@drawable/background_gradient">
+        android:orientation="vertical">
 
-
-        <ImageView
-            android:layout_width="300px"
-            android:layout_height="200px"
-            android:src="@drawable/bestietransparent"/>
-
+     
         <TextView
+            android:layout_marginLeft="50px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textStyle="bold"
             android:text="BESTIE"
             android:textColor="@android:color/white"
-            android:textSize="70px"
+            android:textSize="100px"
         />
 
         <!--for now ung background is yan muna-->
@@ -61,37 +68,31 @@
             android:visibility="visible"/>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/AutoCompleteSearch"
+            android:id="@+id/BuildingOverviewButton"
             android:layout_marginTop="5px"
             android:layout_width="250px"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_design"
-            android:text="Search"
-            app:cornerRadius="50px"
-            android:visibility="visible"/>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/BuildingOverviewButton"
-            android:layout_width="250px"
-            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
             android:background="@drawable/button_design"
             app:cornerRadius="50px"
+            style="@style/Invert"
             android:text="Building Overview"/>
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="250px"
             android:layout_height="wrap_content"
-            style="@style/ButtonOve"
-            android:text="Emergency Exits"
+            android:text=""
             app:cornerRadius="50px"
-            android:id="@+id/EmergencyExitButton"/>
+            android:backgroundTint="@android:color/holo_red_light"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/InstructionsButton"
             android:layout_width="250px"
             android:layout_height="wrap_content"
             app:cornerRadius="50px"
+            android:textColor="@android:color/black"
             android:background="@drawable/button_design"
+            style="@style/Invert"
             android:text="Instructions"/>
 
         <TextView
@@ -99,24 +100,9 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:text="Codeez Inc."
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:id="@+id/textView1" />
 
-        <Button
-            android:id="@+id/AboutButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_design"
-            android:text="About"
-            android:visibility="invisible"/>
-
-       <!-- <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:text="Codeez Inc."
-            android:textColor="@android:color/white"
-            android:id="@+id/textView1" />-->
     </LinearLayout>
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -137,6 +123,20 @@
                 android:background="@drawable/contact_gmail"/>
 
         </RelativeLayout>
-    </RelativeLayout>
-   
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="437px"
+                android:layout_marginLeft="392px"
+                android:layout_width="240px"
+                android:layout_height="40px"
+                android:textColor="@android:color/holo_red_light"
+                android:text="Emergency Exits"
+                app:cornerRadius="50px"
+                style="@style/Invert"
+                android:id="@+id/EmergencyExitButton"/>
+        </RelativeLayout>
+    </RelativeLayout> 
 </RelativeLayout> 
