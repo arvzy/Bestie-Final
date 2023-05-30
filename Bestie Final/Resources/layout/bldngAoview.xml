@@ -12,7 +12,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_gradient"/>
+        android:background="@drawable/bestie_grade"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@id/home"
@@ -416,78 +416,78 @@
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="1f"
-                android:textColor="@color/colorAccent"
+                android:textColor="#ffff00"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
                 android:layout_marginLeft="170dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
-                style="@style/Invert"
+                style="@style/ButtonO"
                 android:id="@+id/frstfButton"/>
 
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="M"
-                android:textColor="@color/colorAccent"
+                android:textColor="#ffff00"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
-                style="@style/Invert"
+                style="@style/ButtonO"
                 android:id="@+id/mzznnButton" />
 
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="2f"
-                android:textColor="@color/colorAccent"
+                android:textColor="#ffff00"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
-                style="@style/Invert"
+                style="@style/ButtonO"
                 android:id="@+id/scndfButton" />
 
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="3f"
-                android:textColor="@color/colorAccent"
+                android:textColor="#ffff00"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
-                style="@style/Invert"
+                style="@style/ButtonO"
                 android:id="@+id/thrdfButton" />
 
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="4f"
-                android:textColor="@color/colorAccent"
+                android:textColor="#ffff00"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
-                style="@style/Invert"
+                style="@style/ButtonO"
                 android:id="@+id/frthfButton"  />
 
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="rf"
-                android:textColor="@color/colorAccent"
+                android:textColor="#ffff00"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
-                style="@style/Invert"
+                style="@style/ButtonO"
                 android:id="@+id/rfdckButton"/>
 
 

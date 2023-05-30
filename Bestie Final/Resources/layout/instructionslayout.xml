@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_gradient">
+    android:background="@drawable/bestie_bg">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
             android:textColor="@android:color/black"
             app:cornerRadius="20px"
             android:layout_marginLeft="12px"
-            style="@style/Button"
+            style="@style/Buttonem"
             android:text="Back"/>
 
         <TextView

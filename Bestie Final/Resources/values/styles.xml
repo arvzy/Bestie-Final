@@ -26,11 +26,15 @@
 	</style>
 	
 	<style name="Buttonem" parent="Widget.MaterialComponents.Button">
-		<item name="backgroundTint">#e8e337</item>
+		<item name="backgroundTint">#f1ee8e</item>
 	</style>
 
 	<style name="ButtonBes" parent="Widget.MaterialComponents.Button">
 		<item name="backgroundTint">#000000</item>
+	</style>
+
+	<style name="Buttoneme" parent="Widget.MaterialComponents.Button">
+		<item name="backgroundTint">#ffff00</item>
 	</style>
 
 </resources>
