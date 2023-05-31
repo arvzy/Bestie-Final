@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView 
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:gridSpec="1|8|#0093eeff|K:#ee8700ff:16,l:72,l:16,r|S:#83ee00ff:16,0,l:16,56,l:16,0,r"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bestie_bg">
@@ -12,24 +14,149 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/InstructionsBackButton"
-            android:layout_width="100px"  
+            android:layout_width="100px"
             android:layout_height="60px"
             android:textColor="@android:color/black"
             app:cornerRadius="20px"
             android:layout_marginLeft="12px"
             style="@style/Buttonem"
             android:text="Back"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="How to use BESTIE"
+                android:paddingLeft="12px"
+                android:layout_marginLeft="10px"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="50px"/>
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="Search bar"
+                android:background="@drawable/button_design"
+                android:paddingHorizontal="20px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="10px"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25px"/>
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="- It is used to search for the facilities/rooms where you want to go."
+                android:paddingHorizontal="20px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="10px"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25px"/>
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="Buildings Overview"
+                android:background="@drawable/button_design"
+                android:paddingHorizontal="20px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="10px"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25px"/>
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="- It is used to have an overview of each building that the school categorizes."
+                android:paddingHorizontal="20px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="10px"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25px"/>
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="Emergency Plan/Exits"
+                android:background="@drawable/button_design"
+                android:paddingHorizontal="20px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="10px"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25px"/>
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="- It is used to raise awareness of the locations of potential escape routes in case of emergencies."
+                android:paddingHorizontal="20px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="10px"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25px"/>
+        </LinearLayout>
+        <!--<TextView
+            android:textColor="@android:color/white"
+            android:text="BESTIE"
+            android:paddingLeft="12px"
+            android:layout_marginLeft="10px"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="50px"/>
 
         <TextView
             android:textColor="@android:color/white"
-            android:text="COMING SOON"
-            android:padding="20dp"
+            android:text="BESTIE stands for (Basic Electronic Stationary Terminal for Indoor Exploration)"
+            android:background="@drawable/button_design"
+            android:paddingHorizontal="20px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="10px"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:layout_height="1000dp"
-            android:textSize="100dp"
-            android:id="@+id/textView1" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25px"/>
 
+        <TextView
+            android:textColor="@android:color/white"
+            android:text="What is BESTIE?"
+            android:paddingLeft="12px"
+            android:layout_marginLeft="10px"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="50px"/>
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:text="
+An application software that potentially can help in locating the facilities/rooms you’re looking for. 
+            
+BESTIE is cost-efficient as it does not need to use an IPS (indoor positioning system), Bluetooth, and wifi beacons to locate the areas the users might be looking for. However, as of now, the only building that the application software only covers is building A, and in the future, buildings B, C, and D. BESTIE is an application software that provides indoor directions from the building’s entrance to the place of your choice. This application software will only be installed stationary, hence it will always begin pointing in directions from the entrance to make this achievable and beneficial for the users and school. Aside from wayfinding assistance, BESTIE also has a feature showing the emergency exits that are present on each floor of the building, which aims to aid the staff and the students to be familiar in case of an emergency. 
+"
+            android:background="@drawable/button_design"
+            android:paddingHorizontal="20px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="10px"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25px"/>-->
     </LinearLayout>
 </ScrollView>
