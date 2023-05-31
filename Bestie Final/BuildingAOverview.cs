@@ -139,6 +139,8 @@ namespace Bestie_Final
 
             rfdckimgbtn.Visibility = ViewStates.Gone;
 
+            frstflrbtn.Enabled = false;
+
 
 
             regimgbtn.Click += (sender, args) =>

@@ -10,104 +10,117 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/Bestie_bg"/>
-
-    <RelativeLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_marginTop="215px"
-            android:layout_marginLeft="270px"
-            android:layout_width="120px"
-            android:layout_height="100px"
-            android:src="@drawable/bestietransparent"/>
-     </RelativeLayout>>
-
-    <LinearLayout
-        android:id="@+id/linearLayout1"
-        android:focusableInTouchMode="true"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
-
-     
-        <TextView
-            android:layout_marginLeft="50px"
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/Bestie_bg"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:gravity="center"
-            android:textStyle="bold"
-            android:text="BESTIE"
-            android:textColor="@android:color/white"
-            android:textSize="100px"
-        />
+            android:orientation="vertical">
 
-        <!--for now ung background is yan muna-->
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="150px">
+                <ImageView
+                    android:layout_width="120px"
+                    android:layout_height="100px"
+                    android:layout_marginTop="20px"
+                    android:layout_marginLeft="255px"
+                    android:src="@drawable/bestietransparent"/>
+                <TextView
+                    android:layout_width="400px"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="355px"
+                    android:textStyle="bold"
+                    android:text="BESTIE"
+                    android:textColor="@android:color/white"
+                    android:textSize="100px"/>
+            </RelativeLayout>
 
-        <AutoCompleteTextView
-            android:id="@+id/searchBar"
-            android:layout_width="700dp"
-            android:layout_height="50dp"
-            android:background="@drawable/search_design"
-            android:textColor="@android:color/black"
-            android:layout_marginLeft="20px"
-            android:layout_marginRight="20px"
-            android:textAlignment="center"
-            android:hint="Search"
-            android:textColorHint="@android:color/black"
-            android:completionThreshold="2"
-            android:dropDownWidth="match_parent"
-            android:dropDownHeight="wrap_content"
-            android:singleLine="true"
-            android:imeOptions="actionDone"
-            android:visibility="visible"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/BuildingOverviewButton"
-            android:layout_marginTop="5px"
-            android:layout_width="250px"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-            android:background="@drawable/button_design"
-            app:cornerRadius="50px"
-            style="@style/Invert"
-            android:text="Building Overview"/>
+            <!--for now ung background is yan muna-->
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="250px"
-            android:layout_height="wrap_content"
-            android:text=""
-            app:cornerRadius="50px"
-            android:backgroundTint="@android:color/holo_red_light"/>
+            <AutoCompleteTextView
+                android:id="@+id/searchBar"
+                android:layout_width="700dp"
+                android:layout_height="50dp"
+                android:background="@drawable/search_design"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:textAlignment="center"
+                android:hint="Search"
+                android:textColorHint="@android:color/black"
+                android:completionThreshold="2"
+                android:dropDownWidth="match_parent"
+                android:dropDownHeight="wrap_content"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:visibility="visible"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/InstructionsButton"
-            android:layout_width="250px"
-            android:layout_height="wrap_content"
-            app:cornerRadius="50px"
-            android:textColor="@android:color/black"
-            android:background="@drawable/button_design"
-            style="@style/Invert"
-            android:text="Instructions"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/BuildingOverviewButton"
+                android:layout_marginTop="5px"
+                android:layout_width="250px"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:background="@drawable/button_design"
+                app:cornerRadius="50px"
+                style="@style/Invert"
+                android:text="Building Overview"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:text="Codeez Inc."
-            android:textColor="@android:color/black"
-            android:id="@+id/textView1" />
 
-    </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="250px"
+                    android:layout_height="wrap_content"
+                    app:cornerRadius="50px"
+                    style="@style/ButtonOve"/>
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="240px"
+                    android:layout_height="40px"
+                    android:layout_marginTop="4px"
+                    android:layout_marginLeft="5px"
+                    android:textColor="@android:color/holo_red_light"
+                    android:text="Emergency Exits"
+                    app:cornerRadius="50px"
+                    style="@style/Invert"
+                    android:id="@+id/EmergencyExitButton"/>
+            </RelativeLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/InstructionsButton"
+                android:layout_width="250px"
+                android:layout_height="wrap_content"
+                app:cornerRadius="50px"
+                android:textColor="@android:color/black"
+                android:background="@drawable/button_design"
+                style="@style/Invert"
+                android:text="Instructions"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Codeez Inc."
+                android:textColor="@android:color/black"
+                android:id="@+id/textView1" />
+
+        </LinearLayout>
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-           
+
             <ImageButton
                 android:layout_width="80px"
                 android:layout_height="80px"
@@ -123,20 +136,5 @@
                 android:background="@drawable/contact_gmail"/>
 
         </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_marginTop="437px"
-                android:layout_marginLeft="392px"
-                android:layout_width="240px"
-                android:layout_height="40px"
-                android:textColor="@android:color/holo_red_light"
-                android:text="Emergency Exits"
-                app:cornerRadius="50px"
-                style="@style/Invert"
-                android:id="@+id/EmergencyExitButton"/>
-        </RelativeLayout>
-    </RelativeLayout> 
+    </RelativeLayout>
 </RelativeLayout> 

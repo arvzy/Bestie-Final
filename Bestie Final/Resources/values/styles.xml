@@ -37,5 +37,9 @@
 		<item name="backgroundTint">#ffff00</item>
 	</style>
 
+	<style name="flrBtn" parent="Widget.MaterialComponents.Button">
+		<item name="android:background">@drawable/inactive_button_background</item>
+		<item name="android:textColor">@color/inactive_button_text_color</item>
+	</style>
 </resources>
 

@@ -422,7 +422,7 @@
                 android:layout_marginLeft="170dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
-                style="@style/ButtonO"
+                style="@style/flrBtn"
                 android:id="@+id/frstfButton"/>
 
             <com.google.android.material.button.MaterialButton
@@ -435,7 +435,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
-                style="@style/ButtonO"
+                style="@style/flrBtn"
                 android:id="@+id/mzznnButton" />
 
             <com.google.android.material.button.MaterialButton
@@ -448,7 +448,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
-                style="@style/ButtonO"
+                style="@style/flrBtn"
                 android:id="@+id/scndfButton" />
 
             <com.google.android.material.button.MaterialButton
@@ -461,7 +461,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
-                style="@style/ButtonO"
+                style="@style/flrBtn"
                 android:id="@+id/thrdfButton" />
 
             <com.google.android.material.button.MaterialButton
@@ -474,23 +474,21 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
-                style="@style/ButtonO"
+                style="@style/flrBtn"
                 android:id="@+id/frthfButton"  />
 
             <com.google.android.material.button.MaterialButton
                 android:textSize="30px"
                 app:cornerRadius="50px"
                 android:text="rf"
-                android:textColor="#ffff00"
+                android:textColor="#808080"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
-                style="@style/ButtonO"
+                style="@style/flrBtn"
                 android:id="@+id/rfdckButton"/>
-
-
         </LinearLayout> 
 
     </LinearLayout>
